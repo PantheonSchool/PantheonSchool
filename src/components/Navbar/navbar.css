@@ -4,9 +4,65 @@
 }
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.34) !important;
     position: fixed;
     z-index: 999;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.dropdown-menu{
+    background: var(--bs-dark)
+}
+
+.dropdown-toggle{
+    border: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu{
+    animation: slideIn 0.4s ;
+}
+  
+@keyframes slideIn {
+    0%{
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+@media only screen and (max-width:756px) {
+    .dropdown-menu{
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .bottom-nav{
+        background-color: var(--pantheon-red)!important;
+    }
+    .dropdown{
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:756px){
+    .dropdown-menu{
+        position: absolute;
+        left:-128px !important;
+    }
 }
 
 

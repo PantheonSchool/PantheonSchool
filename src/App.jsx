@@ -7,7 +7,7 @@ const Home = lazy(() => import('./components/Home/Home'))
 const App = () => {
   return (
     <>
-      <div className='w-100 h-100'>
+      <div className='w-100' style={{minHeight:'100vh'}}>
         <Suspense fallback={<>Loading...</>}><Navbar /></Suspense>
         <Suspense fallback={<>Loading ...</>} >
           <Routes>

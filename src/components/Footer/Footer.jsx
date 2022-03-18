@@ -1,6 +1,7 @@
 import PantheonLogo from '../Images/PantheonLogo.png'
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import './footer.css'
 const Footer = () => {
     return (
         <footer className='bg-black px-4 mx-0 py-5 text-light'>
