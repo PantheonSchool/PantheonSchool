@@ -1,0 +1,15 @@
+.navbar.scrolled{
+    background:rgba(0, 0, 0, 0.95) !important;
+    transition: 0.4s ease-in-out;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    position: fixed;
+    z-index: 999;
+}
+
+
+/* .navbar.scroll .nav-school-name{
+    color: #000 !important;
+} */

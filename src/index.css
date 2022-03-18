@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root{
+  --pantheon-red:#9d2235;
+  --pantheon-mustard:#FFCB05;
+}
+*,body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow-x: hidden; */
+}
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  /* font-family: 'Arvo', serif !important; */
+  font-family: "Open Sans", sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-arvo{
+  font-family: 'Arvo', serif !important;
+}
+
+a{
+  text-decoration: none !important; 
+  transition: 0.15s ease-in-out;
+}
+a:hover{
+  color: var(--pantheon-mustard) !important;
+  transition: 0.25s ease-in-out;
+}
+
+a:hover svg{
+  color: var(--pantheon-mustard) !important;
+  transition: 0.25s ease-in-out;
+}
+
+.bg-pantheonRed{
+  background-color: var(--pantheon-red) !important;
+}
+
+.text-mustard{
+  color: var(--pantheon-mustard);
+}
+
+.bg-mustard{
+  background-color: var(--pantheon-mustard) !important;
+}
+
+.text-pantheonRed{
+  color: var(--pantheon-red);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar
+{
+    width: 7px;
+    height: 6px;
+	background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: grey;
+}
+
+
