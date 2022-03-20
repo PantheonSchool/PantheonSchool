@@ -37,7 +37,7 @@ const Footer = () => {
                         <Link to='/' className='text-light mb-4'>contact us</Link>
                     </div>
                     <div>
-                        <iframe className='rounded-3 w-100' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3481.6148657887325!2d79.47888661490823!3d29.23488088218401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09b24e09b03dd%3A0xb24beeedfc0d5a68!2sThe%20Pantheon%20School%2C%20Haldwani!5e0!3m2!1sen!2sin!4v1647584884756!5m2!1sen!2sin" height="200" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe className='rounded-3 w-100' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3481.6148657887325!2d79.47888661490823!3d29.23488088218401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39a09b24e09b03dd%3A0xb24beeedfc0d5a68!2sThe%20Pantheon%20School%2C%20Haldwani!5e0!3m2!1sen!2sin!4v1647584884756!5m2!1sen!2sin" height="200" allowFullScreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
