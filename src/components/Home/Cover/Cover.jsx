@@ -5,8 +5,8 @@ const Cover = () => {
     return (
         <div className='position-relative'>
             <div className='pantheon-cover d-flex flex-column justify-content-center align-items-center'>
-                <p className='display-4 text-center mb-5 text-uppercase hero-content fw-bold mt-auto text-light'><span>Education for a changing world</span></p>
-                <div style={{ zIndex: '0' }} className='p-2 text-light mb-5 text-light d-flex align-items-center flex-column'>
+                <p style={{marginTop:'145px'}} className='display-4 text-center mb-1 text-uppercase hero-content fw-bold text-light'><span>Education for a changing world</span></p>
+                <div style={{ zIndex: '0' }} className='p-2 text-light mb-5 mt-auto text-light d-flex align-items-center flex-column'>
                     <h6 className='text-uppercase drop-shadow-sm fw-bold'><span>Find Your Way</span></h6>
                     <div className="line my-1" />
                     <FaChevronCircleDown className='fs-5' id='cover-down-arrow' />

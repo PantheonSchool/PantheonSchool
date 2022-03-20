@@ -28,19 +28,19 @@ const Navbar = () => {
         navbar.classList.toggle("scrolled", window.scrollY > 0);
     })
 
-    return (<><NavbarContainer variant='dark' className='p-0 text-white sticky-top col-12' expand="md">
+    return (<><NavbarContainer variant='dark' className='p-0 text-white sticky-top col-12' expand="lg">
         <Container className='mx-md-2 p-0 mw-100'>
-            <Link to='/' className="d-flex d-md-none font-arvo flex-row align-items-center justify-content-center ps-2 py-2">
+            <Link to='/' className="d-flex d-lg-none font-arvo flex-row align-items-center justify-content-center ps-2 py-2">
                 <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '80px' }} />
                 <div style={{ letterSpacing: '2.5px' }} className="text-uppercase text-light ms-3 mt-4">
-                    <p className='fs-5 fw-bold mb-0'>The Pantheon</p>
-                    <p className="mb-0 fw-light">School</p>
+                    <p className='small fw-bold mb-0'>The Pantheon</p>
+                    <p className="mb-0 small fw-light">School</p>
                 </div>
             </Link>
             <NavbarContainer.Toggle aria-controls="basic-navbar-nav" className='me-2' />
             <NavbarContainer.Collapse id="basic-navbar-nav" className="w-100">
                 <div className='d-flex mx-0 w-100'>
-                    <Link to='/' className="d-none col-3 font-arvo d-md-flex flex-row align-items-center justify-content-center border-end border-bottom py-2">
+                    <Link to='/' className="d-none col-3 font-arvo d-lg-flex flex-row align-items-center justify-content-center border-end border-bottom py-2">
                         <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '80px' }} />
                         <div style={{ letterSpacing: '2.5px' }} className="text-uppercase text-light ms-3 mt-4">
                             <p className='fs-5 fw-bold mb-0'>The Pantheon</p>

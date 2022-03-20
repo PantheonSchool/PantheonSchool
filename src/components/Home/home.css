@@ -217,6 +217,9 @@
     .explore_portals .portal a{
         width: 345px;
     }
+    .slides .slide .stats .stat p{
+        font-size: 11px !important;
+    }
 }
 
 @media (min-width: 960px){

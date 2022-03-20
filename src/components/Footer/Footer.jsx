@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 import './footer.css'
 const Footer = () => {
     return (
-        <footer className='bg-black px-4 mx-0 py-5 text-light'>
+        <footer className='bg-black px-md-4 mx-0 py-5 text-light'>
             <div className='container-fluid'>
                 <div className='d-flex flex-column flex-md-row justify-content-between align-items-md-center'>
-                    <div className="d-flex justify-content-center">
+                    <div className="d-flex justify-content-center mb-3 mb-md-0">
                         <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '120px', height: '150px' }} />
                         <div style={{ letterSpacing: '2.5px' }} className="text-uppercase text-light ms-3 d-flex flex-column justify-content-end">
                             <p className='fs-5 fw-bold mb-0'>The Pantheon</p>
@@ -20,7 +20,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div style={{ letterSpacing: '1.6px' }} className='text-uppercase p-2'>
+                    <div style={{ letterSpacing: '1.6px' }} className='text-uppercase p-2 mb-4 mb-md-4'>
                         <p className='mb-2 fw-bold'>The pantheon school</p>
                         <p className='mb-1 small'>Haidakhan Mandir Road</p>
                         <p className='small'>Kathgharia,Haldwani</p>
@@ -31,7 +31,7 @@ const Footer = () => {
                         <Link to='/' className='text-light mb-4'>The Pantheon way</Link>
                         <Link to='/' className='text-light mb-4'>apply</Link>
                     </div>
-                    <div style={{ letterSpacing: '1.6px' }} className='text-uppercase fw-bold  d-flex flex-column p-2'>
+                    <div style={{ letterSpacing: '1.6px' }} className='text-uppercase fw-bold mb-4 mb-md-4 d-flex flex-column p-2'>
                         <Link to='/' className='text-light mb-4'>site map</Link>
                         <Link to='/' className='text-light mb-4'>Tution</Link>
                         <Link to='/' className='text-light mb-4'>contact us</Link>
