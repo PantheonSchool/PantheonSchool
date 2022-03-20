@@ -12,7 +12,7 @@ const StatComp = ({ stat }) => {
 const Slide = ({ slide }) => {
     return (
         <div style={{ backgroundColor: slide.backgroundColor }} className={slide.class + 'p-md-5 p-3 slide text-uppercase position-relative'}>
-            <div class="bg-image" style={{ backgroundImage: `url(${slide.img})` }} />
+            <div className="bg-image" style={{ backgroundImage: `url(${slide.img})` }} />
             <div className='p-md-5 p-1 fw-bold text-light'>
                 <div className="d-flex flex-column align-items-center">
                     <h3 className="text-light fw-bold text-center">{slide.title}</h3>

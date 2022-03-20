@@ -1,18 +1,18 @@
 .pantheon-cover{
     background: url('../Images/PantheonCover.jpg');
     background-color: #00274c;
-    height: 90vh;
+    height: 82vh;
     width: 100%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-attachment: fixed !important;
-    background-position: center top !important;
+    background-position: center center !important;
 }
 
 .pantheon-cover::before{
     background-color: black;
     content: '';
-    height: 90vh;
+    height: 82vh;
     left: 0;
     opacity: 0.55;
     position: absolute;
