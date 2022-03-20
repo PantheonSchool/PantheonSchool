@@ -11,7 +11,7 @@ const Home = () => {
     <>
       <Cover />
       <ExplorePantheon/>
-      <h2 className='display-5 text-center fw-bold my-5 drop-shadow-sm'>BY THE NUMBERS</h2>
+      <h2 className='display-4 text-center fw-bold my-4'>BY THE NUMBERS</h2>
       <div className='slides'>
         {slides && slides.map((slide, index) => <Slide slide={slide} key={slide.title + index} />)}
       </div>

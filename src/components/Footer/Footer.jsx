@@ -11,7 +11,7 @@ const Footer = () => {
                         <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '120px', height: '150px' }} />
                         <div style={{ letterSpacing: '2.5px' }} className="text-uppercase text-light ms-3 d-flex flex-column justify-content-end">
                             <p className='fs-5 fw-bold mb-0'>The Pantheon</p>
-                            <p className="mb-0 fw-light">School</p>
+                            <p className="mb-0 fw-light">School,Haldwani</p>
                             <div className='mt-4 d-flex justify-content-between'>
                                 <a href='/' target='_blank'><FaFacebookF className='text-light' /></a>
                                 <a href='/' target='_blank'><FaTwitter className='text-light' /></a>
@@ -33,7 +33,7 @@ const Footer = () => {
                     </div>
                     <div style={{ letterSpacing: '1.6px' }} className='text-uppercase fw-bold mb-4 mb-md-4 d-flex flex-column p-2'>
                         <Link to='/' className='text-light mb-4'>site map</Link>
-                        <Link to='/' className='text-light mb-4'>Tution</Link>
+                        <Link to='/' className='text-light mb-4'>Tuition</Link>
                         <Link to='/' className='text-light mb-4'>contact us</Link>
                     </div>
                     <div>

@@ -12,7 +12,10 @@
 .dropdown{
     display: flex;
     flex-direction: column;
-    
+}
+
+.navbar-toggler{
+    border: none !important;
 }
 
 .dropdown-menu{
@@ -65,6 +68,11 @@
     }
 }
 
+@media (max-width:960px){
+    .navbar{
+    background:rgba(0, 0, 0, 0.9) !important;
+    }
+}
 
 /* .navbar.scroll .nav-school-name{
     color: #000 !important;

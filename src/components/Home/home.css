@@ -1,5 +1,5 @@
 .pantheon-cover{
-    background: url(https://assets.speakcdn.com/assets/2532/middle_school_lake.jpg);
+    background: url('../Images/PantheonCover.jpg');
     background-color: #00274c;
     height: 90vh;
     width: 100%;
@@ -14,7 +14,7 @@
     content: '';
     height: 90vh;
     left: 0;
-    opacity: 0.5;
+    opacity: 0.55;
     position: absolute;
     top: 0;
     width: 100%;
@@ -25,7 +25,7 @@
 }
 
 .hero-content>*{
-    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 1));
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
     cursor: pointer;
     transition: 0.25s ease-in-out;
 }
