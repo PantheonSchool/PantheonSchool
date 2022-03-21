@@ -1,15 +1,15 @@
 .navbar.scrolled{
-    background:rgba(0, 0, 0, 0.9) !important;
-    transition: 0.4s ease-in-out;
+    background:rgba(0, 0, 0, 0.8) !important;
+    /* transition: 0.4s ease-in-out; */
 }
 
 .scrolled-down{
     transform:translateY(-100%); 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out !important;
 }
 .scrolled-up{
     transform:translateY(0); 
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out !important;
 }
 
 .navbar{
