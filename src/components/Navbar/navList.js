@@ -7,25 +7,13 @@ const navList = [
         title: "Pantheon at a Glance",
       },
       {
-        title: "History of Pantheon",
+        title: "Director's Message",
       },
       {
-        title: "Diversity & Inclusion",
+        title: "Principal's Message",
       },
       {
-        title: "Calendar",
-      },
-      {
-        title: "Leadership",
-      },
-      {
-        title: "Working at Pantheon",
-      },
-      {
-        title: "Explore Pantheon",
-      },
-      {
-        title: "Technology at Pantheon",
+        title: "Mandatory Disclosure",
       },
     ],
   },
@@ -46,39 +34,51 @@ const navList = [
       { title: "Assesment Schedule" },
       { title: "Curriculum" },
       { title: "Syllabus" },
+      { title: "Book List" },
     ],
   },
   {
-    title: "ATHLETICS",
-    hasList: true,
-  },
-  {
-    title: "ARTS",
+    title: "EXTRA CIRRICULAR",
     hasList: true,
     list: [
       {
-        title: "Pantheon at a Glance",
+        title: "Art & Craft",
       },
       {
-        title: "History of Pantheon",
+        title: "Dance",
       },
       {
-        title: "Diversity & Inclusion",
+        title: "Music",
       },
       {
-        title: "Calendar",
+        title: "Public Speaking",
       },
       {
-        title: "Leadership",
+        title: "Spoken English",
       },
       {
-        title: "Working at Pantheon",
+        title: "Sports",
       },
       {
-        title: "Explore Pantheon",
+        title: "Swimming",
+      },
+    ],
+  },
+  {
+    title: "UNIQUE TO PANTHEON",
+    hasList: true,
+    list: [
+      {
+        title: "Weekly Test Series",
       },
       {
-        title: "Technology at Pantheon",
+        title: "After School Tution Classes",
+      },
+      {
+        title: "Focus On Concepts",
+      },
+      {
+        title: "All Round Development",
       },
     ],
   },
