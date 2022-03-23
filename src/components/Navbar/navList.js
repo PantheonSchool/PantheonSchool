@@ -2,6 +2,7 @@ const navList = [
   {
     title: "ABOUT",
     hasList: true,
+    bgColor: 'rgba(89,126,32,0.9)',
     list: [
       {
         title: "Pantheon at a Glance",
@@ -20,6 +21,7 @@ const navList = [
   {
     title: "ADMISSION",
     hasList: true,
+    bgColor: 'rgba(1,126,167,0.9)',
     list: [
       { title: "Admission Information" },
       { title: "Fee Structure" },
@@ -29,6 +31,7 @@ const navList = [
   {
     title: "ACADEMICS",
     hasList: true,
+    bgColor: 'rgba(0,39,76,0.9)',
     list: [
       { title: "Academic Calendar" },
       { title: "Assesment Schedule" },
@@ -40,6 +43,7 @@ const navList = [
   {
     title: "EXTRA CIRRICULAR",
     hasList: true,
+    bgColor: 'rgba(202,22,57,0.9)',
     list: [
       {
         title: "Art & Craft",
@@ -67,6 +71,7 @@ const navList = [
   {
     title: "UNIQUE TO PANTHEON",
     hasList: true,
+    bgColor: 'rgba(90,32,73,0.9)',
     list: [
       {
         title: "Weekly Test Series",

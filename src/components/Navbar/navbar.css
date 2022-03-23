@@ -44,9 +44,9 @@
     display: block;
 }
 
-.dropdown-menu{
+/* .dropdown-menu{
     animation: slideIn 0.4s ;
-}
+} */
   
 @keyframes slideIn {
     0%{

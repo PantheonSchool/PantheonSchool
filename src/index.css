@@ -132,7 +132,7 @@ code {
   -webkit-border-radius: 10px;
   opacity: 1;
   width: 8px;
-  background: #e9b171;
+  background: var(--pantheon-mustard);
 }
 
 

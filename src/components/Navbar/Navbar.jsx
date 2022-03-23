@@ -15,15 +15,15 @@ const Navbar = () => {
     let last_scroll_top = 0;
     const [bgColor, setBgColor] = useState('none')
 
-    function getRandomColor() {
-        const random = `hsla(${Math.random() * 360},70%,40%,0.9)`
-        return random
-    }
+    // function getRandomColor() {
+    //     const random = `hsla(${Math.random() * 360},70%,40%,0.9)`
+    //     return random
+    // }
 
 
     const NavItem = ({ item }) => {
         return <>
-            {item.hasList ? <Dropdown onMouseEnter={() => screen.width > 960 && setBgColor(getRandomColor())} onMouseLeave={() => screen.width > 960 && setBgColor('transparent')} className='h-100'>
+            {item.hasList ? <Dropdown onMouseEnter={() => screen.width > 960 && setBgColor(item.bgColor)} onMouseLeave={() => screen.width > 960 && setBgColor('transparent')} className='h-100'>
                 <Dropdown.Toggle className='text-center bg-transparent fw-bold h-100 text-white px-3 '>
                     {item.title}
                 </Dropdown.Toggle>
