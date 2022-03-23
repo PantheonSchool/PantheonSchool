@@ -228,6 +228,7 @@
     padding: 0;
     max-width: 375px;
     min-width: 325px;
+    min-height: 530px;
 }
 
 .posts .post .image {

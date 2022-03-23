@@ -45,7 +45,7 @@ const slides = [
         title: 'we encourage continual self-reflection',
         img: 'https://assets.speakcdn.com/assets/2532/dsc03474.jpg',
         class: 'd-flex flex-column flex-md-row-reverse ',
-        backgroundColor: '#00274c',
+        backgroundColor: '#D9002A',
         learnMoreLink: '/',
         slideData: [
             {

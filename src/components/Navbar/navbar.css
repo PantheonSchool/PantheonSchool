@@ -31,6 +31,11 @@
     background: var(--bs-dark)
 }
 
+.dropdown-menu:hover a {
+    color: #fff !important;
+    background: none;
+}
+
 .dropdown-toggle{
     border: none;
 }
@@ -70,10 +75,10 @@
     }
 }
 
-@media only screen and (min-width:756px){
+@media only screen and (max-width:960px){
     .dropdown-menu{
-        position: absolute;
-        left:-128px !important;
+        background-color: transparent !important;
+        border-top: none !important;
     }
 }
 

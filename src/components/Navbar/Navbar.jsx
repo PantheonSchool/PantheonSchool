@@ -6,26 +6,34 @@ import PantheonLogo from '../Images/PantheonLogo.png'
 import { Link } from "react-router-dom"
 import navList from "./navList"
 import { CgMenuRight } from 'react-icons/cg'
-import { useRef, useEffect } from "react"
+import { useRef, useState } from "react"
 
 
-const NavItem = ({ item }) => {
-    return <>
-        {item.hasList ? <Dropdown>
-            <Dropdown.Toggle className='text-center bg-transparent fw-bold text-white px-3 '>
-                {item.title}
-            </Dropdown.Toggle>
-            <Dropdown.Menu renderOnMount={true}>
-                {item.list && item.list.map((it, index) => <Link key={it.title + index} className='dropdown-item text-light' to={it.link || '/'}>{it.title}</Link>)}
-            </Dropdown.Menu>
-        </Dropdown> :
-            <Link className='fw-bold px-3 text-light nav-link' to={item.link || '/'}>{item.title}</Link>}
-    </>
-}
 
 const Navbar = () => {
     const navbar = useRef()
     let last_scroll_top = 0;
+    const [bgColor, setBgColor] = useState('none')
+
+    function getRandomColor() {
+        const random = `hsla(${Math.random() * 360},70%,40%,0.9)`
+        return random
+    }
+
+
+    const NavItem = ({ item }) => {
+        return <>
+            {item.hasList ? <Dropdown onMouseEnter={() => screen.width > 960 && setBgColor(getRandomColor())} onMouseLeave={() => screen.width > 960 && setBgColor('transparent')} className='h-100'>
+                <Dropdown.Toggle className='text-center bg-transparent fw-bold h-100 text-white px-3 '>
+                    {item.title}
+                </Dropdown.Toggle>
+                <Dropdown.Menu className='py-0 my-0 border-top' style={{ backgroundColor: bgColor }} renderOnMount={true}>
+                    {item.list && item.list.map((it, index) => <Link key={it.title + index} className='dropdown-item text-light' to={it.link || '/'}>{it.title}</Link>)}
+                </Dropdown.Menu>
+            </Dropdown> :
+                <Link className='fw-bold px-3 text-light nav-link' to={item.link || '/'}>{item.title}</Link>}
+        </>
+    }
 
     window.addEventListener('scroll', () => {
         if (navbar.current) {
@@ -70,7 +78,7 @@ const Navbar = () => {
                             <Link className="btn-v2 px-3 fw-bold px-4 py-2" to='/login'><BsBookmark style={{ fontSize: '15px' }} className='align-top me-2' />INQUIRE</Link>
                             <a className='px-3' href='tel:7618671071'><BsFillTelephoneFill style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /></a>
                         </div>
-                        <div className="h-100 py-3 py-md-0 border-bottom bottom-nav px-md-5">
+                        <div style={{ backgroundColor: bgColor }} className="h-100 py-3 py-md-0 border-bottom bottom-nav px-md-5">
                             <Nav className='d-flex flex-md-row justify-content-end h-100 align-items-center'>
                                 {navList && navList.map((item, index) => <NavItem key={item.title + index} item={item} />)}</Nav>
                         </div>

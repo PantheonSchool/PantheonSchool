@@ -1,6 +1,9 @@
+import Abacus from '../Images/news-pics/Abacus.png'
+//images should be in 640:427px
+
 const posts = [
   {
-    img: "https://scontent.fdel31-1.fna.fbcdn.net/v/t39.30808-6/274857122_948365115838197_3837597614428638180_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=iceijvBIeS4AX9vQ6I9&_nc_ht=scontent.fdel31-1.fna&oh=00_AT_TjH8Cd-Qh7cRRJpNW5b6FdQAM5_NzTyiQwnhHULbkJA&oe=623EEC46",
+    img: Abacus,
     date: "Saturday, February 26, 2022",
     title: "International Abacus Competition",
     body: "Panshul Tewari of class 5 and Aman Kumar of class 2 of the School secured position in International Abacus Competition. The Pantheon School congratulates both of them for their achievement.",

@@ -76,10 +76,16 @@ body {
 a{
   text-decoration: none !important; 
   transition: 0.15s ease-in-out;
+  outline: none;
 }
 a:hover{
   color: var(--pantheon-mustard) !important;
   transition: 0.25s ease-in-out;
+  outline: none;
+}
+
+button,button:hover,button:focus,button:visited{
+  outline:none
 }
 
 a:hover svg{
