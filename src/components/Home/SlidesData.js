@@ -1,7 +1,11 @@
+import pic1 from "../Images/slides-pics/pic1.jpg";
+import pic2 from "../Images/slides-pics/pic2.jpg";
+import pic3 from "../Images/slides-pics/dsc03474.jpg";
+
 const slides = [
   {
     title: "we create a joyful and challenging learning process",
-    img: "https://assets.speakcdn.com/assets/2532/dsc03673.jpg",
+    img: pic1,
     class: "d-flex flex-column flex-md-row-reverse ",
     backgroundColor: "#597E20",
     learnMoreLink: "/",
@@ -22,7 +26,7 @@ const slides = [
   },
   {
     title: "we forge meaningful relationships",
-    img: "https://assets.speakcdn.com/assets/2532/20201021-dsc07922.jpg",
+    img: pic2,
     class: "d-flex flex-column flex-md-row ",
     backgroundColor: "#5A2049",
     learnMoreLink: "/",
@@ -43,7 +47,7 @@ const slides = [
   },
   {
     title: "we offer unique facilities",
-    img: "https://assets.speakcdn.com/assets/2532/dsc03474.jpg",
+    img: pic3,
     class: "d-flex flex-column flex-md-row-reverse ",
     backgroundColor: "#D9002A",
     learnMoreLink: "/",
