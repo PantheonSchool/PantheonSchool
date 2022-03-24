@@ -8,15 +8,15 @@ const slides = [
     slideData: [
       {
         title: "student/teacher ratio",
-        data: "7:1",
+        data: "20:1",
       },
       {
-        title: "vertically aligned curriculum",
+        title: "CBSE Pattern",
         data: "PK-12",
       },
       {
-        title: "International baccalaureate diploma programme enrollment",
-        data: "45%",
+        title: "Focus on Concepts",
+        data: "100%",
       },
     ],
   },
@@ -28,36 +28,36 @@ const slides = [
     learnMoreLink: "/",
     slideData: [
       {
-        title: "average class size",
-        data: "14",
-      },
-      {
-        title: "lakeside acres",
+        title: "max class size",
         data: "30",
       },
       {
-        title: "siblings",
+        title: "acres area",
+        data: "2.24",
+      },
+      {
+        title: "referal students",
         data: "50%",
       },
     ],
   },
   {
-    title: "unique offerings from pantheon",
+    title: "we offer unique facilities",
     img: "https://assets.speakcdn.com/assets/2532/dsc03474.jpg",
     class: "d-flex flex-column flex-md-row-reverse ",
     backgroundColor: "#D9002A",
     learnMoreLink: "/",
     slideData: [
       {
-        title: "spoken english classes",
-        data: "62",
+        title: "weekly spoken english classes",
+        data: "5",
       },
       {
         title: "weekly tests",
-        data: "4",
+        data: "5",
       },
       {
-        title: "hours daily tution",
+        title: "hours daily tuition",
         data: "2",
       },
     ],
