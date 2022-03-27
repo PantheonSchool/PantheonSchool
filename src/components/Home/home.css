@@ -5,7 +5,7 @@
     width: 100%;
     background-size: cover !important;
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+    background-attachment:fixed;
     background-position: center center !important;
 }
 
@@ -263,6 +263,7 @@
 
 @media (max-width:756px){
     .pantheon-cover{
+        background-attachment: scroll;
         height: 55vh;
     }
     .pantheon-cover::before{

@@ -23,7 +23,7 @@ h3{
 
 .btn-v2{
     align-items: center;
-    background: #FFCB05;
+    background-color: #FFCB05 !important;
     clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 100% 100%, 0% 100%);
     color: #00274c;
     display: flex;
@@ -31,6 +31,15 @@ h3{
     font-weight: bold;
     margin: 0 10px;
     text-transform: uppercase;
+}
+
+.btn-v2.btn-cls{
+    background: var(--pantheon-mustard);
+    clip-path: polygon(0% 0%, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 0% 100%) !important;
+    color: #222 !important;
+    font-size: 0.75rem !important;
+    letter-spacing: 1.3px;
+    width: 90%;
 }
 
 .btn-v3{
@@ -84,8 +93,8 @@ a:hover{
   outline: none;
 }
 
-button,button:hover,button:focus,button:visited{
-  outline:none
+.btn,.btn:hover,.btn:focus,.btn:visited{
+  outline:none !important;
 }
 
 a:hover svg{

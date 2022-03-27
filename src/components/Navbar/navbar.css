@@ -1,7 +1,7 @@
-.navbar.scrolled{
+/* .navbar.scrolled{
     background:rgba(0, 0, 0, 0.8) !important;
-    /* transition: 0.4s ease-in-out; */
-}
+    transition: 0.4s ease-in-out;
+} */
 
 .scrolled-down{
     transform:translateY(-100%); 
@@ -13,7 +13,7 @@
 }
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.34) !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
     position: fixed;
     z-index: 999;
 }
@@ -40,13 +40,31 @@
     border: none;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
 
 /* .dropdown-menu{
     animation: slideIn 0.4s ;
 } */
+
+#nav-modal{
+    margin: 0;
+    transform: translateX(100%);
+}
+.modal.show #nav-modal{
+    transform: translateX(0%);
+}
+#nav-modal .modal-content{
+    min-height: 100vh;
+    margin: 0 0 0 auto;
+    width: 260px;
+    background: #00274c;
+}
+#nav-modal .modal-content .modal-body{
+    padding: 0;
+}
+
+#nav-modal .modal-content .modal-body .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
   
 @keyframes slideIn {
     0%{
@@ -82,10 +100,11 @@
     }
 }
 
-@media (max-width:960px){
-    .navbar{
-    background:rgba(0, 0, 0, 0.9) !important;
-    }
+@media (min-width:960px){
+    
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 }
 
 /* .navbar.scroll .nav-school-name{
