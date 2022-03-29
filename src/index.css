@@ -62,7 +62,7 @@ h3{
 }
 
 .btn-v2:hover{
-    background: var(--pantheon-red);
+    background: var(--pantheon-red) !important;
     color: white;
     clip-path: polygon(0% 0%, calc(100% - 15px) 0%, 100% 50%, calc(100% - 15px) 100%, 0% 100%);
 }
