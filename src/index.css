@@ -13,7 +13,7 @@
 }
 
 .pantheon-cover{
-  background: url('../Images/PantheonCover.jpg');
+  background: url('./components/Images/PantheonCover.jpg');
   background-color: #00274c;
   height: 82vh;
   width: 100%;
