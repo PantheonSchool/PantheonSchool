@@ -1,24 +1,4 @@
-.pantheon-cover{
-    background: url('../Images/PantheonCover.jpg');
-    background-color: #00274c;
-    height: 82vh;
-    width: 100%;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-attachment:fixed;
-    background-position: center center !important;
-}
 
-.pantheon-cover::before{
-    background-color: black;
-    content: '';
-    height: 82vh;
-    left: 0;
-    opacity: 0.55;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
 
 .drop-shadow-sm{
     text-shadow: 0 2px 4px rgb(0 0 0 / 50%);

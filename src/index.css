@@ -12,6 +12,28 @@
   /* overflow-x: hidden; */
 }
 
+.pantheon-cover{
+  background: url('../Images/PantheonCover.jpg');
+  background-color: #00274c;
+  height: 82vh;
+  width: 100%;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment:fixed;
+  background-position: center center !important;
+}
+
+.pantheon-cover::before{
+  background-color: black;
+  content: '';
+  height: 82vh;
+  left: 0;
+  opacity: 0.55;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
 h3{
     font-size: 2.125rem !important;
     line-height: 1.2135 !important;
@@ -53,6 +75,7 @@ h3{
   font-weight: bold;
   margin: 0 10px;
   text-transform: uppercase;
+  transition: all 0.25s ease-in-out;
 }
 
 .btn-v3:hover{
@@ -144,4 +167,42 @@ code {
   background: var(--pantheon-mustard);
 }
 
+.caption{
+  padding: 1rem 2rem;
+  max-width: 32rem;
+  position: absolute;
+  border-radius: 5px 0 0 5px;
+  right: 0;
+  /* background-color: #597E20 !important; */
+  background-color: rgba(161, 40, 40, 0.712);
+  /* font-size: 1.5rem; */
+}
+
+.caption .title{
+  font-size: 1.5rem;
+  letter-spacing: 0.29px;
+}
+
+.border-11{
+  border-radius: 11px !important;
+  border:0 !important;
+}
+
+.bg-snow{
+  background-color: #f7e8e8 !important;
+}
+@media (min-width: 960px){
+   .caption{
+     min-width: 30rem;
+     right: 0.5rem;
+     bottom: 3rem;
+   }
+ }
+
+@media (max-width:960px){
+  .caption{
+    top: 50%;
+    transform: translate(0,-40%);
+  }
+}
 

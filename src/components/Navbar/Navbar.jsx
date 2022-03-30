@@ -81,7 +81,7 @@ const Navbar = () => {
                             <Link className="text-light px-3 d-flex flex-row" to='/news'><BsInbox style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>NEWS</span></Link>
                             <Link className="text-light px-3 d-flex flex-row" to='/contact-us'><BsTelephone style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>CONTACT US</span></Link>
                             <Link className="text-light px-3 d-flex flex-row" to='/login'><FaLock style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>LOGIN</span></Link>
-                            <Link className="btn-v2 px-3 fw-bold px-4 py-2" to='/login'><BsBookmark style={{ fontSize: '15px' }} className='align-top me-2' />INQUIRE</Link>
+                            <Link className="btn-v2 px-3 fw-bold px-4 py-2" to='/inquire'><BsBookmark style={{ fontSize: '15px' }} className='align-top me-2' />INQUIRE</Link>
                             <a className='px-3' href='tel:7618671071'><BsFillTelephoneFill style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /></a>
                         </div>
                         <div style={{ backgroundColor: bgColor }} className="h-100 py-3 py-md-0 border-bottom bottom-nav px-md-5">
