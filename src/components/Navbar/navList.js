@@ -41,7 +41,7 @@ const navList = [
     ],
   },
   {
-    title: "EXTRA CIRRICULAR",
+    title: "EXTRA CURRICULAR",
     hasList: true,
     bgColor: 'rgba(202,22,57,0.9)',
     list: [

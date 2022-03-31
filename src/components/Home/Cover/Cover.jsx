@@ -12,7 +12,7 @@ const Cover = () => {
                     <FaChevronCircleDown className='fs-5' id='cover-down-arrow' />
                 </div>
             </div>
-            <nav className="hero-links text-uppercase fw-bold small">
+            <nav className="hero-links text-uppercase fw-bold small shadow-sm">
                 <ul className='px-md-5 py-md-3 py-2'>
                     <li><Link className='text-dark d-flex flex-row align-items-center' to="/apply">Apply <BsChevronRight className='small ms-1'/></Link></li>
                     <li><Link className='text-dark d-flex flex-row align-items-center' to="/plan-a-visit">Visit <BsChevronRight className='small ms-1'/></Link></li>

@@ -23,6 +23,10 @@
   background-position: center center !important;
 }
 
+.pantheon-cover.cover{
+  min-height: 75vh;
+}
+
 .pantheon-cover::before{
   background-color: black;
   content: '';
@@ -32,6 +36,10 @@
   position: absolute;
   top: 0;
   width: 100%;
+}
+
+.pantheon-cover.cover::before{
+  min-height: 75vh;
 }
 
 h3{
@@ -103,6 +111,10 @@ body {
 
 .font-arvo{
   font-family: 'Arvo', serif !important;
+}
+
+textarea{
+  height: auto !important;
 }
 
 a{
