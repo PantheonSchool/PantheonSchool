@@ -1,6 +1,5 @@
 import slides from './SlidesData'
 import { lazy } from 'react'
-import './home.css'
 const Cover = lazy(() => import('./Cover/Cover'))
 const Slide = lazy(() => import('./Slide'))
 const ExplorePantheon = lazy(() => import('./ExplorePantheon'))

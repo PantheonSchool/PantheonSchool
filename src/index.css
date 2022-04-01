@@ -207,7 +207,7 @@ code {
    .caption{
      min-width: 30rem;
      right: 0.5rem;
-     bottom: 3rem;
+     bottom: 1rem;
    }
  }
 
@@ -215,6 +215,10 @@ code {
   .caption{
     top: 50%;
     transform: translate(0,-40%);
+    width: 100%;
+  }
+  .caption .title{
+    font-size: 1.45rem;
   }
 }
 
