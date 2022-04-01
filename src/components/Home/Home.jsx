@@ -12,7 +12,7 @@ const Home = () => {
       <ExplorePantheon />
       <h2 className='display-4 text-center fw-bold my-4'>BY THE NUMBERS</h2>
       <div className='slides'>
-        {slides && slides.map((slide, index) => <Slide slide={slide} key={slide.title + index} />)}
+        {slides && slides.map((slide, index) => <Slide slide={slide} index={index} key={slide.title + index} />)}
       </div>
       <News />
     </>

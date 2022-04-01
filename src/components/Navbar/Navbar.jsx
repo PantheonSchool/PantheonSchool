@@ -2,7 +2,7 @@ import { Navbar as NavbarContainer, Nav, Container, Dropdown } from "react-boots
 import { BsInbox, BsTelephone, BsFillTelephoneFill, BsBookmark } from 'react-icons/bs'
 import { FaLock } from 'react-icons/fa'
 import './navbar.css'
-import PantheonLogo from '../Images/PantheonLogo.png'
+import PantheonLogo from '../Images/PantheonLogo1.png'
 import { Link } from "react-router-dom"
 import navList from "./navList"
 import { CgMenuRight } from 'react-icons/cg'
@@ -60,21 +60,21 @@ const Navbar = () => {
         <NavMobile show={show} handleClose={handleClose}/>
         <Container className='p-0 mw-100 border-bottom'>
             <Link to='/' className="d-flex d-lg-none font-arvo flex-row align-items-center justify-content-center ps-2 py-2">
-                <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '70px' }} />
-                <div style={{ letterSpacing: '2.5px' }} className="text-uppercase text-light ms-3 mt-4">
+                <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '230px' }} />
+                {/* <div style={{ letterSpacing: '2.5px' }} className="text-uppercase text-light ms-3 mt-4">
                     <p className='small fw-bold mb-0'>The Pantheon</p>
                     <p className="mb-0 small fw-light">School,Haldwani</p>
-                </div>
+                </div> */}
             </Link>
             <NavbarContainer.Toggle onClick={handleShow} aria-controls="basic-navbar-nav" ><CgMenuRight className="fs-1 me-2" /></NavbarContainer.Toggle>
             <NavbarContainer.Collapse id="basic-navbar-nav" className="w-100 d-none d-ld-block">
                 <div className='d-flex mx-0 w-100'>
                     <Link to='/' className="d-none col-3 font-arvo py-3 d-lg-flex flex-row align-items-center justify-content-center border-end border-bottom">
-                        <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '80px' }} />
-                        <div style={{ letterSpacing: '2.5px' }} className="text-uppercase text-light ms-3 mt-4">
+                        <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '260px' }} />
+                        {/* <div style={{ letterSpacing: '2.5px' }} className="text-uppercase text-light ms-3 mt-4">
                             <p className='fs-5 fw-bold mb-0'>The Pantheon</p>
                             <p className="mb-0 fw-light">School,Haldwani</p>
-                        </div>
+                        </div> */}
                     </Link>
                     <div className="d-flex flex-column w-100">
                         <div style={{ fontSize: '11px' }} className="border-bottom py-3 py-md-0 h-100 w-100 d-flex align-items-center justify-content-between justify-content-md-end px-md-5">

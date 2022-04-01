@@ -5,11 +5,10 @@
   --pantheon-red:#9d2235;
   --pantheon-mustard:#FFCB05;
 }
-*,body{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* overflow-x: hidden; */
 }
 
 .pantheon-cover{
