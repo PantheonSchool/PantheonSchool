@@ -1,4 +1,9 @@
 [[redirects]]
+  from = '/google7e1fbb02dabaf57b.html'
+  to = '/google7e1fbb02dabaf57b.html'
+  status = 200
+
+[[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
