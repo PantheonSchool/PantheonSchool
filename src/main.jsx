@@ -6,6 +6,10 @@ import App from './App'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 
+import Amplify, { Auth } from 'aws-amplify';
+
+Amplify.configure({});
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
