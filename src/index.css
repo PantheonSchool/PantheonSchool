@@ -13,13 +13,17 @@
 
 .pantheon-cover{
   background: url('./components/Images/PantheonCover.jpg');
-  background-color: #00274c;
+  background-color: #00274c !important;
   height: 82vh;
   width: 100%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-attachment:fixed;
+  background-attachment:fixed !important;
   background-position: center center !important;
+}
+
+.bg-form{
+  background-color: rgba(255, 203, 5, 0.6) !important;
 }
 
 .pantheon-cover.cover{
@@ -181,9 +185,9 @@ code {
 .caption{
   padding: 1rem 2rem;
   max-width: 32rem;
-  position: absolute;
+  /* position: absolute; */
   border-radius: 5px 0 0 5px;
-  right: 0;
+  /* right: 0; */
   /* background-color: #597E20 !important; */
   background-color: rgba(161, 40, 40, 0.712);
   /* font-size: 1.5rem; */
@@ -205,8 +209,8 @@ code {
 @media (min-width: 960px){
    .caption{
      min-width: 30rem;
-     right: 0.5rem;
-     bottom: 1rem;
+     /* right: 0.5rem; */
+     /* bottom: 1rem; */
    }
  }
 

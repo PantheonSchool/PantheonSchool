@@ -1,7 +1,7 @@
 import { Dropdown } from "react-bootstrap"
 import { useState } from "react"
 import { Link } from "react-router-dom"
-const NavItem = ({ item }) => {
+const NavItem = ({ item,handleClose }) => {
     const [show,setShow] = useState(false)
     return <>
         {item.hasList ? <Dropdown autoClose={false} show={show} drop='down'>
@@ -9,7 +9,7 @@ const NavItem = ({ item }) => {
                 {item.title}
             </Dropdown.Toggle>
             <Dropdown.Menu className='py-0 my-0 border-top py-2' renderOnMount={true}>
-                {item.list && item.list.map((it, index) => <Link key={it.title + index} className='dropdown-item py-2 text-light' to={it.link || '/'}>{it.title}</Link>)}
+                {item.list && item.list.map((it, index) => <Link onClick={handleClose} key={it.title + index} className='dropdown-item py-2 text-light' to={it.link || '/'}>{it.title}</Link>)}
             </Dropdown.Menu>
         </Dropdown> :
             <Link className='fw-bold px-3 text-light nav-link' to={item.link || '/'}>{item.title}</Link>}
