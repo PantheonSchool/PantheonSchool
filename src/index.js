@@ -8,7 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import './components/Home/home.css'
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
