@@ -1,0 +1,281 @@
+
+
+.drop-shadow-sm{
+    text-shadow: 0 2px 4px rgb(0 0 0 / 50%);
+}
+
+.hero-content>*{
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+.hero-content:hover>*{
+    color: #FFCB05;
+    transition: 0.25s ease-in-out;
+}
+
+.line{
+    border-left: 2px dashed white;
+    height: 80px;
+}
+
+#cover-down-arrow{
+    animation: up-down 1s alternate infinite;
+    -webkit-animation: up-down 1s alternate infinite;
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
+
+@-webkit-keyframes up-down{
+    0%{
+        transform: translateY(-2px);
+    }
+    100%{
+        transform: translateY(2px);
+    }
+}
+
+/*SLIDES*/
+.slides .slide::before {
+    background-color: white;
+    content: '';
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.slides .slide .bg-image {
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 75%;
+    position: relative;
+    z-index: 5;
+}
+
+.slides .slide:nth-child(odd) .bg-image::before {
+    border-right: 2px solid #FFCB05;
+    right: -10px;
+}
+
+.slides .slide:nth-child(even) .bg-image::before {
+    border-left: 2px solid #FFCB05;
+    left: -10px;
+}
+
+.slides .slide .bg-image::before {
+    border-top: 2px solid #FFCB05;
+    content: '';
+    height: 75%;
+    position: absolute;
+    top: -10px;
+    width: 25%;
+}
+
+.slides .slide .stats .stat div {
+    align-items: center;
+    border: 2px solid #FFCB05;
+    border-radius: 50%;
+    display: flex;
+    height: 80px;
+    justify-content: center;
+    margin: 0 auto 10px;
+    position: relative;
+    width: 80px;
+}
+
+.hero-links ul li{
+    list-style: none;
+    padding: 8px 15px 10px;
+}
+
+.hero-links ul li a:hover,.hero-links ul li a:hover svg{
+    color:#222 !important;
+}
+
+.hero-links ul {
+    background-color: #FFCB05;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0 20px;
+}
+.hero-links {
+    bottom: -20px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+.hero-links {
+    bottom: -20px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+/*EXPLORE PANTHEON*/
+.find-your-way::before {
+    background-color: #00274c;
+    content: '';
+    height: calc(100% - 100px);
+    /* height: 100%; */
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.news-section::before{
+    background-color: #00274c;
+    content: '';
+    height: 450px;
+    /* height: 100%; */
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.find-your-way .content, .news-section .content {
+    margin: 0 auto;
+    max-width: 640px;
+    position: relative;
+}
+
+.find-your-way .explore_portals .portal{
+    transition: 0.34s ease-in-out;
+}
+
+
+.find-your-way .explore_portals .portal:hover{
+    transform: translateY(-6px);
+    transition: 0.45s ease-in-out;
+}
+
+.find-your-way .explore_portals .portal a {
+    background-position: center;
+    background-size: cover;
+}
+
+.find-your-way .explore_portals .portal h6 {
+    background-color: #017EA7;
+    text-align: left;
+}
+
+.explore_portals .portal h6 {
+    background-color: #00274c;
+    bottom: 0;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    left: 0;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px 15px;
+    position: absolute;
+    transition: color 0.2s ease;
+    width: 100%;
+}
+
+.explore_portals .portal a {
+    box-shadow: 0 4px 8px rgb(0 0 0 / 20%);
+    background-color: #00274c;
+    display: block;
+    padding-bottom: 75%;
+    position: relative;
+    width: 400px;
+}
+
+
+/*NEWS*/
+.posts .post {
+    background-color: white;
+    box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 40px;
+    padding: 0;
+    max-width: 375px;
+    min-width: 325px;
+    min-height: 530px;
+}
+
+.posts .post .image {
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 75%;
+    width: 100%;
+}
+
+.posts .post .date {
+    color: #00274c;
+    font: bold 12px "Open Sans", sans-serif;
+    letter-spacing: 1px;
+    margin: 20px 0 10px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.posts .post .title {
+    font: bold 20px "Open Sans Condensed", sans-serif;
+    margin: 0 0 15px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+
+.posts .post .body {
+    color: #00274c;
+    font: normal 17px "Noto Serif", Garamond, "Times New Roman", Times, sans-serif;
+    padding: 0 20px;
+}
+
+
+@media (max-width:756px){
+    .pantheon-cover{
+        background-attachment: scroll;
+        height: 50vh;
+    }
+    .pantheon-cover::before{
+        height: 50vh;
+    }
+
+    .explore_portals .portal a{
+        width: 345px;
+    }
+    .slides .slide .stats .stat p{
+        font-size: 11px !important;
+    }
+}
+
+@media (min-width: 960px){
+    .slides .slide .bg-image {
+    min-width: 50%;
+    padding-bottom: 33% !important;
+    width: 50%;
+    }
+
+    .slides .slide:nth-child(odd)::before {
+    left: auto;
+    right: 0;
+    }
+    .slides .slide::before {
+    height: 100%;
+    width: 12.5%;
+    }
+    .slides .slide .stats .stat div {
+    height: 120px;
+    width: 120px;
+    }
+}
+

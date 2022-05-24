@@ -1,0 +1,131 @@
+/* .navbar.scrolled{
+    background:rgba(0, 0, 0, 0.8) !important;
+    transition: 0.4s ease-in-out;
+} */
+
+.scrolled-down{
+    transform:translateY(-100%); 
+    transition: all 0.5s ease-in-out !important;
+}
+.scrolled-up{
+    transform:translateY(0); 
+    transition: all 0.5s ease-in-out !important;
+}
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    position: fixed;
+    z-index: 999;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.dropdown-menu{
+    background: var(--bs-dark)
+}
+
+.dropdown-menu:hover a {
+    color: #fff !important;
+    background: none;
+}
+
+.dropdown-toggle{
+    border: none;
+    position: relative;
+}
+
+.dropdown-toggle::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    opacity: 0;
+    transform: translateY(100%);
+}
+
+.dropdown-toggle:hover::before{
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* .dropdown-menu{
+    animation: slideIn 0.4s ;
+} */
+
+#nav-modal{
+    margin: 0;
+    transform: translateX(100%);
+}
+.modal.show #nav-modal{
+    transform: translateX(0%);
+}
+#nav-modal .modal-content{
+    min-height: 100vh;
+    margin: 0 0 0 auto;
+    width: 260px;
+    background: #00274c;
+}
+#nav-modal .modal-content .modal-body{
+    padding: 0;
+}
+
+#nav-modal .modal-content .modal-body .dropdown-menu{
+    background-color: rgba(0, 0, 0, 0.3) !important;
+}
+  
+@keyframes slideIn {
+    0%{
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+}
+
+.nav-link{
+    color: #fff !important;
+}
+
+@media only screen and (max-width:756px) {
+    .dropdown-menu{
+        background: rgba(0, 0, 0, 0.3);
+    }
+    .bottom-nav{
+        background-color: var(--pantheon-red)!important;
+    }
+    .dropdown{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:960px){
+    .dropdown-menu{
+        background-color: transparent !important;
+        border-top: none !important;
+    }
+}
+
+@media (min-width:960px){
+    
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+}
+
+/* .navbar.scroll .nav-school-name{
+    color: #000 !important;
+} */
