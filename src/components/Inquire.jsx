@@ -1,12 +1,22 @@
 import { Draw } from "../utils/Images"
 import { Form } from "react-bootstrap"
 import { cdnURL } from '../utils/constants'
+import ApiCall from "../utils/ApiCall"
+import { useState} from "react"
 const Inquire = () => {
+
+    const [loading, setLoading] = useState(false);
 
     const submitInquiry = async e => {
         e.preventDefault();
+        setLoading(true);
         let fd = new FormData(e.target);
-        alert('hello ')
+        const data = await ApiCall('/api/inquiry', 'POST', Object.fromEntries(fd));
+        if (data.status) {
+            e.target.reset();
+            alert('Form Submitted Successfully')
+        }
+        setLoading(false)
     }
 
     return (
@@ -46,7 +56,7 @@ const Inquire = () => {
                                 </div>
                             </Form.Group>
                             <div className="d-flex pt-1">
-                                <button type='submit' className="btn-v3 text-dark px-5 py-2 ms-auto me-0">Submit</button>
+                                <button type='submit' className="btn-v3 text-dark px-5 py-2 ms-auto me-0">{loading ? <div class="spinner-border" role="status" /> : 'Submit'}</button>
                             </div>
                         </Form>
                     </div>
