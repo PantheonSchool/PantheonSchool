@@ -3,7 +3,7 @@ const router = express.Router();
 const Inquiry = require("../models/inquiry.model");
 
 router
-  .route("/api/inquiry")
+  .route("/")
   .get(async (req, res) => {
     try {
       let inquiryInfo = await Inquiry.find({});
