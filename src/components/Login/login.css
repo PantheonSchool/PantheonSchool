@@ -1,0 +1,21 @@
+#_login_container {
+    min-height: 100vh;
+}
+
+#_login_container #_login_banner_img {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    /* position: absolute; */
+    margin: -120px 0 auto 0;
+    /* border-radius: 50%; */
+}
+
+#_login_container #_login_banner_img img {
+    height: 150px;
+    width: 150px;
+}
+
+#_login_header_title {
+    color: #1e3160;
+}

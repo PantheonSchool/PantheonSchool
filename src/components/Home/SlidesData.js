@@ -2,10 +2,12 @@ import pic1 from "../Images/slides-pics/pic1.jpg";
 import pic2 from "../Images/slides-pics/pic2.jpg";
 import pic3 from "../Images/slides-pics/dsc03474.jpg";
 
+import { cdnURL } from '../../utils/constants'
+
 const slides = [
   {
     title: "we create a joyful and challenging learning process",
-    img: pic1,
+    img: cdnURL + '/Images/slides-pics/pic1.jpg',
     class: "d-flex flex-column flex-md-row-reverse ",
     backgroundColor: "#597E20",
     learnMoreLink: "/",
@@ -26,7 +28,7 @@ const slides = [
   },
   {
     title: "we forge meaningful relationships",
-    img: pic2,
+    img: cdnURL + '/Images/slides-pics/pic2.jpg',
     class: "d-flex flex-column flex-md-row ",
     backgroundColor: "#5A2049",
     learnMoreLink: "/",
@@ -47,7 +49,7 @@ const slides = [
   },
   {
     title: "we offer unique facilities",
-    img: pic3,
+    img: cdnURL + '/Images/slides-pics/dsc03474.jpg',
     class: "d-flex flex-column flex-md-row-reverse ",
     backgroundColor: "#D9002A",
     learnMoreLink: "/",

@@ -1,13 +1,15 @@
 import { Navbar as NavbarContainer, Nav, Container, Dropdown } from "react-bootstrap"
 import { BsInbox, BsTelephone, BsFillTelephoneFill, BsBookmark } from 'react-icons/bs'
-import { FaLock } from 'react-icons/fa'
+import { FaLock,FaUnlock } from 'react-icons/fa'
 import './navbar.css'
 import PantheonLogo from '../Images/PantheonLogo1.png'
 import { Link } from "react-router-dom"
 import navList from "./navList"
 import { CgMenuRight } from 'react-icons/cg'
-import { useRef, useState } from "react"
+import { useRef, useState, useContext } from "react"
+import { AuthContext } from "../../utils/ContextAPI/AuthContext"
 import NavMobile from "./NavMobile"
+
 
 
 const Navbar = () => {
@@ -19,6 +21,8 @@ const Navbar = () => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const { user } = useContext(AuthContext)
 
     // function getRandomColor() {
     //     const random = `hsla(${Math.random() * 360},70%,40%,0.9)`
@@ -57,7 +61,7 @@ const Navbar = () => {
     })
 
     return (<><NavbarContainer ref={navbar} variant='dark' className='p-0 text-white sticky-top col-12' expand="lg">
-        <NavMobile show={show} handleClose={handleClose}/>
+        <NavMobile show={show} handleClose={handleClose} />
         <Container className='p-0 mw-100 border-bottom'>
             <Link to='/' className="d-flex d-lg-none font-arvo flex-row align-items-center justify-content-center ps-2 py-2">
                 <img src={PantheonLogo} alt='' className="img-fluid" style={{ width: '230px' }} />
@@ -80,7 +84,8 @@ const Navbar = () => {
                         <div style={{ fontSize: '11px' }} className="border-bottom py-3 py-md-0 h-100 w-100 d-flex align-items-center justify-content-between justify-content-md-end px-md-5">
                             <Link className="text-light px-3 d-flex flex-row" to='/news'><BsInbox style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>NEWS</span></Link>
                             <Link className="text-light px-3 d-flex flex-row" to='/contact-us'><BsTelephone style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>CONTACT US</span></Link>
-                            <Link className="text-light px-3 d-flex flex-row" to='/login'><FaLock style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>LOGIN</span></Link>
+                            {!user && <Link className="text-light px-3 d-flex flex-row" to='/login'><FaLock style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>LOGIN</span></Link>}
+                            {user && <Link className="text-light px-3 d-flex flex-row" to='/logout'><FaUnlock style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>LOGOUT</span></Link>}
                             <Link className="btn-v2 px-3 fw-bold px-4 py-2" to='/inquire'><BsBookmark style={{ fontSize: '15px' }} className='align-top me-2' />INQUIRE</Link>
                             <a className='px-3' href='tel:7618671071'><BsFillTelephoneFill style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /></a>
                         </div>

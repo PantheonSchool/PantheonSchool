@@ -5,7 +5,7 @@ const ApiCall = async (_path, _method, _body) => {
         method: _method,
         headers: {
             'Content-Type': 'application/json',
-            'x-access-token': localStorage.token
+            'x-access-token': localStorage.pantheon_token
         },
         body: JSON.stringify(_body)
     })

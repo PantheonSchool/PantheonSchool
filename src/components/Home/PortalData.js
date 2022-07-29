@@ -1,21 +1,19 @@
-import pic1 from "../Images/portal-pics/1.jpg";
-import pic2 from "../Images/portal-pics/2.jpeg";
-import pic3 from "../Images/portal-pics/3.jpg";
+import { cdnURL } from '../../utils/constants'
 
 const portals = [
   {
     title: "academics",
-    img: pic1,
+    img: cdnURL + '/Images/portal-pics/1.jpg',
     link: "/academics",
   },
   {
     title: "artists at work",
-    img: pic2,
+    img: cdnURL + '/Images/portal-pics/2.jpeg',
     link: "/arts",
   },
   {
     title: "athletics",
-    img: pic3,
+    img: cdnURL + '/Images/portal-pics/3.jpg',
     link: "/athletics",
   },
 ];
