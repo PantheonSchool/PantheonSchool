@@ -243,11 +243,11 @@
 
 @media (max-width:756px){
     .pantheon-cover{
-        background-attachment: scroll;
-        height: 50vh;
+        background-attachment: scroll !important;
+        height: 50vh !important;
     }
     .pantheon-cover::before{
-        height: 50vh;
+        height: 50vh !important;
     }
 
     .explore_portals .portal a{

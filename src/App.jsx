@@ -12,6 +12,10 @@ const Register = lazy(() => import('./components/Login/Register'))
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
 
+const Admin = lazy(() => import('./components/Admin/Admin'))
+const AdminNews = lazy(() => import('./components/Admin/News/News'))
+const AdminInquire = lazy(() => import('./components/Admin/Inquire'))
+
 const App = () => {
   return (
     <>
@@ -21,13 +25,19 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path="/inquire" element={<Inquire />} />
+
             <Route element={<PrivateRoute />}>
-              <Route path='/register' element={<Register />} />
+              <Route path='/admin/register' element={<Register />} />
+              <Route path='/admin/news' element={<AdminNews />} />
+              <Route path='/admin/inquire' element={<AdminInquire />} />
               <Route path='/logout' element={<Logout />} />
+              <Route path='/admin' element={<Admin />} />
             </Route>
+
             <Route element={<PublicRoute restricted={true} />}>
               <Route path='/login' element={<Login />} />
             </Route>
+
             <Route path='*' element={<Page404 />} />
           </Routes>
         </Suspense>

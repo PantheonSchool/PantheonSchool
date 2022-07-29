@@ -20,7 +20,7 @@
   width: 100%;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-  background-attachment: fixed !important;
+  background-attachment: fixed;
   background-position: center center !important;
 }
 
@@ -49,6 +49,7 @@
 
 .cover-mod.pantheon-cover {
   height: 50vh;
+  background-attachment: fixed !important;
 }
 
 .cover-mod.pantheon-cover::before {
@@ -222,6 +223,14 @@ code {
 
 .bg-snow {
   background-color: #f7e8e8 !important;
+}
+
+.text-pantheon-blue {
+  color: #1e3160;
+}
+
+.letter-spacing-1{
+  letter-spacing: 1px;
 }
 
 /* #_inquire_form_img img {
