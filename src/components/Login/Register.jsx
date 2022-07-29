@@ -29,9 +29,10 @@ const Register = () => {
                     <div id='_login_banner_img' className='p-2'>
                         <img alt='' className='img-fluid' src={cdnURL + '/Images/PantheonLogo.png'} />
                     </div>
-                    <div className='text-center'>
+                    <div className='text-center mb-2'>
                         <h3 id='_login_header_title' className='my-3'>The Pantheon School</h3>
-                        <p className='fw-bold'>If you have any questions regarding your account, please contact Technology Support.</p>
+                        <p className='fw-bold mb-1'>If you have any questions regarding your account, please contact Technology Support.</p>
+                        <a href='mailto:ujjwalpandey24@gmail.com'>ujjwalpandey24@gmail.com</a>
                     </div>
                     <Form onSubmit={e => RegisterFunc(e)} className='col-12'>
                         <Form.Group className='py-1'>

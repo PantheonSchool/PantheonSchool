@@ -22,7 +22,7 @@ const Inquire = () => {
     return (
         <>
             <div className="position-relative">
-                <div className="pantheon-cover fixed d-flex flex-column justify-content-center align-items-center" style={{ background: `url(${Draw})` }} >
+                <div className="pantheon-cover cover-mod fixed d-flex flex-column justify-content-center align-items-center" style={{ background: `url(${Draw})` }} >
                     <p className='display-4 text-center my-auto text-uppercase hero-content fw-bold text-light'><span></span></p>
                 </div>
             </div>
@@ -60,7 +60,8 @@ const Inquire = () => {
                             </div>
                         </Form>
                     </div>
-                    <div className="col-md-6">
+                    <div className="col-md-2"/>
+                    <div className="col-md-4" id='_inquire_form_img'>
                         <img alt='' className="img-fluid" src={cdnURL + '/Images/PantheonPlaytime.svg'} />
                     </div>
                 </div>
