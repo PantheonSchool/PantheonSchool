@@ -15,9 +15,12 @@ const Inquire = () => {
         }
     }
 
-    const deleteInquiry = async (_id) => {
+    const deleteInquiry = async (_id, e) => {
         if (window.confirm(`Delete Inquiry ID:${_id}`)) {
-            const data = await ApiCall('/api/inquiry', 'DELETE',_id);
+            e.target.innerHTML = ''
+            e.target.classList.remove('btn-danger')
+            e.target.classList.add('spinner-border')
+            const data = await ApiCall(`/api/inquiry/${_id}`, 'DELETE');
             if (data.status) getInquiryData();
             else alert('Some error Occured')
         }
@@ -30,7 +33,7 @@ const Inquire = () => {
             <td>{inquiry.contact_no}</td>
             <td>{inquiry.email}</td>
             <td>{inquiry.message}</td>
-            <td><button onClick={() => deleteInquiry(inquiry._id)} className="btn btn-danger py-0 rounded-pill letter-spacing-1">DELETE</button></td>
+            <td><button onClick={(e) => deleteInquiry(inquiry._id, e)} className="btn btn-danger py-0 rounded-pill letter-spacing-1">DELETE</button></td>
         </tr>
     }
 
@@ -38,7 +41,7 @@ const Inquire = () => {
         getInquiryData();
     }, [])
     return (
-        <div className="container" style={{ marginTop: navHeight.current + 50 }}>
+        <div className="container" style={{ marginTop: navHeight + 50 }}>
             <h1 className="text-center fw-bold text-pantheon-blue mb-3">INQUIRY SECTION</h1>
             <Table striped bordered hover>
                 <thead>

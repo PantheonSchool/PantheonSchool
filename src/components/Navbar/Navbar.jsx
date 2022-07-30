@@ -22,11 +22,11 @@ const Navbar = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const { user, navHeight } = useContext(AuthContext)
+    const { user, setNavHeight } = useContext(AuthContext)
 
     useEffect(() => {
         if (navbar.current) {
-            navHeight.current = navbar.current.offsetHeight;  
+            setNavHeight(navbar.current.offsetHeight)
         }
     }, [navbar])
 

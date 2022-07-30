@@ -5,7 +5,7 @@ export const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(false);
-    const navHeight = useRef()
+    const [navHeight, setNavHeight] = useState()
 
     useEffect(() => {
         const VerifyAuth = async () => {
@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
         }
     }, [])
 
-    return <AuthContext.Provider value={{ user, setUser, navHeight }}>
+    return <AuthContext.Provider value={{ user, setUser, navHeight, setNavHeight }}>
         {children}
     </AuthContext.Provider>
 }

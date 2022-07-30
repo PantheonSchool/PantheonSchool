@@ -26,7 +26,7 @@ const Inquire = () => {
                     <p className='display-4 text-center my-auto text-uppercase hero-content fw-bold text-light'><span></span></p>
                 </div>
             </div>
-            <div className="container mt-2">
+            <div className="container mt-2 pb-5">
                 <div className="row align-items-center">
                     <div className="col-md-6">
                         <div className="fw-bold text-uppercase fs-3 title">Pantheon's Inquiry Form</div>
@@ -56,7 +56,7 @@ const Inquire = () => {
                                 </div>
                             </Form.Group>
                             <div className="d-flex pt-1">
-                                <button type='submit' className="btn-v3 text-dark px-5 py-2 ms-auto me-0">{loading ? <div class="spinner-border" role="status" /> : 'Submit'}</button>
+                                <button type='submit' className="btn-v3 text-dark px-5 py-2 ms-auto me-0">{loading ? <div className="spinner-border" role="status" /> : 'Submit'}</button>
                             </div>
                         </Form>
                     </div>
