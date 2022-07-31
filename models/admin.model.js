@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 
-const admin = new mongoose.Schema(
+const adminSchema = new mongoose.Schema(
   {
     username: { type: String, required: true, unique: true },
     password: { type: String, required: true },
@@ -9,7 +9,7 @@ const admin = new mongoose.Schema(
   { timestamps: true }
 );
 
-admin.pre("save", async function (next) {
+adminSchema.pre("save", async function (next) {
   const admin = this;
 
   if (admin.isModified("password")) {
@@ -19,6 +19,6 @@ admin.pre("save", async function (next) {
   next();
 });
 
-const model = mongoose.model("admins", admin);
+const Admin = mongoose.model("admins", adminSchema);
 
-module.exports = model;
+module.exports = Admin;
