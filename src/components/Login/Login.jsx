@@ -5,6 +5,7 @@ import APICall from '../../utils/ApiCall'
 import { useRef, useContext } from 'react'
 import { AuthContext } from '../../utils/ContextAPI/AuthContext'
 import { useNavigate } from 'react-router'
+import {toast} from 'react-toastify'
 
 import './login.css'
 
@@ -22,18 +23,22 @@ const Login = () => {
             localStorage.pantheon_token = data.token;
             localStorage.pantheon_username = data.username;
             login_msg.current.innerHTML = 'Login Successful';
+            toast.success('Login Successful')
             setTimeout(() => {
                 setUser(true)
                 navigate('/admin')
             }, 1500);
         }
-        else login_msg.current.innerHTML = data.error;
+        else {
+            login_msg.current.innerHTML = data.error;
+            toast.error(data.error)
+        }
         setTimeout(() => login_msg.current.innerHTML = '', 3000);
     }
 
     return (
-        <div className="container">
-            <div id='_login_container' className="d-flex justify-content-center align-items-center pt-5 mt-5">
+        <div className="container pt-2">
+            <div className="d-flex justify-content-center align-items-center pt-5 mt-5">
                 <div className='d-flex p-4 flex-column align-items-center col-12 col-lg-5 shadow'>
                     <div id='_login_banner_img' className='p-2'>
                         <img alt='' className='img-fluid' src={cdnURL + '/Images/PantheonLogo.png'} />

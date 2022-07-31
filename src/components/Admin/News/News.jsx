@@ -1,22 +1,19 @@
-import { AuthContext } from "../../../utils/ContextAPI/AuthContext"
-import { useContext, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
+import NewsForm from "./NewsForm"
+import NewsCard from "./NewsCard"
 
 const News = () => {
-    const { navHeight } = useContext(AuthContext)
     const [newsData, setNewsData] = useState([])
-    return (
-        <div className="container" style={{ marginTop: navHeight.current + 50 }}>
-            <div className="row">
-                <div className="col-md-6">
-                    <div className="p-2 shadow">
-
-                    </div>
-                </div>
-                <div className="col-md-6">
-
-                </div>
+    return (<>
+        <div className="row">
+            <div className="col-md-6">
+                <NewsForm />
+            </div>
+            <div className="col-md-6">
+                <NewsCard />
             </div>
         </div>
+    </>
     )
 }
 

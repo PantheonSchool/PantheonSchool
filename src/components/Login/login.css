@@ -2,7 +2,7 @@
     min-height: 100vh;
 }
 
-#_login_container #_login_banner_img {
+#_login_banner_img {
     height: 150px;
     width: 150px;
     display: flex;
@@ -11,7 +11,7 @@
     /* border-radius: 50%; */
 }
 
-#_login_container #_login_banner_img img {
+#_login_banner_img img {
     height: 150px;
     width: 150px;
 }

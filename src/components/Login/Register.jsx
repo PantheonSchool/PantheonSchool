@@ -13,7 +13,7 @@ const Register = () => {
     const RegisterFunc = async e => {
         e.preventDefault();
         const fd = new FormData(e.target)
-        if (fd.get('password') != fd.get('re-pass')) register_msg.current.innerHTML = 'Password doesn\'t match'
+        if (fd.get('password') !== fd.get('re-pass')) register_msg.current.innerHTML = 'Password doesn\'t match'
         else {
             const data = await ApiCall('/api/admin/register', 'POST', Object.fromEntries(fd));
             if (data.status) register_msg.current.innerHTML = 'Registration Successful'
@@ -24,7 +24,7 @@ const Register = () => {
 
     return (
         <div className="container">
-            <div id='_login_container' className="d-flex justify-content-center align-items-center pt-5 mt-5">
+            <div className="d-flex justify-content-center align-items-center pt-5 mt-5">
                 <div className='d-flex p-4 flex-column align-items-center col-12 col-lg-5 shadow'>
                     <div id='_login_banner_img' className='p-2'>
                         <img alt='' className='img-fluid' src={cdnURL + '/Images/PantheonLogo.png'} />

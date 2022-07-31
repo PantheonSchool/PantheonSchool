@@ -1,6 +1,8 @@
 import { lazy, Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
 import Footer from "./components/Footer/Footer"
+import { ToastContainer } from "react-toastify"
+
 const Navbar = lazy(() => import('./components/Navbar/Navbar'))
 const Home = lazy(() => import('./components/Home/Home'))
 const Inquire = lazy(() => import('./components/Inquire'))
@@ -26,7 +28,6 @@ const App = () => {
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path="/inquire" element={<Inquire />} />
-            <Route path='/visit' element={<Visit />} />
 
             <Route element={<PrivateRoute />}>
               <Route path='/admin/register' element={<Register />} />
@@ -36,14 +37,30 @@ const App = () => {
               <Route path='/admin' element={<Admin />} />
             </Route>
 
-            <Route element={<PublicRoute restricted={true} />}>
+            <Route element={<PublicRoute restricted={true}/>}>
               <Route path='/login' element={<Login />} />
+            </Route>
+
+            <Route element={<PublicRoute restricted={false} />}>
+              <Route path='/visit' element={<Visit />} />
             </Route>
 
             <Route path='*' element={<Page404 />} />
           </Routes>
         </Suspense>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Footer />
     </>
   )

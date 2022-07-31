@@ -3,6 +3,7 @@ import { Form } from "react-bootstrap"
 import { cdnURL } from '../utils/constants'
 import ApiCall from "../utils/ApiCall"
 import { useState} from "react"
+import {toast} from 'react-toastify'
 const Inquire = () => {
 
     const [loading, setLoading] = useState(false);
@@ -14,7 +15,7 @@ const Inquire = () => {
         const data = await ApiCall('/api/inquiry', 'POST', Object.fromEntries(fd));
         if (data.status) {
             e.target.reset();
-            alert('Form Submitted Successfully')
+            toast.success('Form Submitted Successfully')
         }
         setLoading(false)
     }

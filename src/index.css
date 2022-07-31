@@ -13,6 +13,45 @@
   /* border: 1px solid green; */
 }
 
+/* *:focus,
+input:focus {
+  outline: none !important;
+}
+
+input {
+  border-color: var(--pantheon-mustard) !important;
+} */
+
+/*REMOVING OUTLINE*/
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--pantheon-mustard) !important;
+}
+
+button {
+  outline: none;
+}
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
+}
+
+/*REMOVING OUTLINE END*/
+
 .pantheon-cover {
   background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/PantheonCover.jpg');
   background-color: #00274c !important;
@@ -229,7 +268,7 @@ code {
   color: #1e3160;
 }
 
-.letter-spacing-1{
+.letter-spacing-1 {
   letter-spacing: 1px;
 }
 

@@ -1,4 +1,4 @@
-import { useState, useEffect, createContext, useRef } from 'react';
+import { useState, useEffect, createContext } from 'react';
 import APICall from '../ApiCall';
 
 export const AuthContext = createContext()
