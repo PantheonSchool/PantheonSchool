@@ -31,7 +31,9 @@ adminSchema.statics.findByCredentials = async (username, password) => {
 // Generate auth token for admin
 adminSchema.methods.generateAuthToken = async function () {
   let admin = this;
-  let token = jwt.sign({ username: admin.username }, process.env.SECRET);
+  let token = jwt.sign({ username: admin.username }, process.env.SECRET, {
+    expiresIn: "24h",
+  });
 
   return token;
 };
