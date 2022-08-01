@@ -42,7 +42,7 @@ router.get("/", async (req, res) => {
       return res.status(200).send({ status: true, data: limitNewsData });
     }
 
-    let newsData = await News.find({});
+    let newsData = await News.find({}).sort({ date: -1 });
     res.status(200).send({ status: true, data: newsData });
   } catch (err) {
     console.log(err);
