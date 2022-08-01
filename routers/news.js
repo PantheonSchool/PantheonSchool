@@ -38,7 +38,7 @@ router.delete("/:id", auth, async (req, res) => {
 router.get("/", async (req, res) => {
   try {
     if (req.query.homepage) {
-      let limitNewsData = await News.find({}).sort({ date: -1 }).limit(4);
+      let limitNewsData = await News.find({}).sort({ date: -1 }).limit(8);
       return res.status(200).send({ status: true, data: limitNewsData });
     }
 
