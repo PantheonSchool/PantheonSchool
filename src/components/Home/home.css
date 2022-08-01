@@ -1,43 +1,44 @@
-
-
-.drop-shadow-sm{
+.drop-shadow-sm {
     text-shadow: 0 2px 4px rgb(0 0 0 / 50%);
 }
 
-.hero-content>*{
+.hero-content>* {
     filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.4));
     cursor: pointer;
     transition: 0.25s ease-in-out;
 }
-.hero-content:hover>*{
+
+.hero-content:hover>* {
     color: #FFCB05;
     transition: 0.25s ease-in-out;
 }
 
-.line{
+.line {
     border-left: 2px dashed white;
     height: 80px;
 }
 
-#cover-down-arrow{
+#cover-down-arrow {
     animation: up-down 1s alternate infinite;
     -webkit-animation: up-down 1s alternate infinite;
 }
 
 @keyframes up-down {
-    0%{
+    0% {
         transform: translateY(-2px);
     }
-    100%{
+
+    100% {
         transform: translateY(2px);
     }
 }
 
-@-webkit-keyframes up-down{
-    0%{
+@-webkit-keyframes up-down {
+    0% {
         transform: translateY(-2px);
     }
-    100%{
+
+    100% {
         transform: translateY(2px);
     }
 }
@@ -93,13 +94,14 @@
     width: 80px;
 }
 
-.hero-links ul li{
+.hero-links ul li {
     list-style: none;
     padding: 8px 15px 10px;
 }
 
-.hero-links ul li a:hover,.hero-links ul li a:hover svg{
-    color:#222 !important;
+.hero-links ul li a:hover,
+.hero-links ul li a:hover svg {
+    color: #222 !important;
 }
 
 .hero-links ul {
@@ -109,12 +111,14 @@
     margin: 0;
     padding: 0 20px;
 }
+
 .hero-links {
     bottom: -20px;
     position: absolute;
     right: 0;
     z-index: 1;
 }
+
 .hero-links {
     bottom: -20px;
     position: absolute;
@@ -135,7 +139,7 @@
     z-index: -1;
 }
 
-.news-section::before{
+.news-section::before {
     background-color: #00274c;
     content: '';
     height: 450px;
@@ -147,18 +151,19 @@
     z-index: -1;
 }
 
-.find-your-way .content, .news-section .content {
+.find-your-way .content,
+.news-section .content {
     margin: 0 auto;
     max-width: 640px;
     position: relative;
 }
 
-.find-your-way .explore_portals .portal{
+.find-your-way .explore_portals .portal {
     transition: 0.34s ease-in-out;
 }
 
 
-.find-your-way .explore_portals .portal:hover{
+.find-your-way .explore_portals .portal:hover {
     transform: translateY(-6px);
     transition: 0.45s ease-in-out;
 }
@@ -204,18 +209,21 @@
     box-shadow: 0 4px 8px rgb(0 0 0 / 15%);
     display: flex;
     flex-direction: column;
-    margin: 20px 0 40px;
+    margin: 20px 0 10px 0;
     padding: 0;
     max-width: 375px;
-    min-width: 325px;
     min-height: 530px;
 }
 
-.posts .post .image {
-    background-position: center;
-    background-size: cover;
-    padding-bottom: 75%;
-    width: 100%;
+.posts .post.homepage {
+    max-height: 530px;
+    min-width: 325px;
+}
+
+.posts .post .image img {
+    object-fit: cover;
+    height: 285px;
+    /* height: 245px; */
 }
 
 .posts .post .date {
@@ -234,6 +242,13 @@
     text-transform: uppercase;
 }
 
+.posts .post.homepage .body {
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+
 .posts .post .body {
     color: #00274c;
     font: normal 17px "Noto Serif", Garamond, "Times New Roman", Times, sans-serif;
@@ -241,41 +256,44 @@
 }
 
 
-@media (max-width:756px){
-    .pantheon-cover{
+@media (max-width:756px) {
+    .pantheon-cover {
         background-attachment: scroll !important;
         height: 50vh !important;
     }
-    .pantheon-cover::before{
+
+    .pantheon-cover::before {
         height: 50vh !important;
     }
 
-    .explore_portals .portal a{
+    .explore_portals .portal a {
         width: 345px;
     }
-    .slides .slide .stats .stat p{
+
+    .slides .slide .stats .stat p {
         font-size: 11px !important;
     }
 }
 
-@media (min-width: 960px){
+@media (min-width: 960px) {
     .slides .slide .bg-image {
-    min-width: 50%;
-    padding-bottom: 33% !important;
-    width: 50%;
+        min-width: 50%;
+        padding-bottom: 33% !important;
+        width: 50%;
     }
 
     .slides .slide:nth-child(odd)::before {
-    left: auto;
-    right: 0;
+        left: auto;
+        right: 0;
     }
+
     .slides .slide::before {
-    height: 100%;
-    width: 12.5%;
+        height: 100%;
+        width: 12.5%;
     }
+
     .slides .slide .stats .stat div {
-    height: 120px;
-    width: 120px;
+        height: 120px;
+        width: 120px;
     }
 }
-

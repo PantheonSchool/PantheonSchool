@@ -1,5 +1,5 @@
-import { Form, ToastBody } from 'react-bootstrap'
-import { useState } from 'react'
+import { Form } from 'react-bootstrap'
+import { useEffect, useState } from 'react'
 import { AiFillEdit, AiFillDelete } from 'react-icons/ai'
 import { toast } from 'react-toastify'
 import ApiCall from '../../../utils/ApiCall'
@@ -8,6 +8,12 @@ const NewsCard = ({ news, getNewsData }) => {
 
     const [edit, setEdit] = useState(false)
     const [isImp, setImp] = useState(news.important)
+    const [date, setDate] = useState()
+
+    useEffect(() => {
+        const det = new Date(news.date)
+        setDate(`${det.getFullYear()}-${(det.getMonth() + 1) < 10 ? '0' + (det.getMonth() + 1) : det.getMonth() + 1}-${det.getDate() < 10 ? '0' + det.getDate() : det.getDate()}`)
+    }, [])
 
     const deleteNews = async () => {
         if (window.confirm('Are you sure?')) {
@@ -69,7 +75,7 @@ const NewsCard = ({ news, getNewsData }) => {
                 </Form.Group>
                 <Form.Group className='py-1'>
                     <Form.Floating>
-                        <Form.Control name='date' defaultValue={news.date} readOnly={!edit} type='date' />
+                        <Form.Control name='date' defaultValue={date} readOnly={!edit} type='date' />
                         <label>Date</label>
                     </Form.Floating>
                 </Form.Group>

@@ -11,6 +11,7 @@ const Login = lazy(() => import('./components/Login/Login'))
 const Logout = lazy(() => import('./components/Login/Logout'))
 const Register = lazy(() => import('./components/Login/Register'))
 const Visit = lazy(() => import('./components/Visit/Visit'))
+const News = lazy(() => import('./components/News/News'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -37,12 +38,13 @@ const App = () => {
               <Route path='/admin' element={<Admin />} />
             </Route>
 
-            <Route element={<PublicRoute restricted={true}/>}>
+            <Route element={<PublicRoute restricted={true} />}>
               <Route path='/login' element={<Login />} />
             </Route>
 
             <Route element={<PublicRoute restricted={false} />}>
               <Route path='/visit' element={<Visit />} />
+              <Route path='/news' element={<News />} />
             </Route>
 
             <Route path='*' element={<Page404 />} />
