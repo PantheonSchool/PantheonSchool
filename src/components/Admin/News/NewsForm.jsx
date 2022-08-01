@@ -42,7 +42,7 @@ const NewsForm = ({ getNewsData }) => {
                 </Form.Group>
                 <Form.Group className='py-1'>
                     <Form.Floating>
-                        <textarea className="form-control" rows={3} name='body' required />
+                        <textarea className="form-control" rows={3} name='body'/>
                         <label>Body</label>
                     </Form.Floating>
                 </Form.Group>
