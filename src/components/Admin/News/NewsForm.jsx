@@ -1,39 +1,54 @@
 import { Form } from "react-bootstrap"
 import { useState } from 'react'
+import ApiCall from "../../../utils/ApiCall"
+import { toast } from 'react-toastify'
 
-const NewsForm = () => {
+const NewsForm = ({ getNewsData }) => {
 
     const [isImp, setImp] = useState(false)
 
     const SubmitNews = async e => {
         e.preventDefault();
+        toast.info('Processing...')
         const fd = new FormData(e.target);
+        fd.append('important', isImp);
+        const data = await ApiCall('/api/news', 'POST', Object.fromEntries(fd));
+        toast.dismiss();
+        if (data.status) {
+            toast.success('News Added Successfully')
+            getNewsData()
+        }
+        else {
+            console.error(data.error)
+            toast.error('Some Error Occurred')
+        }
     }
 
     return (
-        <div className="p-2 shadow">
+        <div className="p-2 shadow border">
+        <h3 className="my-0 text-center text-pantheon-blue fw-bold">ADD NEWS</h3>
             <Form onSubmit={(e) => SubmitNews(e)}>
                 <Form.Group className='py-1'>
                     <Form.Floating>
-                        <Form.Control type='text' />
+                        <Form.Control type='text' name='imgURL' />
                         <label>Photo Link</label>
                     </Form.Floating>
                 </Form.Group>
                 <Form.Group className='py-1'>
                     <Form.Floating>
-                        <Form.Control type='text' />
+                        <Form.Control type='text' name='title' required />
                         <label>Title</label>
                     </Form.Floating>
                 </Form.Group>
                 <Form.Group className='py-1'>
                     <Form.Floating>
-                        <textarea className="form-control" rows={3} />
+                        <textarea className="form-control" rows={3} name='body' required />
                         <label>Body</label>
                     </Form.Floating>
                 </Form.Group>
                 <Form.Group className='py-1'>
                     <Form.Floating>
-                        <Form.Control type='date' />
+                        <Form.Control type='date' name='date' required />
                         <label>Date</label>
                     </Form.Floating>
                 </Form.Group>
