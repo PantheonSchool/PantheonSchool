@@ -1,0 +1,56 @@
+.post .image ._skeletonImg{
+    display: none;
+}
+
+.skeleton .post .image ._skeletonImg {
+    display: block;
+    opacity: 0.7;
+    animation: skeleton-loading 1s linear infinite alternate;
+    height: 285px;
+}
+
+.skeleton .post .date{
+    width: 75%;
+    height: 0.75rem;
+    animation: skeleton-loading 1s linear infinite alternate;
+    margin-left: 0.5rem;
+}
+
+.skeleton .post .title{
+    width: 90%;
+    height: 1rem;
+    animation: skeleton-loading 1s linear infinite alternate;
+    margin-left: 0.5rem;
+}
+
+.post .skeleton-text{
+    display: none;
+}
+
+.skeleton .post .skeleton-text{
+    display: block;
+    width: 95%;
+    height: 0.5rem;
+    animation: skeleton-loading 1s linear infinite alternate;
+    margin-left: 0.5rem;
+    margin-bottom: 0.25rem;
+}
+
+.skeleton .post .skeleton-text:last-child{
+    width: 75%;
+    margin-bottom: 0;
+}
+
+.skeleton .post .image img{
+    display: none;
+}
+
+@keyframes skeleton-loading {
+    0% {
+        background-color: hsl(200, 20%, 70%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}

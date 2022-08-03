@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import ApiCall from "../../utils/ApiCall";
 import NewsComp from "../News/NewsComp";
+import { Link } from "react-router-dom"
 
 const News = () => {
   const [newsData, setNewsData] = useState([])
@@ -23,7 +24,9 @@ const News = () => {
       </div>
       <div className="posts d-flex my-1 p-3 flex-row justify-content-md-between overflow-auto overflow_hide">
         {newsData && newsData.map((post, index) => (
-          <NewsComp homepage='homepage' boxSize='p-2' post={post} key={post.title + index} />
+          <Link to='/news'  key={post.title + index}>
+            <NewsComp homepage='homepage' boxSize='p-2' post={post} />
+          </Link>
         ))}
       </div>
     </div>
