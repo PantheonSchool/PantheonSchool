@@ -85,7 +85,7 @@ const Footer = () => {
                 <div>
                     <p className='fw-bold footer-title'>Contact Info</p>
                     <div className='footer-contact small'>
-                        <p className='text-capitalize mb-2'><GoLocation/> HaidaKhan Mandir road, Kathgharia, Haldwani, 263139</p>
+                        <p className='text-capitalize mb-2'><GoLocation/> Haidakhan Mandir road, Kathgharia, Haldwani, 263139</p>
                         <p className='mb-2'><BsFillTelephoneFill/> 7618671071, 7618671075</p>
                         <p><AiOutlineMail/> thepantheon.2019@gmail.com</p>
                     </div>

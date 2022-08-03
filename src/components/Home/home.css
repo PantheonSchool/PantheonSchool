@@ -216,7 +216,7 @@
 }
 
 .posts .post.homepage {
-    /* max-height: 530px; */
+    max-height: 530px;
     min-width: 325px;
 }
 
@@ -243,7 +243,7 @@
 }
 
 .posts .post.homepage .body {
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
     display: -webkit-box;

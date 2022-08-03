@@ -22,13 +22,13 @@ const Navbar = () => {
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
-    const { user, setNavHeight } = useContext(AuthContext)
+    const { user, setNavHeight,navHeight } = useContext(AuthContext)
 
     useEffect(() => {
         if (navbar.current) {
-            setNavHeight(navbar.current.offsetHeight)
+            setNavHeight(navbar.current.offsetHeight > 107 ? navbar.current.offsetHeight : navHeight)
         }
-    }, [navbar])
+    }, [navbar.current])
 
     // function getRandomColor() {
     //     const random = `hsla(${Math.random() * 360},70%,40%,0.9)`

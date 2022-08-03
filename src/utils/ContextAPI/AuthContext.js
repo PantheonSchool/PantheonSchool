@@ -5,7 +5,7 @@ export const AuthContext = createContext()
 
 export const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(false);
-    const [navHeight, setNavHeight] = useState()
+    const [navHeight, setNavHeight] = useState(107)
 
     useEffect(() => {
         const VerifyAuth = async () => {
