@@ -11,7 +11,7 @@ const News = () => {
             const data = await ApiCall('/api/news', 'GET');
             if (data.status) setNewsData(data.data)
         }
-        // getNewsData()
+        getNewsData()
     }, [])
     return (
         <div className='container-fluid px-4 pt-md-4'>
