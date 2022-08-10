@@ -1,0 +1,40 @@
+:root {
+    --overview-bg-color: #c50707
+}
+
+.step-container .step-box .heading {
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.step-container .step-box .content {
+    margin-top: 45px;
+}
+
+.step-container .step-box .heading .icon {
+    background: white;
+    font-size: 50px;
+    border-radius: 4px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.step-container .step-box .heading .icon svg {}
+
+.step-container .step-box {
+    border: 5px solid white;
+    border-radius: 6px;
+    border-bottom-right-radius: 35px;
+}
+
+.admisson-overview {
+    box-shadow: 0 0 0 100vmax var(--overview-bg-color);
+    clip-path: inset(0 -100vmax);
+}
+
+@media (min-width:960px) {
+    .admisson-overview .second-step div:last-child .step-container .step-box .content {
+        padding: 5rem 0 !important;
+    }
+}

@@ -239,6 +239,15 @@ code {
   background: var(--pantheon-mustard);
 }
 
+.scrollbar-v1::-webkit-scrollbar{
+  height: 4px;
+}
+
+.scrollbar-v1::-webkit-scrollbar-track{
+  height: 4px;
+}
+
+
 .caption {
   padding: 1rem 2rem;
   max-width: 32rem;

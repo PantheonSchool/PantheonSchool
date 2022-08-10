@@ -15,7 +15,7 @@ const Cover = () => {
             </div>
             <nav className="hero-links text-uppercase fw-bold small shadow-sm">
                 <ul className='px-md-5 py-md-3 py-2'>
-                    <li><a className='text-dark d-flex flex-row align-items-center' target='_blank' href={cdnURL + '/pdf/pantheonAdmissionForm.pdf'}>Apply <BsChevronRight className='small ms-1' /></a></li>
+                    <li><Link className='text-dark d-flex flex-row align-items-center' to='/apply'>Apply <BsChevronRight className='small ms-1' /></Link></li>
                     <li><Link className='text-dark d-flex flex-row align-items-center' to="/visit">Visit <BsChevronRight className='small ms-1' /></Link></li>
                 </ul>
             </nav>
