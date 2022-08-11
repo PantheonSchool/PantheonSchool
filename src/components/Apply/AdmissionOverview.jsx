@@ -6,7 +6,7 @@ import { Table } from 'react-bootstrap'
 
 const FirstStepData = {
     title: 'Admission Enquiry',
-    description: <>Submit the online Enquiry Form from this <a class="text-mustard" target="_blank" href={`${cdnURL}/pdf/pantheonAdmissionForm.pdf`}>link</a> or visit the school admissions office. Our counsellor will get back to you to answer your questions and collect the required information.</>,
+    description: <>Submit the online Enquiry Form from this <a class="text-mustard" target="_blank" href={`${cdnURL}/pdf/pantheonAdmissionForm.pdf`}><u><b>link</b></u></a> or visit the school admissions office. Our counsellor will get back to you to answer your questions and collect the required information.</>,
     Icon: AiOutlineFileSearch
 }
 
