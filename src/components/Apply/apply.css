@@ -35,19 +35,26 @@
 }
 
 .admission-procedure{
-    position: relative;
-    top: 2rem;
+    /* position: relative;
+    top: 2rem; */
+    margin-top: 2.5rem;
     font-size: 1.5rem;
 }
 
 .admission-procedure-para{
     font-size: 1rem;
-    position: relative;
-    top: 2.5rem;
-    width: 88%;
+    /* position: relative;
+    top: 2.5rem; */
+    margin-top: 0.5rem;
 }
 
-@media (min-width:960px) {
+@media (min-width:768px){
+    .admission-procedure-para{
+        width: 88%;
+    }
+}
+
+@media (min-width:992px) {
     .admisson-overview .second-step div:last-child .step-container .step-box .content {
         padding: 5rem 0 !important;
     }

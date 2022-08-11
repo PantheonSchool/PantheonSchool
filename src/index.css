@@ -239,11 +239,11 @@ code {
   background: var(--pantheon-mustard);
 }
 
-.scrollbar-v1::-webkit-scrollbar{
+.scrollbar-v1::-webkit-scrollbar {
   height: 4px;
 }
 
-.scrollbar-v1::-webkit-scrollbar-track{
+.scrollbar-v1::-webkit-scrollbar-track {
   height: 4px;
 }
 
@@ -282,11 +282,24 @@ code {
 }
 
 
+.cover img {
+  width: 100%;
+  object-fit: cover;
+  height: 54vh;
+}
+
+
 /* #_inquire_form_img img {
   width: 400px
 } */
 
 @media (min-width: 960px) {
+
+  .cover img {
+    object-fit: fill;
+    height: 59.6vh;
+  }
+
   .caption {
     min-width: 30rem;
     /* right: 0.5rem; */
