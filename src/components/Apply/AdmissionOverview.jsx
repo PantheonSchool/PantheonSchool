@@ -54,13 +54,13 @@ const StepData = [
 
 const AdmissionOverview = () => {
     return (
-        <div className="admisson-overview py-5 text-light" style={{ backgroundColor: '#c50707' }}>
+        <div className="admisson-overview py-5 text-light" style={{ backgroundColor: '#84101b' }}>
             <div>
                 <div className="row">
                     <div className="col mb-4">
                         <h1 className="text-uppercase text-mustard letter-spacing-1"><span className='display-3' style={{ fontWeight: '900' }}>Admission</span><br /><span className="display-4">Overview</span></h1>
-                        <p className="mb-0 fw-bold">ADMISSION PROCEDURE</p>
-                        <p className="fw-light small">At The Pantheon School we aim to make our admission process as simple as possible to ensure that all prospective parents enjoy a stress free application experience.</p>
+                        <p className="mb-0 fw-bold admission-procedure">ADMISSION PROCEDURE</p>
+                        <p className="fw-light small admission-procedure-para">At The Pantheon School we aim to make our admission process as simple as possible to ensure that all prospective parents enjoy a stress free application experience.</p>
                     </div>
                     <div className="col-md-5 col-lg-4">
                         <StepBox data={FirstStepData} index={1} />

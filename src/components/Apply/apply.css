@@ -1,5 +1,5 @@
 :root {
-    --overview-bg-color: #c50707
+    --overview-bg-color: #84101b
 }
 
 .step-container .step-box .heading {
@@ -29,8 +29,22 @@
 }
 
 .admisson-overview {
+    margin-top: 0.2rem;
     box-shadow: 0 0 0 100vmax var(--overview-bg-color);
     clip-path: inset(0 -100vmax);
+}
+
+.admission-procedure{
+    position: relative;
+    top: 2rem;
+    font-size: 1.5rem;
+}
+
+.admission-procedure-para{
+    font-size: 1rem;
+    position: relative;
+    top: 2.5rem;
+    width: 88%;
 }
 
 @media (min-width:960px) {
