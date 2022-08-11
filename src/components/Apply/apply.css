@@ -55,7 +55,7 @@
 }
 
 @media (min-width:992px) {
-    .admisson-overview .second-step div:last-child .step-container .step-box .content {
+    .admisson-overview .second-step div:nth-child(3) .step-container .step-box .content {
         padding: 5rem 0 !important;
     }
 }

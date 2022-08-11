@@ -66,8 +66,9 @@ const AdmissionOverview = () => {
                         <StepBox data={FirstStepData} index={1} />
                     </div>
                 </div>
-                <div className="second-step row mt-5 align-items-lg-end">
-                    {StepData && StepData.map((step, index) => <div className="col-md-6 col-lg-4 mb-5"><StepBox data={step} key={step.title + index} index={index + 2} /></div>)}
+                <div className="second-step row mt-4 align-items-lg-end">
+                    {StepData && StepData.reverse().map((step, index) => <div className="d-none d-lg-block col-md-6 col-lg-4 mb-5"><StepBox data={step} key={step.title + index} index={StepData.length - index + 1} /></div>)}
+                    {StepData && StepData.map((step, index) => <div className="d-lg-none col-md-6 col-lg-4 mb-5"><StepBox data={step} key={step.description + index} index={index + 2} /></div>)}
                 </div>
             </div>
         </div>
