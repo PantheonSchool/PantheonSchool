@@ -14,6 +14,7 @@ const Visit = lazy(() => import('./components/Visit/Visit'))
 const News = lazy(() => import('./components/News/News'))
 const Apply = lazy(() => import('./components/Apply/Apply'))
 const FeeStructure = lazy(() => import('./components/Apply/FeeStructure'))
+const About = lazy(() => import('./components/About/About'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -33,6 +34,7 @@ const App = () => {
             <Route path="/inquire" element={<Inquire />} />
             <Route path='/apply' element={<Apply />} />
             <Route path='/fee-structure' element={<FeeStructure />} />
+            <Route path='/pantheon-at-a-glance' element={<About />} />
 
             <Route element={<PrivateRoute />}>
               <Route path='/admin/register' element={<Register />} />

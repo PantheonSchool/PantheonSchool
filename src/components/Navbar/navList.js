@@ -6,6 +6,7 @@ const navList = [
     list: [
       {
         title: "Pantheon at a Glance",
+        link:"pantheon-at-a-glance"
       },
       {
         title: "Director's Message",
