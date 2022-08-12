@@ -36,6 +36,7 @@ const navList = [
     list: [
       { title: "Academic Calendar" },
       { title: "Assesment Schedule" },
+      { title: "Faculty"},
       { title: "Curriculum" },
       { title: "Syllabus" },
       { title: "Book List" },
