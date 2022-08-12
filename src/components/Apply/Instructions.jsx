@@ -37,7 +37,7 @@ const Instructions = () => {
                     </ul>
                 </div>
                 <div id='instruction-img' className="d-none d-md-block">
-                    <img src={cdnURL + '/Images/InstructionImg.png'} />
+                    <img src={cdnURL + '/Images/instructionImg.png'} />
                 </div>
             </div>
         </div>
