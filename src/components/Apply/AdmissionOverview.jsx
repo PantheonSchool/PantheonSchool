@@ -3,10 +3,11 @@ import { cdnURL } from "../../utils/constants"
 import { AiOutlineFileSearch } from 'react-icons/ai'
 import { FaEnvelopeOpenText, FaBusinessTime, FaFileInvoiceDollar } from 'react-icons/fa'
 import { Table } from 'react-bootstrap'
+import { Link } from "react-router-dom"
 
 const FirstStepData = {
     title: 'Admission Enquiry',
-    description: <>Submit the online Enquiry Form from this <a class="text-mustard fw-bold text-decoration-underline" target="_blank" href={`${cdnURL}/pdf/pantheonAdmissionForm.pdf`}>link</a> or visit the school admissions office. Our counsellor will get back to you to answer your questions and collect the required information.</>,
+    description: <>Submit the online Enquiry Form from this <a className="text-mustard fw-bold text-decoration-underline" target="_blank" href={`${cdnURL}/pdf/pantheonAdmissionForm.pdf`}>link</a> or visit the school admissions office. Our counsellor will get back to you to answer your questions and collect the required information.</>,
     Icon: AiOutlineFileSearch
 }
 
@@ -20,7 +21,7 @@ const StepData = [
         title: 'Form Submission',
         description: 'The parent needs to fill up the admission form and ensure all documents are in order. Kinfly intimate the school in case your child requires some special assistance due to ant health reasons.',
         Icon: FaBusinessTime,
-        additionalData: <Table className="text-center" striped bordered hover variant="dark" style={{fontSize:'0.6rem'}}>
+        additionalData: <Table className="text-center" striped bordered hover variant="dark" style={{ fontSize: '0.6rem' }}>
             <thead>
                 <tr>
                     <th>Class</th>
@@ -49,7 +50,7 @@ const StepData = [
     },
     {
         title: 'Payment of Fees',
-        description: 'Once the above steps are satisfactorily completed, parents will recieve an admission offer and may pay the applicable fees to confirm admission.',
+        description: <>Once the above steps are satisfactorily completed, parents will recieve an admission offer and may pay the <Link to='/fee-structure' className="text-mustard fw-bold text-decoration-underline">applicable fees</Link> to confirm admission.</>,
         Icon: FaFileInvoiceDollar
     }
 ]
@@ -68,7 +69,7 @@ const AdmissionOverview = () => {
                         <StepBox data={FirstStepData} index={1} />
                     </div>
                 </div>
-                <div className="second-step row mt-4 align-items-lg-end">
+                <div className="second-step row mt-5 mt-md-4 align-items-lg-end">
                     {StepData && StepData.reverse().map((step, index) => <div className="d-none d-lg-block col-md-6 col-lg-4 mb-5"><StepBox data={step} key={step.title + index} index={StepData.length - index + 1} /></div>)}
                     {StepData && StepData.map((step, index) => <div className="d-lg-none col-md-6 col-lg-4 mb-5"><StepBox data={step} key={step.description + index} index={index + 2} /></div>)}
                 </div>

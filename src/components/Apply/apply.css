@@ -69,3 +69,28 @@
         padding: 5rem 0 !important;
     }
 }
+
+
+/*Fee Section Starts*/
+
+.fee-container{
+    background-color: rgba(200,152,42,255);
+}
+
+.fee-container table thead{
+    background-color: var(--overview-bg-color) !important;
+}
+
+.fee-container table{
+    vertical-align: middle;
+    border-collapse: collapse;
+
+}
+
+.fee-container table td{
+    line-height: 1.3rem;
+}
+
+.fee-container td,.fee-container tr,.fee-container th{
+    border: 0.1px solid #000 !important;
+}

@@ -1,6 +1,6 @@
-import { cdnURL } from '../../utils/constants'
 import AdmissionOverview from './AdmissionOverview'
 import Instructions from './Instructions'
+import Cover from '../Cover'
 // import Banner from '../Images/applyCover.jpg'
 
 import './apply.css'
@@ -13,9 +13,7 @@ const Apply = () => {
                     <p className='display-4 text-center my-auto text-uppercase hero-content fw-bold text-light'><span></span></p>
                 </div>
             </div> */}
-            <div className='cover'>
-                <img src={cdnURL + '/Images/applyCoverImg.jpg'} alt='Apply Cover' className='img-fluid'/>
-            </div>
+            <Cover backgroundImg='/Images/applyCover.jpg'/>
             <div className='container'>
                 <AdmissionOverview />
             </div>

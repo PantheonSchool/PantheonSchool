@@ -23,8 +23,8 @@ const navList = [
     hasList: true,
     bgColor: "rgba(1,126,167,0.9)",
     list: [
-      { title: "Admission Information" },
-      { title: "Fee Structure" },
+      { title: "Admission Information", link: 'apply' },
+      { title: "Fee Structure", link: 'fee-structure' },
       { title: "Apply Online" },
     ],
   },
