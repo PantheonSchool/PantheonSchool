@@ -10,8 +10,8 @@ const FeeStructure = () => {
                 <div className='py-3'>
             <div className='container ' style={{ paddingTop: navHeight }}>
                     <h1 className='text-uppercase letter-spacing-1'><span className='display-2 fw-bold'>Fee</span><br /><span className='display-3'>Structure</span></h1>
-                    <div className='overflow-auto scrollbar-v1'>
-                        <Table bordered className='text-center border-dark'>
+                    <div className='overflow-auto scrollbar-v1 mb-5'>
+                        <Table bordered className='text-center border-dark '>
                             <thead className='text-light'>
                                 <tr>
                                     <th>CLASS</th>
