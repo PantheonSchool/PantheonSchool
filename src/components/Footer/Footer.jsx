@@ -1,5 +1,5 @@
 //import PantheonLogo from '../Images/PantheonLogo.png'
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa'
+import { FaFacebookF,  FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import { GoLocation } from 'react-icons/go'
 import { BsFillTelephoneFill } from 'react-icons/bs'
@@ -43,8 +43,8 @@ const footerList_2 = [
         link: '/about-us'
     },
     {
-        title: 'Blog',
-        link: '/blog'
+        title: 'News',
+        link: '/news'
     },
     {
         title: 'Career',
@@ -63,11 +63,10 @@ const Footer = () => {
                 <div>
                     <p className='fw-bold footer-title'>SOCIAL LINKS</p>
                     <div className='d-flex flex-row footer-icons'>
-                        <Link to='/'><FaFacebookF /></Link>
-                        <Link to='/'><FaTwitter /></Link>
+                        <a href='https://www.facebook.com/thepantheonschool' target="_blank"><FaFacebookF /></a>
                         <Link to='/'><FaLinkedinIn /></Link>
                         <Link to='/'><FaInstagram /></Link>
-                        <Link to='/'><FaYoutube /></Link>
+                        <a href='https://www.youtube.com/channel/UCbmSmjs9-1t2l0xtfnqSOGg/featured' target="_blank"><FaYoutube /></a>
                     </div>
                 </div>
                 <div>

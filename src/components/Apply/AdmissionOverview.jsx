@@ -26,8 +26,9 @@ const StepData = [
                     <th>Class</th>
                     <th>Pre-Nursery</th>
                     <th>Nursery</th>
-                    <th>KG</th>
-                    <th>Class 1 </th>
+                    <th>LKG</th>
+                    <th>UKG</th>
+                    <th>Class 1</th>
                     <th>Class 2</th>
                     <th>Class 3</th>
                 </tr>
@@ -41,6 +42,7 @@ const StepData = [
                     <td>5+</td>
                     <td>6+</td>
                     <td>7+</td>
+                    <td>8+</td>
                 </tr>
             </tbody>
         </Table>

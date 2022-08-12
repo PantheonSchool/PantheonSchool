@@ -48,6 +48,16 @@
     margin-top: 0.5rem;
 }
 
+.instructions-section{
+    padding-left: 6rem;
+}
+
+@media (max-width:768px){
+    .instructions-section{
+        padding-left: 1rem;
+    }
+}
+
 @media (min-width:768px){
     .admission-procedure-para{
         width: 88%;
