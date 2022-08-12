@@ -87,12 +87,14 @@ label:focus,
 }
 
 .cover-mod.pantheon-cover {
-  height: 50vh;
+  height: 54vh;
   background-attachment: fixed !important;
+  background-size: 100% 50vh !important;
+  background-position: center 0% !important;
 }
 
 .cover-mod.pantheon-cover::before {
-  height: 50vh;
+  height: 54vh;
 }
 
 h3 {
@@ -304,6 +306,15 @@ code {
 } */
 
 @media (min-width: 960px) {
+
+  .cover-mod.pantheon-cover {
+    background-size: 100% 60vh !important;
+    height: 59.6vh;
+  }
+
+  .cover-mod.pantheon-cover::before {
+    height: 59.6vh;
+  }
 
   .cover img {
     object-fit: fill;
