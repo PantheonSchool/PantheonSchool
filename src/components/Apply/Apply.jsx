@@ -13,7 +13,7 @@ const Apply = () => {
                     <p className='display-4 text-center my-auto text-uppercase hero-content fw-bold text-light'><span></span></p>
                 </div>
             </div> */}
-            <Cover backgroundImg='/Images/applyCover.jpg'/>
+            <Cover backgroundImg='/Images/applyCoverImg2.jpg'/>
             <div className='container'>
                 <AdmissionOverview />
             </div>
