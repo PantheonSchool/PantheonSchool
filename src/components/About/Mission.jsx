@@ -5,7 +5,7 @@ const Mission = ({MissionRef}) => {
         <div className="pt-5 mission" ref={MissionRef}>
             <div className="d-flex">
                 <div className="mission_content p-lg-5 p-2 col-12 col-lg-6">
-                    <h1 className="text-pantheon-blue fw-bold display-2">OUR MISSION</h1>
+                    <h1 className="text-pantheon-blue display-2"><span className="fw-bold">OUR</span> MISSION</h1>
                     <ul>
                         <li>To develop a child harmoniously and holistically by emphasizing on his physical, cognitive, emotional,  aesthetic, social and spiritual needs.</li>
                         <li>To emphasize on total personality development, conceptual ability and skill development through its own exclusively developed and structured curriculum and very methodical curriculum transaction.</li>

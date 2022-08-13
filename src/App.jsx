@@ -15,6 +15,7 @@ const News = lazy(() => import('./components/News/News'))
 const Apply = lazy(() => import('./components/Apply/Apply'))
 const FeeStructure = lazy(() => import('./components/Apply/FeeStructure'))
 const About = lazy(() => import('./components/About/About'))
+const DirectorMessage = lazy(() => import('./components/About/DirectorMessage'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -30,11 +31,13 @@ const App = () => {
       <div style={{ minHeight: '50vh' }} className='mb-1'>
         <Suspense fallback={<>Loading ...</>} >
           <Routes>
+            <Route>
             <Route path='/' element={<Home />} />
             <Route path="/inquire" element={<Inquire />} />
             <Route path='/apply' element={<Apply />} />
             <Route path='/fee-structure' element={<FeeStructure />} />
             <Route path='/pantheon-at-a-glance' element={<About />} />
+            <Route path='/director-message' element={<DirectorMessage />} />
 
             <Route element={<PrivateRoute />}>
               <Route path='/admin/register' element={<Register />} />
@@ -54,6 +57,8 @@ const App = () => {
             </Route>
 
             <Route path='*' element={<Page404 />} />
+            </Route>
+            
           </Routes>
         </Suspense>
       </div>

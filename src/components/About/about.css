@@ -1,6 +1,6 @@
-.pantheon-at-a-glance-container {
-    /* background-color: var(--overview-bg-color); */
-}
+/* .pantheon-at-a-glance-container {
+    background-color: var(--overview-bg-color);
+} */
 
 .pantheon-at-a-glance-container .container .about {
     background-color: var(--overview-bg-color);
@@ -113,5 +113,27 @@
     
     .pantheon-at-a-glance-container .approach::before{
         display: none;
+    }
+}
+
+/*DIRECTOR MESSAGE CSS*/
+
+.director{
+    background-color: var(--overview-bg-color);
+    box-shadow: 0 0 0 100vmax var(--overview-bg-color);
+    clip-path: inset(0 -100vmax);
+}
+
+.director .logo img{
+    height: 100%;
+}
+
+.director .content .sign img{
+    width: 200px;
+}
+
+@media (max-width:768px){
+    .director .content .sign img{
+        width: 150px;
     }
 }

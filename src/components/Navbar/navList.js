@@ -10,6 +10,7 @@ const navList = [
       },
       {
         title: "Director's Message",
+        link:'director-message'
       },
       {
         title: "Principal's Message",
