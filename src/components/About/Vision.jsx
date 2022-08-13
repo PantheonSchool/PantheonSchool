@@ -3,7 +3,7 @@ const Vision = ({VisionRef}) => {
         <div className="p-lg-5 vision" ref={VisionRef}>
             <div className="h-100">
                 <div className="row flex-column-reverse flex-md-row pe-md-2 py-md-2 col-12 m-0">
-                    <div className="col-md-8 col-lg-5 content p-2">
+                    <div className="col-md-8 col-lg-5 content p-3 shadow-sm">
                         <p className="fw-bold mb-1">OurVision</p>
                         <ul>
                             <li>Fosteraculture of high expectations,and strive for excellence</li>

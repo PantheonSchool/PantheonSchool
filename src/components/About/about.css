@@ -33,15 +33,32 @@
 }
 
 .pantheon-at-a-glance-container .vision {
+    position: relative;
     background-color: var(--pantheon-blue);
     box-shadow: 0 0 0 100vmax var(--pantheon-blue);
     clip-path: inset(0 -100vmax);
-    background-image: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/vision_backround.jpg');
+    background-image: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/vision_backround_1.jpg');
     /* height: 100vh; */
     background-repeat: no-repeat;
-    background-size: 100% 70%;
+    background-size: 100%;
     background-position: center 100%;
-    height: 100vh;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.pantheon-at-a-glance-container .vision .h-100{
+    z-index: 10;
+}
+
+.pantheon-at-a-glance-container .vision::before{
+    position: absolute;
+    content: '';
+    height: 29%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--pantheon-blue);
+    z-index: -1;
 }
 
 .pantheon-at-a-glance-container .vision .content {
