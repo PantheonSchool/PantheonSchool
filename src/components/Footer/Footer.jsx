@@ -13,7 +13,7 @@ import './footer.css'
 const footerList_1 = [
     {
         title: 'About Us',
-        link: '/about-us'
+        link: '/pantheon-at-a-glance'
     },
     {
         title: 'News',
@@ -30,31 +30,28 @@ const footerList_1 = [
     {
         title: 'Contact Us',
         link: '/contact-us'
-    }
-]
-
-const footerList_2 = [
-    {
-        title: 'Home',
-        link: '/'
-    },
-    {
-        title: 'About Us',
-        link: '/about-us'
-    },
-    {
-        title: 'News',
-        link: '/news'
     },
     {
         title: 'Career',
         link: '/career'
-    },
-    {
-        title: 'Contact Us',
-        link: '/contact-us'
     }
 ]
+
+// const footerList_2 = [
+//     {
+//         title: 'Home',
+//         link: '/'
+//     },
+//     {
+//         title: 'News',
+//         link: '/news'
+//     },
+//     {
+//         title: 'Career',
+//         link: '/career'
+//     },
+
+// ]
 
 const Footer = () => {
     return (
@@ -75,12 +72,12 @@ const Footer = () => {
                         {footerList_1 && footerList_1.map((item, index) => <Link className='text-white small' key={item.title + index} to={item.link}>{item.title}</Link>)}
                     </div>
                 </div>
-                <div>
+                {/* <div>
                     <p className='fw-bold footer-title'>Quick Links</p>
                     <div className='d-flex flex-column footer-items'>
                         {footerList_2 && footerList_2.map((item, index) => <Link className='text-white small' key={item.title + index} to={item.link}>{item.title}</Link>)}
                     </div>
-                </div>
+                </div> */}
                 <div>
                     <p className='fw-bold footer-title'>Contact Info</p>
                     <div className='footer-contact small'>

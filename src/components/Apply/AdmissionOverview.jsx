@@ -7,7 +7,7 @@ import { Link } from "react-router-dom"
 
 const FirstStepData = {
     title: 'Admission Enquiry',
-    description: <>Submit the online Enquiry Form from this <a className="text-mustard fw-bold text-decoration-underline" target="_blank" href={`${cdnURL}/pdf/pantheonAdmissionForm.pdf`}>link</a> or visit the school admissions office. Our counsellor will get back to you to answer your questions and collect the required information.</>,
+    description: <>Submit the online Enquiry Form from this <a className="text-mustard fw-bold text-decoration-underline" target="_blank" href={`${cdnURL}/pdf/pantheonAdmissionForm.pdf`}>link</a> or visit the school admissions office. Our counsellor will get back to you so as to answer your questions and collect the required information.</>,
     Icon: AiOutlineFileSearch
 }
 
@@ -19,7 +19,7 @@ const StepData = [
     },
     {
         title: 'Form Submission',
-        description: 'The parent needs to fill up the admission form and ensure all documents are in order. Kinfly intimate the school in case your child requires some special assistance due to ant health reasons.',
+        description: 'The parent needs to fill up the admission form and ensure all documents are in order. Kindly intimate the school in case your child requires some special assistance due to any health reasons.',
         Icon: FaBusinessTime,
         additionalData: <Table className="text-center" striped bordered hover variant="dark" style={{ fontSize: '0.6rem' }}>
             <thead>

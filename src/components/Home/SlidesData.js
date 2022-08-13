@@ -10,7 +10,7 @@ const slides = [
     img: cdnURL + '/Images/slides-pics/pic1.jpg',
     class: "d-flex flex-column flex-md-row-reverse ",
     backgroundColor: "#597E20",
-    learnMoreLink: "/pantheon-at-a-glance",
+    learnMoreLink: "/pantheon-at-a-glance?scrollTo=vision",
     slideData: [
       {
         title: "student/teacher ratio",
@@ -31,7 +31,7 @@ const slides = [
     img: cdnURL + '/Images/slides-pics/pic2.jpg',
     class: "d-flex flex-column flex-md-row ",
     backgroundColor: "#5A2049",
-    learnMoreLink: "/pantheon-at-a-glance?scrollTo=vision",
+    learnMoreLink: "/pantheon-at-a-glance?scrollTo=mission",
     slideData: [
       {
         title: "max class size",
@@ -52,7 +52,7 @@ const slides = [
     img: cdnURL + '/Images/slides-pics/dsc03474.jpg',
     class: "d-flex flex-column flex-md-row-reverse ",
     backgroundColor: "#D9002A",
-    learnMoreLink: "/pantheon-at-a-glance?scrollTo=mission",
+    learnMoreLink: "/unique-to-pantheon",
     slideData: [
       {
         title: "weekly spoken english classes",
