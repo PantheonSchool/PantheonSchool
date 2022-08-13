@@ -6,7 +6,7 @@ const PantheonInfo = ({AboutRef}) => {
     const { navHeight } = useContext(AuthContext)
 
     return (
-        <div className='pb-3 about' ref={AboutRef}  style={{ paddingTop: navHeight }}>
+        <div className='pb-3 about text-justify' ref={AboutRef}  style={{ paddingTop: navHeight }}>
             <h1 className='text-uppercase pt-3 display-3 mb-5'><span className='fw-bold'>about</span> <span>the school</span></h1>
             <div className='d-flex content'>
                 <div id='_pantheon_at_a_glance_icon'>

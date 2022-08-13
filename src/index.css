@@ -70,6 +70,10 @@ label:focus,
   background-color: rgba(255, 203, 5, 0.6) !important;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
 .pantheon-cover.cover {
   min-height: 75vh;
 }

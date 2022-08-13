@@ -1,6 +1,7 @@
 import PantheonInfo from './PantheonInfo'
 import Mission from './Mission'
 import Vision from './Vision'
+import Approach from './Approach'
 import { useSearchParams } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 
@@ -11,11 +12,13 @@ const About = () => {
     const VisionRef = useRef();
     const AboutRef = useRef();
     const MissionRef = useRef();
+    const ApproachRef = useRef();
 
     const scrollQuery = {
         vision: VisionRef,
         mission: MissionRef,
-        about: AboutRef
+        about: AboutRef,
+        approach: ApproachRef
     }
 
     const ScrollFunction = () => {
@@ -31,16 +34,19 @@ const About = () => {
     }
 
     useEffect(() => {
-        ScrollFunction();
+        try {
+            ScrollFunction();
+        } catch (err) { console.error(err) }
     }, [])
 
     return (
-        <div className='pantheon-at-a-glance-container text-light'>
+        <div className='pantheon-at-a-glance-container text-light text-justify'>
             <div className='container'>
                 <PantheonInfo AboutRef={AboutRef} />
             </div>
             <Vision VisionRef={VisionRef} />
             <Mission MissionRef={MissionRef} />
+            <Approach ApproachRef={ApproachRef} />
         </div>
     )
 }

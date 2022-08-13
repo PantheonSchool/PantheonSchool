@@ -65,6 +65,27 @@
     background-color: var(--pantheon-blue);
 }
 
+.pantheon-at-a-glance-container .approach{
+    background-color: var(--pantheon-blue);
+    box-shadow: 0 0 0 100vmax var(--pantheon-blue);
+    clip-path: inset(0 -100vmax);
+    position: relative;
+}
+
+.pantheon-at-a-glance-container .approach::before{
+    background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_cover.jpg');
+    background-repeat: no-repeat;
+    background-size: 20% 100%;
+    background-position: 100% center;
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 @media (max-width: 992px) {
     #_pantheon_at_a_glance_icon img {
         height: 300px;
@@ -88,5 +109,9 @@
         object-fit: contain;
         z-index: -1;
         opacity: 0.11;
+    }
+    
+    .pantheon-at-a-glance-container .approach::before{
+        display: none;
     }
 }
