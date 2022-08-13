@@ -2,15 +2,15 @@ import { cdnURL } from '../../utils/constants'
 import { useContext } from 'react'
 import { AuthContext } from '../../utils/ContextAPI/AuthContext'
 
-const PantheonInfo = () => {
+const PantheonInfo = ({AboutRef}) => {
     const { navHeight } = useContext(AuthContext)
 
     return (
-        <div className='pb-3 about'  style={{ paddingTop: navHeight }}>
+        <div className='pb-3 about' ref={AboutRef}  style={{ paddingTop: navHeight }}>
             <h1 className='text-uppercase pt-3 display-3 mb-5'><span className='fw-bold'>about</span> <span>the school</span></h1>
             <div className='d-flex content'>
                 <div id='_pantheon_at_a_glance_icon'>
-                    <img src={cdnURL + '/Images/about.png'} className='img-fluid' />
+                    <img src={cdnURL + '/Images/about.png'} alt='' className='img-fluid' />
                 </div>
                 <div className='px-lg-3 mt-4'>
                     <p>The Pantheon School is set up in three acres area amidst the well connected

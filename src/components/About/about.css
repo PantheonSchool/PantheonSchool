@@ -2,56 +2,72 @@
     /* background-color: var(--overview-bg-color); */
 }
 
-.pantheon-at-a-glance-container .container .about{
+.pantheon-at-a-glance-container .container .about {
     background-color: var(--overview-bg-color);
     box-shadow: 0 0 0 100vmax var(--overview-bg-color);
     clip-path: inset(0 -100vmax);
 }
 
-.pantheon-at-a-glance-container .mission{
+.pantheon-at-a-glance-container .mission {
     background-color: var(--pantheon-mustard-v2);
     box-shadow: 0 0 0 100vmax var(--pantheon-mustard-v2);
     clip-path: inset(0 -100vmax);
 }
 
-.pantheon-at-a-glance-container .mission .mission_icon{
+.pantheon-at-a-glance-container .mission .mission_icon {
     width: 100%;
     display: flex;
     justify-content: end;
 }
 
-.pantheon-at-a-glance-container .mission .mission_icon img{
-    /* height: 80vh; */
-    position:absolute;
+.pantheon-at-a-glance-container .mission .mission_icon img {
+    max-height: 80vh;
+    position: absolute;
     bottom: 0;
     right: 0;
 }
 
 
-.pantheon-at-a-glance-container .mission .d-flex{
+.pantheon-at-a-glance-container .mission .d-flex {
     position: relative;
 }
 
-@media (max-width: 992px){
-    #_pantheon_at_a_glance_icon img{
+.pantheon-at-a-glance-container .vision {
+    background-color: var(--pantheon-blue);
+    box-shadow: 0 0 0 100vmax var(--pantheon-blue);
+    clip-path: inset(0 -100vmax);
+    background-image: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/vision_backround.jpg');
+    /* height: 100vh; */
+    background-repeat: no-repeat;
+    background-size: 100% 70%;
+    background-position: center 100%;
+    height: 100vh;
+}
+
+.pantheon-at-a-glance-container .vision .content {
+    background-color: var(--pantheon-blue);
+}
+
+@media (max-width: 992px) {
+    #_pantheon_at_a_glance_icon img {
         height: 300px;
         object-fit: contain;
         width: 100%;
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         z-index: -1;
         opacity: 0.6;
     }
 
-    .pantheon-at-a-glance-container .content{
+    .pantheon-at-a-glance-container .content {
         flex-direction: column;
         position: relative;
         z-index: 0;
     }
 
-    .pantheon-at-a-glance-container .mission .mission_icon img{
+    .pantheon-at-a-glance-container .mission .mission_icon img {
         object-fit: contain;
         z-index: -1;
         opacity: 0.11;

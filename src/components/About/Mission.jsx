@@ -1,11 +1,11 @@
 import { cdnURL } from "../../utils/constants"
 
-const Mission = () => {
+const Mission = ({MissionRef}) => {
     return (
-        <div className="pt-5 mission">
+        <div className="pt-5 mission" ref={MissionRef}>
             <div className="d-flex">
                 <div className="mission_content p-lg-5 p-2 col-12 col-lg-6">
-                    <h1 className="text-pantheon-blue fw-bold display-2">MISSION</h1>
+                    <h1 className="text-pantheon-blue fw-bold display-2">OUR MISSION</h1>
                     <ul>
                         <li>To develop a child harmoniously and holistically by emphasizing on his physical, cognitive, emotional,  aesthetic, social and spiritual needs.</li>
                         <li>To emphasize on total personality development, conceptual ability and skill development through its own exclusively developed and structured curriculum and very methodical curriculum transaction.</li>
@@ -18,7 +18,7 @@ const Mission = () => {
                     </ul>
                 </div>
                 <div className="mission_icon">
-                    <img className="img-fluid" alt='mission icon' src={cdnURL + '/Images/mission_tree_reduce.png'} />
+                    <img className="img-fluid" alt='mission icon' src={cdnURL + '/Images/mission_tree_large.jpg'} />
                 </div>
             </div>
         </div>
