@@ -4,7 +4,8 @@
 :root {
   --pantheon-red: #9d2235;
   --pantheon-mustard: #FFCB05;
-  --overview-bg-color: #84101b
+  --overview-bg-color: #84101b;
+  --pantheon-mustard-v2: rgba(200,152,42,255)
 }
 
 * {
@@ -308,12 +309,12 @@ code {
 
 @media (min-width: 960px) {
 
-  .cover-mod.pantheon-cover{
+  .cover-mod.pantheon-cover {
     height: 59.6vh;
     background-size: 100% 59.6vh !important;
   }
 
-  .cover-mod.pantheon-cover::before{
+  .cover-mod.pantheon-cover::before {
     height: 59.6vh;
   }
 

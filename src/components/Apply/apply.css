@@ -2,6 +2,8 @@
     --overview-bg-color: #84101b
 }
 
+
+
 .step-container .step-box .heading {
     position: absolute;
     top: -30px;
@@ -70,11 +72,17 @@
     }
 }
 
+@media (max-width:992px){
+    .apply-cover .pantheon-cover.cover-mod{
+        background-size: 255% 54vh !important;
+    }
+}
+
 
 /*Fee Section Starts*/
 
 .fee-container{
-    background-color: rgba(200,152,42,255);
+    background-color: var(--pantheon-mustard-v2);
 }
 
 .fee-container table thead{

@@ -8,7 +8,7 @@ import './apply.css'
 const Apply = () => {
     return (
         <>
-            <Cover backgroundImg='/Images/applyCoverImg7.jpg'/>
+            <Cover classN='apply-cover' backgroundImg='/Images/applyCoverImg7.jpg'/>
             <div className='container'>
                 <AdmissionOverview />
             </div>
