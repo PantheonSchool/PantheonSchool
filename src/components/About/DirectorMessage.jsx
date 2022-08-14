@@ -37,8 +37,12 @@ const DirectorMessage = () => {
                             We also recognize the vital role that parents play in contributing to children's success and happiness at school. We therefore seek to build strong and supportive partnerships with our parent community and look forward to their close involvement with the school and its programs.<br />
                             Our endeavor is to create a world class institution that will be a centre of excellence in all respects.<br />
                             We look forward to continuing our successful partnership with our parents and working closely together towards building a strong and vibrant school community.</p>
-                        <div className='d-flex justify-content-end sign'>
+                        <div className='d-flex align-items-end sign flex-column'>
                             <img className='img-fluid' alt='' src={cdnURL + '/Images/director_sign1.png'} />
+                            <div className='d-flex align-items-end flex-column'>
+                            <span className='sign-under'>B.Tech (NIT Allahbad)</span>
+                            <span className='sign-under'>B.Ed, CTET I & II</span>
+                            </div>
                         </div>
                     </div>
                 </div>

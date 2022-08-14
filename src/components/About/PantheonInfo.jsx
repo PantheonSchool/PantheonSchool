@@ -32,7 +32,7 @@ const PantheonInfo = ({AboutRef}) => {
                     </p>
 
                     <p>From this paradigm, we aim to develop conscientious citizens, who are ingenious,
-                        open-minded, creative, critical thinking, self-disciplined and energetic individuals.
+                        open-minded, creative, self-disciplined and energetic individuals.
                     </p>
                 </div>
             </div>

@@ -147,6 +147,11 @@
     width: 200px;
 }
 
+.sign-under{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
 @media (max-width:768px) {
     .director .content .sign img {
         width: 150px;
