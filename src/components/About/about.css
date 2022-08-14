@@ -87,7 +87,15 @@
     z-index: -1;
 }
 
+.director .director_img img {
+    width: 250px;
+}
+
 @media (max-width: 992px) {
+    .director .director_img img {
+        width: 250px;
+    }
+
     #_pantheon_at_a_glance_icon img {
         height: 300px;
         object-fit: contain;
@@ -116,7 +124,7 @@
         text-align: center;
     }
 
-    .pantheon-at-a-glance-container .approach::before{
+    .pantheon-at-a-glance-container .approach::before {
         background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_hd.jpg');
         background-size: cover;
         opacity: 0.1;

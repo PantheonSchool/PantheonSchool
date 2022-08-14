@@ -346,3 +346,12 @@ code {
     font-size: 1.45rem;
   }
 }
+
+.modal-header{
+  border-bottom: 0 !important;
+  padding: 0.8rem 1rem !important;
+}
+
+.cursor-pointer{
+  cursor: pointer;
+}

@@ -4,6 +4,7 @@ const Cover = lazy(() => import('./Cover/Cover'))
 const Slide = lazy(() => import('./Slide'))
 const ExplorePantheon = lazy(() => import('./ExplorePantheon'))
 const News = lazy(() => import('./News'))
+const GoogleReviews = lazy(() => import('./GoogleReviews'))
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <div className='slides'>
         {slides && slides.map((slide, index) => <Slide slide={slide} index={index} key={slide.title + index} />)}
       </div>
+      <GoogleReviews/>
       <News />
     </>
   )
