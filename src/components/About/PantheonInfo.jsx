@@ -1,13 +1,13 @@
 import { cdnURL } from '../../utils/constants'
-import { useContext } from 'react'
-import { AuthContext } from '../../utils/ContextAPI/AuthContext'
+// import { useContext } from 'react'
+// import { AuthContext } from '../../utils/ContextAPI/AuthContext'
 
 const PantheonInfo = ({AboutRef}) => {
-    const { navHeight } = useContext(AuthContext)
+    // const { navHeight } = useContext(AuthContext)
 
     return (
-        <div className='pb-3 about text-justify' ref={AboutRef}  style={{ paddingTop: navHeight }}>
-            <h1 className='text-uppercase pt-3 display-3 mb-5 mt-4'>about the school</h1>
+        <div className='py-3 about text-justify' ref={AboutRef}>
+            <h1 className='text-uppercase pt-3 display-3 mb-5 mt-4'><span className='fw-bold'>about</span> the school</h1>
             <div className='d-flex content'>
                 <div id='_pantheon_at_a_glance_icon'>
                     <img src={cdnURL + '/Images/about.png'} alt='' className='img-fluid' />

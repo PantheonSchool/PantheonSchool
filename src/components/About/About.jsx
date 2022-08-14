@@ -4,6 +4,7 @@ import Vision from './Vision'
 import Approach from './Approach'
 import { useSearchParams } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
+import Cover from '../Cover'
 
 import './about.css'
 
@@ -40,7 +41,8 @@ const About = () => {
     }, [])
 
     return (
-        <div className='pantheon-at-a-glance-container text-light text-justify'>
+        <div className='pantheon-at-a-glance-container text-light text-justify overflow-hidden'>
+            <Cover/>
             <div className='container'>
                 <PantheonInfo AboutRef={AboutRef} />
             </div>

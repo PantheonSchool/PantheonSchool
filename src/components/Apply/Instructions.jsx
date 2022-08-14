@@ -3,7 +3,7 @@ import { cdnURL } from "../../utils/constants"
 const Instructions = () => {
     return (
         <div className="pt-5 instructions-section">
-            <div className="d-flex">
+            <div className="d-flex position-relative">
                 <div className="py-4 px-2 px-md-4">
                     <h2 className="text-pantheon-blue fw-bold">The following documents need to be submitted along with the Registration Form:</h2>
                     {/* <p className=" mb-4" style={{ lineHeight: '1.1rem'}}> */}
@@ -36,7 +36,7 @@ const Instructions = () => {
                         <li>Teachers will assist your child with the syllabi which has been covered in the class till date.</li>
                     </ul>
                 </div>
-                <div id='instruction-img' className="d-none d-md-block">
+                <div className='instruction-img'>
                     <img src={cdnURL + '/Images/instructionImg.png'} />
                 </div>
             </div>

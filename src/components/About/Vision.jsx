@@ -3,7 +3,7 @@ const Vision = ({VisionRef}) => {
         <div className="p-lg-5 vision" ref={VisionRef}>
             <div className="h-100">
                 <div className="row flex-column-reverse flex-md-row pe-md-2 py-md-2 col-12 m-0">
-                    <div className="col-md-8 col-lg-5 content p-3 shadow-sm">
+                    <div className="col-md-8 col-lg-5 content p-3">
                         <p className="fw-bold mb-5"></p>
                         <ul >
                             <li>Foster a culture of high expectations, and strive for excellence.</li>
@@ -28,8 +28,8 @@ const Vision = ({VisionRef}) => {
                         <p className="fw-bold mb-2">Our Motto is:</p>
                         <p className="text-center">&emsp;&emsp;"Strengthen the body Sharpen the Mind Nourish the Soul"</p>
                     </div>
-                    <div className="col">
-                        <h1 className="fw-bold text-mustard display-3 letter-spacing-1 text-end"><span className='fw-bold'>OUR</span> VISION</h1>
+                    <div className="col mt-4 mt-lg-0">
+                        <h1 className="text-mustard display-3 letter-spacing-1 text-lg-end"><span className='fw-bold'>OUR</span> VISION</h1>
                     </div>
                 </div>
             </div>

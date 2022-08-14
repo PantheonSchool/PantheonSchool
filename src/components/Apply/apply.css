@@ -36,14 +36,14 @@
     clip-path: inset(0 -100vmax);
 }
 
-.admission-procedure{
+.admission-procedure {
     /* position: relative;
     top: 2rem; */
     margin-top: 2.5rem;
     font-size: 1.5rem;
 }
 
-.admission-procedure-para{
+.admission-procedure-para {
     font-size: 1rem;
     /* position: relative;
     top: 2.5rem; */
@@ -51,17 +51,21 @@
 }
 
 .instructions-section{
+    position: relative;
     padding-left: 6rem;
 }
 
-@media (max-width:768px){
-    .instructions-section{
-        padding-left: 1rem;
-    }
+.instructions-section .instruction-img{
+    display: flex;
+    align-items: flex-end;
 }
 
-@media (min-width:768px){
-    .admission-procedure-para{
+@media (max-width:768px) {
+    
+}
+
+@media (min-width:768px) {
+    .admission-procedure-para {
         width: 88%;
     }
 }
@@ -72,33 +76,47 @@
     }
 }
 
-@media (max-width:992px){
-    .apply-cover .pantheon-cover.cover-mod{
+@media (max-width:992px) {
+    .apply-cover .pantheon-cover.cover-mod {
         background-size: 255% 54vh !important;
+    }
+
+    .instructions-section .instruction-img img{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.45;
+    }
+
+    .instructions-section {
+        padding-left: 1rem;
     }
 }
 
 
 /*Fee Section Starts*/
 
-.fee-container{
+.fee-container {
     background-color: var(--pantheon-mustard-v2);
 }
 
-.fee-container table thead{
+.fee-container table thead {
     background-color: var(--overview-bg-color) !important;
 }
 
-.fee-container table{
+.fee-container table {
     vertical-align: middle;
     border-collapse: collapse;
 
 }
 
-.fee-container table td{
+.fee-container table td {
     line-height: 1.3rem;
 }
 
-.fee-container td,.fee-container tr,.fee-container th{
+.fee-container td,
+.fee-container tr,
+.fee-container th {
     border: 0.1px solid #000 !important;
 }

@@ -2,6 +2,7 @@
     background-color: var(--overview-bg-color);
 } */
 
+
 .pantheon-at-a-glance-container .container .about {
     background-color: var(--overview-bg-color);
     box-shadow: 0 0 0 100vmax var(--overview-bg-color);
@@ -46,11 +47,11 @@
     z-index: 1;
 }
 
-.pantheon-at-a-glance-container .vision .h-100{
+.pantheon-at-a-glance-container .vision .h-100 {
     z-index: 10;
 }
 
-.pantheon-at-a-glance-container .vision::before{
+.pantheon-at-a-glance-container .vision::before {
     position: absolute;
     content: '';
     height: 29%;
@@ -65,22 +66,22 @@
     background-color: var(--pantheon-blue);
 }
 
-.pantheon-at-a-glance-container .approach{
+.pantheon-at-a-glance-container .approach {
     background-color: var(--pantheon-blue);
     box-shadow: 0 0 0 100vmax var(--pantheon-blue);
     clip-path: inset(0 -100vmax);
     position: relative;
 }
 
-.pantheon-at-a-glance-container .approach::before{
+.pantheon-at-a-glance-container .approach::before {
     background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_cover.jpg');
     background-repeat: no-repeat;
     background-size: 20% 100%;
-    background-position: 100% center;
+    background-position: 0% center;
     position: absolute;
     content: '';
     top: 0;
-    right: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -110,30 +111,36 @@
         z-index: -1;
         opacity: 0.11;
     }
-    
+
+    .pantheon-at-a-glance-container h1 {
+        text-align: center;
+    }
+
     .pantheon-at-a-glance-container .approach::before{
-        display: none;
+        background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_hd.jpg');
+        background-size: cover;
+        opacity: 0.1;
     }
 }
 
 /*DIRECTOR MESSAGE CSS*/
 
-.director{
+.director {
     background-color: var(--overview-bg-color);
     box-shadow: 0 0 0 100vmax var(--overview-bg-color);
     clip-path: inset(0 -100vmax);
 }
 
-.director .logo img{
+.director .logo img {
     height: 100%;
 }
 
-.director .content .sign img{
+.director .content .sign img {
     width: 200px;
 }
 
-@media (max-width:768px){
-    .director .content .sign img{
+@media (max-width:768px) {
+    .director .content .sign img {
         width: 150px;
     }
 }

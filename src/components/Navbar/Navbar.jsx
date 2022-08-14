@@ -1,5 +1,6 @@
 import { Navbar as NavbarContainer, Nav, Container, Dropdown } from "react-bootstrap"
-import { BsInbox, BsTelephone, BsFillTelephoneFill, BsBookmark } from 'react-icons/bs'
+import { BsInbox, BsFillTelephoneFill, BsBookmark } from 'react-icons/bs'
+import { FiMail } from 'react-icons/fi'
 import { FaLock, FaUnlock, FaUser } from 'react-icons/fa'
 import './navbar.css'
 import PantheonLogo from '../Images/PantheonLogo1.png'
@@ -89,7 +90,7 @@ const Navbar = () => {
                     <div className="d-flex flex-column w-100">
                         <div style={{ fontSize: '11px' }} className="border-bottom py-3 py-md-0 h-100 w-100 d-flex align-items-center justify-content-between justify-content-md-end px-md-5">
                             <Link className="text-light px-3 d-flex flex-row" to='/news'><BsInbox style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>NEWS</span></Link>
-                            <Link className="text-light px-3 d-flex flex-row" to='/contact-us'><BsTelephone style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>CONTACT US</span></Link>
+                            <Link className="text-light px-3 d-flex flex-row" to='/contact-us'><FiMail style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>CONTACT US</span></Link>
                             {!user && <Link className="text-light px-3 d-flex flex-row" to='/login'><FaLock style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>LOGIN</span></Link>}
                             {user && <Link className="text-light px-3 d-flex flex-row" to='/admin'><FaUser style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>ADMIN</span></Link>}
                             {user && <Link className="text-light px-3 d-flex flex-row" to='/logout'><FaUnlock style={{ fontSize: '15px' }} className='align-top text-mustard me-2' /><span className='d-none d-md-block'>LOGOUT</span></Link>}
