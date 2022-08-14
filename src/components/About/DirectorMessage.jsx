@@ -40,7 +40,7 @@ const DirectorMessage = () => {
                         <div className='d-flex align-items-end sign flex-column'>
                             <img className='img-fluid' alt='' src={cdnURL + '/Images/director_sign1.png'} />
                             <div className='d-flex align-items-end flex-column'>
-                            <span className='sign-under'>B.Tech (NIT Allahbad)</span>
+                            <span className='sign-under'>B.Tech (NIT Allahabad)</span>
                             <span className='sign-under'>B.Ed, CTET I & II</span>
                             </div>
                         </div>
