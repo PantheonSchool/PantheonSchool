@@ -2,7 +2,7 @@ const Approach = ({ ApproachRef }) => {
     return (
         <div className="p-lg-5 approach row" ref={ApproachRef}>
             <div className="col-lg-6"></div>
-            <div className="h-100 col py-3text-justify">
+            <div className="h-100 col p-3 text-justify">
                 <div className="px-3">
                     <h1 className="text-mustard display-3 text-uppercase"><span className="fw-bold">Our</span> <span>Approach</span></h1>
                     <br /><br />
