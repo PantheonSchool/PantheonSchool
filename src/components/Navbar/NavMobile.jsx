@@ -11,7 +11,7 @@ const NavMobile = ({ show, handleClose, user }) => {
 
     return (
         <Modal id='nav-modal' className='d-lg-none' show={show} onHide={handleClose}>
-            <Modal.Body className='pt-3'>
+            <Modal.Body className='pt-5'>
                 <button onClick={handleClose} className='btn btn-v2 btn-cls py-2 fw-bold'>CLOSE</button>
                 <div className="d-flex flex-column w-100">
                     <div className="h-100 py-3 py-md-0 border-bottom">

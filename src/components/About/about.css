@@ -74,9 +74,9 @@
 }
 
 .pantheon-at-a-glance-container .approach::before {
-    background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_cover.jpg');
+    background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_hd.jpg');
     background-repeat: no-repeat;
-    background-size: 20% 100%;
+    background-size: 50% 100%;
     background-position: 0% center;
     position: absolute;
     content: '';
@@ -125,7 +125,7 @@
     }
 
     .pantheon-at-a-glance-container .approach::before {
-        background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_hd.jpg');
+        /* background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_hd.jpg'); */
         background-size: cover;
         opacity: 0.1;
     }
