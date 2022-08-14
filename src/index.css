@@ -254,6 +254,7 @@ code {
 
 .scrollbar-v1::-webkit-scrollbar-track {
   height: 4px;
+  background: transparent;
 }
 
 
