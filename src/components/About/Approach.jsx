@@ -1,6 +1,6 @@
-const Approach = ({ ApproachRef }) => {
+const Approach = ({ ApproachRef, navHeight }) => {
     return (
-        <div className="p-lg-5 approach row" ref={ApproachRef}>
+        <div className="px-lg-5 pb-lg-5 approach row" ref={ApproachRef} style={{ paddingTop: navHeight }}>
             <div className="col-lg-6"></div>
             <div className="h-100 col p-3 text-justify">
                 <div className="px-3">

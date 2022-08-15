@@ -1,12 +1,9 @@
 import { cdnURL } from '../../utils/constants'
-// import { useContext } from 'react'
-// import { AuthContext } from '../../utils/ContextAPI/AuthContext'
 
-const PantheonInfo = ({AboutRef}) => {
-    // const { navHeight } = useContext(AuthContext)
+const PantheonInfo = ({ AboutRef, navHeight }) => {
 
     return (
-        <div className='py-3 about text-justify' ref={AboutRef}>
+        <div className='about text-justify' ref={AboutRef} style={{ paddingTop: navHeight }}>
             <h1 className='text-uppercase pt-3 display-3 mb-5 mt-4'><span className='fw-bold'>about</span> the school</h1>
             <div className='d-flex content'>
                 <div id='_pantheon_at_a_glance_icon'>
@@ -18,7 +15,7 @@ const PantheonInfo = ({AboutRef}) => {
                         Road near by Haidakhan Mandir Kathgharia Haldwani. It is a Centrally Air
                         Conditioned School, with air Conditioned transport facility and with a Half Olympic
                         Size all weather Swimming pool and Indoor Badminton Court Facility. Lawn Tennis
-                        court, Basket Ball Court Facility.<br/>
+                        court, Basket Ball Court Facility.<br />
                     </p>
 
                     <p>The Pantheon School is going to be a CBSE affiliated co-educational school, which

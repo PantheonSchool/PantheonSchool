@@ -1,12 +1,16 @@
 const navList = [
   {
-    title: "ABOUT",
+    title: "OVERVIEW",
     hasList: true,
     bgColor: "rgba(89,126,32,0.9)",
     list: [
       {
         title: "Pantheon at a Glance",
         link: "pantheon-at-a-glance"
+      },
+      {
+        title: "Chairman's Message",
+        link: 'chairman-message'
       },
       {
         title: "Director's Message",

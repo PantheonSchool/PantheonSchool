@@ -257,6 +257,10 @@ code {
   background: transparent;
 }
 
+.modal-backdrop.show {
+  opacity: 0.75 !important;
+}
+
 
 .caption {
   padding: 1rem 2rem;

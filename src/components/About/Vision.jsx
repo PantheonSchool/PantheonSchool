@@ -1,6 +1,6 @@
-const Vision = ({VisionRef}) => {
+const Vision = ({ VisionRef, navHeight }) => {
     return (
-        <div className="p-lg-5 vision" ref={VisionRef}>
+        <div className="px-lg-5 pb-lg-5 vision" ref={VisionRef} style={{paddingTop:navHeight}}>
             <div className="h-100">
                 <div className="row flex-column-reverse flex-md-row pe-md-2 py-md-2 col-12 m-0">
                     <div className="col-md-8 col-lg-5 content p-3">
@@ -24,7 +24,7 @@ const Vision = ({VisionRef}) => {
                             <li>We aim to create and disseminate knowledge by developing the
                                 intellect of our students with enthusiasm and excellence.</li>
                         </ul>
-                        <br/>
+                        <br />
                         <p className="fw-bold mb-2">Our Motto is:</p>
                         <p className="text-center">&emsp;&emsp;"Strengthen the body Sharpen the Mind Nourish the Soul"</p>
                     </div>

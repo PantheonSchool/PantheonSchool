@@ -38,8 +38,7 @@ const News = () => {
                 </>}
             </div>
             <Modal show={show} size='md' onHide={handleClose}>
-                <Modal.Header closeButton />
-                <Modal.Body>
+                <Modal.Body className="p-0 posts">
                     {modalData && modalData.content === 'image' ? <img alt='' src={modalData.post} className='w-100' /> : <div className="post">
                         <NewsTemplate post={modalData.post} />
                     </div>}

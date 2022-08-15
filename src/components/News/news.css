@@ -51,6 +51,15 @@
     display: none;
 }
 
+.modal-body.posts .post{
+    margin: 0;
+    padding: 0;
+}
+
+.modal-body.posts .post .body{
+    padding-bottom: 20px;
+}
+
 @keyframes skeleton-loading {
     0% {
         background-color: hsl(200, 20%, 70%);

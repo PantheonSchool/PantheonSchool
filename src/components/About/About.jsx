@@ -6,6 +6,9 @@ import { useSearchParams } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
 import Cover from '../Cover'
 
+import { useContext } from 'react'
+import { AuthContext } from '../../utils/ContextAPI/AuthContext'
+
 import './about.css'
 
 const About = () => {
@@ -14,6 +17,8 @@ const About = () => {
     const AboutRef = useRef();
     const MissionRef = useRef();
     const ApproachRef = useRef();
+
+    const { navHeight } = useContext(AuthContext)
 
     const scrollQuery = {
         vision: VisionRef,
@@ -44,11 +49,11 @@ const About = () => {
         <div className='pantheon-at-a-glance-container text-light text-justify overflow-hidden'>
             <Cover/>
             <div className='container'>
-                <PantheonInfo AboutRef={AboutRef} />
+                <PantheonInfo AboutRef={AboutRef} navHeight={navHeight}/>
             </div>
-            <Vision VisionRef={VisionRef} />
-            <Mission MissionRef={MissionRef} />
-            <Approach ApproachRef={ApproachRef} />
+            <Vision VisionRef={VisionRef} navHeight={navHeight}/>
+            <Mission MissionRef={MissionRef} navHeight={navHeight}/>
+            <Approach ApproachRef={ApproachRef} navHeight={navHeight}/>
         </div>
     )
 }
