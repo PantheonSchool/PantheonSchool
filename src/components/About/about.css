@@ -147,6 +147,10 @@
     width: 200px;
 }
 
+.chairman{
+    background-color: rgb(0, 0, 87);
+}
+
 .sign-under{
     font-size: 0.8rem;
     font-weight: 100;

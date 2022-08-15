@@ -61,7 +61,7 @@ const GoogleReviews = () => {
     ]
     return (
         <div className="reviews pt-5 pb-3 px-3 px-lg-5">
-            <h1 className="text-center display-4 fw-bold letter-spacing-1">REVIEWS</h1>
+            <h1 className="text-center display-4 fw-bold letter-spacing-1">OUR REVIEWS</h1>
             <div className="d-flex overflow-auto scrollbar-v1">
                 {reviewData && reviewData.map((review, index) => <ReviewCard review={review} key={review.username + index} />)}
             </div>

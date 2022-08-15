@@ -15,7 +15,7 @@ const ChairmanMessage = () => {
     }, [])
 
     return (
-        <div className='director text-light text-justify'>
+        <div className='director chairman text-light text-justify'>
             <div className='d-flex'>
                 <div className='logo d-none d-md-block col-3'>
                     <img className='img-fluid' alt='' src={cdnURL + '/Images/director.jpg'} />
@@ -23,7 +23,7 @@ const ChairmanMessage = () => {
                 <div className='content px-4' style={{ paddingTop: navHeight }}>
                     <div className='col-lg-11'>
                         <div className='d-flex justify-content-sm-between flex-column flex-sm-row mb-2'>
-                            <h1 className='display-3 text-uppercase letter-spacing-1'>
+                            <h1 className='display-2 text-uppercase letter-spacing-1'>
                                 <span className='fw-bold'>message from</span><br />
                                 <span>the chairman</span>
                             </h1>
