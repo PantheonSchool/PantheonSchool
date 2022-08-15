@@ -47,7 +47,7 @@ const About = () => {
 
     return (
         <div className='pantheon-at-a-glance-container text-light text-justify overflow-hidden'>
-            <Cover/>
+            {/* <Cover/> */}
             <div className='container'>
                 <PantheonInfo AboutRef={AboutRef} navHeight={navHeight}/>
             </div>
