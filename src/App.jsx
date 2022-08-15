@@ -16,6 +16,7 @@ const Apply = lazy(() => import('./components/Apply/Apply'))
 const FeeStructure = lazy(() => import('./components/Apply/FeeStructure'))
 const About = lazy(() => import('./components/About/About'))
 const DirectorMessage = lazy(() => import('./components/About/DirectorMessage'))
+const ChairmanMessage = lazy(() => import('./components/About/ChairmanMessage'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -32,33 +33,34 @@ const App = () => {
         <Suspense fallback={<>Loading ...</>} >
           <Routes>
             <Route>
-            <Route path='/' element={<Home />} />
-            <Route path="/inquire" element={<Inquire />} />
-            <Route path='/apply' element={<Apply />} />
-            <Route path='/fee-structure' element={<FeeStructure />} />
-            <Route path='/pantheon-at-a-glance' element={<About />} />
-            <Route path='/director-message' element={<DirectorMessage />} />
+              <Route path='/' element={<Home />} />
+              <Route path="/inquire" element={<Inquire />} />
+              <Route path='/apply' element={<Apply />} />
+              <Route path='/fee-structure' element={<FeeStructure />} />
+              <Route path='/pantheon-at-a-glance' element={<About />} />
+              <Route path='/director-message' element={<DirectorMessage />} />
+              <Route path='/chairman-message' element={<ChairmanMessage />} />
 
-            <Route element={<PrivateRoute />}>
-              <Route path='/admin/register' element={<Register />} />
-              <Route path='/admin/news' element={<AdminNews />} />
-              <Route path='/admin/inquire' element={<AdminInquire />} />
-              <Route path='/logout' element={<Logout />} />
-              <Route path='/admin' element={<Admin />} />
+              <Route element={<PrivateRoute />}>
+                <Route path='/admin/register' element={<Register />} />
+                <Route path='/admin/news' element={<AdminNews />} />
+                <Route path='/admin/inquire' element={<AdminInquire />} />
+                <Route path='/logout' element={<Logout />} />
+                <Route path='/admin' element={<Admin />} />
+              </Route>
+
+              <Route element={<PublicRoute restricted={true} />}>
+                <Route path='/login' element={<Login />} />
+              </Route>
+
+              <Route element={<PublicRoute restricted={false} />}>
+                <Route path='/visit' element={<Visit />} />
+                <Route path='/news' element={<News />} />
+              </Route>
+
+              <Route path='*' element={<Page404 />} />
             </Route>
 
-            <Route element={<PublicRoute restricted={true} />}>
-              <Route path='/login' element={<Login />} />
-            </Route>
-
-            <Route element={<PublicRoute restricted={false} />}>
-              <Route path='/visit' element={<Visit />} />
-              <Route path='/news' element={<News />} />
-            </Route>
-
-            <Route path='*' element={<Page404 />} />
-            </Route>
-            
           </Routes>
         </Suspense>
       </div>
