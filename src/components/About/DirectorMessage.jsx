@@ -20,7 +20,7 @@ const DirectorMessage = () => {
                 <div className='logo d-none d-md-block col-3'>
                     <img className='img-fluid' alt='' src={cdnURL + '/Images/director.jpg'} />
                 </div>
-                <div className='content px-4' style={{ paddingTop: navHeight }}>
+                <div className='content px-4 pb-5' style={{ paddingTop: navHeight }}>
                     <div className='col-lg-11'>
                         <div className='d-flex justify-content-sm-between flex-column flex-sm-row mb-2'>
                             <h1 className='display-2 text-uppercase letter-spacing-1'>
@@ -28,7 +28,7 @@ const DirectorMessage = () => {
                                 <span>message</span>
                             </h1>
                             <div className='director_img text-center p-2 pe-0'>
-                                <img src={cdnURL + '/Images/director_photo.jpg'} className='img-fluid rounded-3' />
+                                <img src={cdnURL + '/Images/director_photo.jpg'} alt='' className='img-fluid rounded-3' />
                             </div>
                         </div>
                         <p>It is my privilege to welcome you to The Pantheon School, Haldwani. We endeavor to create a learning environment in which all children will feel enabled and encouraged to become successful learners. A caring and challenging school culture will ensure that students grow into responsible and courageous members of our society. At the heart of our effort is the attempt to give the right values to our children.<br />
