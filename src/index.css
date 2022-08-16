@@ -247,6 +247,7 @@ code {
 
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
+  border-radius: 10px;
   opacity: 1;
   width: 8px;
   background: var(--pantheon-mustard);
