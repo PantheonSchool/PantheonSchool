@@ -304,3 +304,35 @@
     overflow: hidden;
     display: -webkit-box;
 }
+
+.__prev_cover,.__next_cover{
+    position: absolute;
+    top: 50%;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    font-size: 2rem;
+}
+
+.__prev_cover:hover,.__next_cover:hover{
+    opacity: 1;
+}
+
+.__prev_cover{
+    left: 30px;
+}
+
+.__next_cover{
+    transform: rotateY(180deg);
+    right: 30px;
+}
+
+@media (max-width:768px){
+    .__next_cover{
+        right: 10px;
+    }
+    .__prev_cover{
+        left: 10px;
+    }
+}

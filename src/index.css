@@ -57,7 +57,7 @@ label:focus,
 
 .pantheon-cover {
   /* background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/PantheonCover.jpg'); */
-  background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/Cover2.jpg');
+  /* background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/Cover2.jpg'); */
   /* background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/Cover3.jpg'); */
   /* background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/Cover4.jpg'); */
   /* background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/Cover5.jpg'); */
@@ -68,6 +68,7 @@ label:focus,
   background-repeat: no-repeat !important;
   background-attachment: fixed;
   background-position: center center !important;
+  transition: background 0.5s ease-in-out;
 }
 
 .bg-form {

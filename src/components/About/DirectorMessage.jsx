@@ -17,7 +17,7 @@ const DirectorMessage = () => {
     return (
         <div className='director text-light text-justify'>
             <div className='d-flex'>
-                <div className='logo d-none d-md-block'>
+                <div className='logo d-none d-md-block col-3'>
                     <img className='img-fluid' alt='' src={cdnURL + '/Images/director.jpg'} />
                 </div>
                 <div className='content px-4' style={{ paddingTop: navHeight }}>
