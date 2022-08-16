@@ -17,7 +17,7 @@ const Cover = () => {
                 coverRef.current.style.background = `url(${bgImg[imgIndex]})`;
                 imgIndex++;
                 imgIndex = imgIndex % 4;
-                BgTimeout = setTimeout(toggleBackground, 6000)
+                BgTimeout = setTimeout(toggleBackground, 10000)
             }
             catch (err) {
                 console.error(err);
