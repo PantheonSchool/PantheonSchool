@@ -128,7 +128,7 @@ const FeeStructure = () => {
                                 </tr>
                             </tbody>
                         </Table>
-                        <b>*25% for Younger Sibling (Not Applicable on transport charges)</b>
+                        <b>*25% Discount for Younger Sibling (Not Applicable on transport charges)</b>
                     </div>
                 </div>
             </div>
