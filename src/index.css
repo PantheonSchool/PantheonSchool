@@ -56,7 +56,11 @@ label:focus,
 /*REMOVING OUTLINE END*/
 
 .pantheon-cover {
-  background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/PantheonCover.jpg');
+  /* background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/PantheonCover.jpg'); */
+  background: url('D:\Coding\Web Dev\Projects\Real World Projects\School Website\ReactApp\PantheonSchool\src\components\Images\Cover2.jpg');
+  /* background: url('D:\Coding\Web Dev\Projects\Real World Projects\School Website\ReactApp\PantheonSchool\src\components\Images\Cover3.jpg'); */
+  /* background: url('D:\Coding\Web Dev\Projects\Real World Projects\School Website\ReactApp\PantheonSchool\src\components\Images\Cover4.jpg'); */
+  /* background: url('D:\Coding\Web Dev\Projects\Real World Projects\School Website\ReactApp\PantheonSchool\src\components\Images\Cover5.jpg'); */
   background-color: #00274c !important;
   height: 82vh;
   width: 100%;
