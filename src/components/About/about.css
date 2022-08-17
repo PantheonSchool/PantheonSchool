@@ -76,12 +76,12 @@
 .pantheon-at-a-glance-container .approach::before {
     background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_hd.jpg');
     background-repeat: no-repeat;
-    background-size: 50% 100%;
-    background-position: 0% center;
+    background-size: auto 100%;
+    background-position: 100% center;
     position: absolute;
     content: '';
     top: 0;
-    left: 0;
+    left: -50%;
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -128,6 +128,8 @@
         /* background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/approach_hd.jpg'); */
         background-size: cover;
         opacity: 0.1;
+        left: 0;
+        background-position: 0% center;
     }
 }
 

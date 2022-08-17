@@ -50,18 +50,14 @@
     margin-top: 0.5rem;
 }
 
-.instructions-section{
+.instructions-section {
     position: relative;
     padding-left: 6rem;
 }
 
-.instructions-section .instruction-img{
+.instructions-section .instruction-img {
     display: flex;
     align-items: flex-end;
-}
-
-@media (max-width:768px) {
-    
 }
 
 @media (min-width:768px) {
@@ -81,7 +77,7 @@
         background-size: 255% 54vh !important;
     }
 
-    .instructions-section .instruction-img img{
+    .instructions-section .instruction-img img {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -91,6 +87,16 @@
 
     .instructions-section {
         padding-left: 1rem;
+    }
+}
+
+
+
+@media (max-width:768px) {
+    .apply-cover .pantheon-cover.cover-mod {
+        background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/mobileCover.jpg') !important;
+        background-size: 100% 54vh !important;
+        background-position: center 100% !important;
     }
 }
 
