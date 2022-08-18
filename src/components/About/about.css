@@ -158,14 +158,20 @@
     font-weight: 100;
 }
 
+.principal{
+    background-color: var(--pantheon-mustard-v2);
+    box-shadow: 0 0 0 100vmax var(--pantheon-mustard-v2);
+    clip-path: inset(0 -100vmax);
+}
+/* 
 .principal .logo{
     float: left;
     margin: 0 15px 15px 0;
-}
-
+} */
+/* 
 .principal .logo img{
     min-height: 100vh;
-}
+} */
 
 @media (max-width:768px) {
     .director .content .sign img {
