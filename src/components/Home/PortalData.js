@@ -8,7 +8,7 @@ const portals = [
   },
   {
     title: "artists at work",
-    img: cdnURL + '/Images/portal-pics/arts.jpg',
+    img: cdnURL + '/Images/portal-pics/arts4.jpg',
     link: "/arts",
   },
   {
