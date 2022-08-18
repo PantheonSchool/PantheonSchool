@@ -6,23 +6,23 @@ const navList = [
     list: [
       {
         title: "Pantheon at a Glance",
-        link: "pantheon-at-a-glance"
+        link: "/pantheon-at-a-glance"
       },
       {
         title: "Chairman's Message",
-        link: 'chairman-message'
+        link: '/chairman-message'
       },
       {
         title: "Director's Message",
-        link: 'director-message'
+        link: '/director-message'
       },
       {
         title: "Principal's Message",
-        link: 'principal-message'
+        link: '/principal-message'
       },
       {
         title: "Mandatory Disclosure",
-        link: 'mandatory-disclosure'
+        link: '/mandatory-disclosure'
       },
     ],
   },
@@ -31,9 +31,9 @@ const navList = [
     hasList: true,
     bgColor: "rgba(1,126,167,0.9)",
     list: [
-      { title: "Admission Information", link: 'apply' },
-      { title: "Fee Structure", link: 'fee-structure' },
-      { title: "Apply Online", link: 'apply-online' },
+      { title: "Admission Information", link: '/apply' },
+      { title: "Fee Structure", link: '/fee-structure' },
+      { title: "Apply Online", link: '/apply-online' },
     ],
   },
   {
@@ -41,12 +41,12 @@ const navList = [
     hasList: true,
     bgColor: "rgba(0,39,76,0.9)",
     list: [
-      { title: "Academic Calendar",link:'academic-calendar' },
-      { title: "Assesment Schedule",link:'assesment-schedule' },
-      { title: "Faculty",link:'faculty' },
-      { title: "Curriculum",link:'curriculum' },
-      { title: "Syllabus",link:'syllabus' },
-      { title: "Book List",link:'book-list' },
+      { title: "Academic Calendar", link: '/academic-calendar' },
+      { title: "Assesment Schedule", link: '/assesment-schedule' },
+      { title: "Faculty", link: '/faculty' },
+      { title: "Curriculum", link: '/curriculum' },
+      { title: "Syllabus", link: '/syllabus' },
+      { title: "Book List", link: '/book-list' },
     ],
   },
   {
@@ -56,31 +56,31 @@ const navList = [
     list: [
       {
         title: "Art & Craft",
-        link:'art-and-craft'
+        link: '/art-and-craft'
       },
       {
         title: "Dance",
-        link:'dance'
+        link: '/dance'
       },
       {
         title: "Music",
-        link:'music'
+        link: '/music'
       },
       {
         title: "Public Speaking",
-        link:'public-speaking'
+        link: '/public-speaking'
       },
       {
         title: "Spoken English",
-        link:'spoken-english'
+        link: '/spoken-english'
       },
       {
         title: "Sports",
-        link:'sports'
+        link: '/sports'
       },
       {
         title: "Swimming",
-        link:'swimming'
+        link: '/swimming'
       },
     ],
   },
@@ -91,19 +91,19 @@ const navList = [
     list: [
       {
         title: "Weekly Test Series",
-        link:'weekly-test-series'
+        link: '/weekly-test-series'
       },
       {
         title: "After School Tution Classes",
-        link:'after-school-tution-classes'
+        link: '/after-school-tution-classes'
       },
       {
         title: "Focus On Concepts",
-        link:'focus-on-concepts'
+        link: '/focus-on-concepts'
       },
       {
         title: "All Round Development",
-        link:'all-round-development'
+        link: '/all-round-development'
       },
     ],
   },
