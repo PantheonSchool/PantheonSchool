@@ -3,7 +3,7 @@ import { cdnURL } from '../../utils/constants'
 const portals = [
   {
     title: "academics",
-    img: cdnURL + '/Images/portal-pics/acad1.jpg',
+    img: cdnURL + '/Images/portal-pics/acad2.jpg',
     link: "/academics",
   },
   {
