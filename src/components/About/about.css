@@ -158,6 +158,15 @@
     font-weight: 100;
 }
 
+.principal .logo{
+    float: left;
+    margin: 0 15px 15px 0;
+}
+
+.principal .logo img{
+    min-height: 100vh;
+}
+
 @media (max-width:768px) {
     .director .content .sign img {
         width: 150px;

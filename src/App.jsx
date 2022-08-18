@@ -17,6 +17,7 @@ const FeeStructure = lazy(() => import('./components/Apply/FeeStructure'))
 const About = lazy(() => import('./components/About/About'))
 const DirectorMessage = lazy(() => import('./components/About/DirectorMessage'))
 const ChairmanMessage = lazy(() => import('./components/About/ChairmanMessage'))
+const PrincipalMessage = lazy(() => import('./components/About/PrincipalMessage'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -40,6 +41,7 @@ const App = () => {
               <Route path='/pantheon-at-a-glance' element={<About />} />
               <Route path='/director-message' element={<DirectorMessage />} />
               <Route path='/chairman-message' element={<ChairmanMessage />} />
+              <Route path='/principal-message' element={<PrincipalMessage />} />
 
               <Route element={<PrivateRoute />}>
                 <Route path='/admin/register' element={<Register />} />
