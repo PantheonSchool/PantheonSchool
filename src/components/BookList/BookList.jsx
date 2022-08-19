@@ -44,7 +44,7 @@ const BookList = () => {
                     {book && <Table bordered className="border-dark text-center">
                         <thead className="text-light">
                             <tr>
-                                <th>S N</th>
+                                <th>S No.</th>
                                 <th>Subject</th>
                                 <th>Name of Book</th>
                                 <th>Publication</th>
@@ -80,7 +80,8 @@ const BookList = () => {
                     {book && <Table bordered className="border-dark text-center">
                         <thead className="text-light">
                             <tr>
-                                <th colSpan={2}>Note Book List Class {bookClass}</th>
+                                <th>S No.</th>
+                                <th>Note Book List Class {bookClass}</th>
                                 <th>Qty</th>
                             </tr>
                         </thead>
@@ -95,7 +96,8 @@ const BookList = () => {
                     {book && <Table bordered className="border-dark text-center">
                         <thead className="text-light">
                             <tr>
-                                <th colSpan={2}>Stationary for Class {bookClass}</th>
+                                <th>S No.</th>
+                                <th>Stationary for Class {bookClass}</th>
                             </tr>
                         </thead>
                         <tbody className="bg-light">
