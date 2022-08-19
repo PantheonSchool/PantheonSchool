@@ -19,7 +19,7 @@ const NewsTemplate = ({ post, handleModal, cursor }) => {
             <div onClick={() => handleModal('post', post)} className={`py-2 ${cursor}`}>
                 <h6 className="date fw-bold">{date}</h6>
                 <h5 className="title text-dark fw-bold">{post && post.title ? post.title : ''}</h5>
-                <div className="body text-justify">{post && post.body ? post.body : ''}</div>
+                <div className="body">{post && post.body ? post.body : ''}</div>
             </div>
             <div className="skeleton-text" />
             <div className="skeleton-text" />

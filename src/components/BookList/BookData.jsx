@@ -264,7 +264,7 @@ const BookData = {
                 qty: 1
             },
             {
-                name: 'G.K (One Sided English)',
+                name: 'G.K (One Side English)',
                 qty: 1
             }
         ],

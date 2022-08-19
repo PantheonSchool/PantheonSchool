@@ -24,7 +24,7 @@ const GoogleReviews = () => {
                     <div className='d-flex justify-content-center'>
                         {ratingStars()}
                     </div><br />
-                    <p className='text-justify review'>{text}</p>
+                    <p className='text-start review'>{text}</p>
                     <p className='small text-muted'><FcGoogle className='fs-5' />&emsp;{relative_time_description}</p>
                 </div>
             </div>
