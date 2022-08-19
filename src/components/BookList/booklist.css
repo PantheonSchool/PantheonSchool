@@ -18,6 +18,13 @@
     background-color: var(--pantheon-blue);
 }
 
+.__toggle_booklist .dropdown-item:hover{
+    color: #000 !important;
+}
+
+.__toggle_booklist .dropdown.show .dropdown-toggle{
+    background-color: var(--pantheon-blue) !important;
+}
 
 .__booklist_container table {
     vertical-align: middle;
