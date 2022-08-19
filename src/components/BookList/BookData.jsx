@@ -174,6 +174,103 @@ const BookData = {
         stationary: [
             'Crayons', 'Pencil', 'Erasor and Sharpener', 'Cover and Name Slips'
         ]
+    },
+    UKG: {
+        bookList: [
+            {
+                subject: 'Math',
+                names: [{
+                    name: 'Math Primer',
+                    publication: 'Book Magic'
+                }]
+            },
+            {
+                subject: 'English',
+                names: [{
+                    name: 'English Primer',
+                    publication: 'Book Magic'
+                },
+                {
+                    name: 'Cursive Cap & Small',
+                    publication: 'Book Magic'
+                }]
+            },
+            {
+                subject: 'Drawing',
+                names: [{
+                    name: 'Magic Wand C',
+                    publication: 'Book Magic'
+                }]
+            },
+            {
+                subject: 'English Rhymes',
+                names: [{
+                    name: 'Nursery Rhymes C',
+                    publication: 'Book Magic'
+                }]
+            },
+            {
+                subject: 'Hindi Rhymes',
+                names: [{
+                    name: 'Baal Geet 3',
+                    publication: 'Book Magic'
+                }]
+            },
+            {
+                subject: 'Hindi',
+                names: [{
+                    name: 'Swar Gyan',
+                    publication: 'Book Magic'
+                },
+                {
+                    name: 'Swar Lekhan',
+                    publication: 'Book Magic'
+                }]
+            },
+            {
+                subject: 'EVS',
+                names: [{
+                    name: 'EVS Intro',
+                    publication: 'Unique'
+                }]
+            },
+            {
+                subject: 'Phonics',
+                names: [{
+                    name: 'Learning Phonic',
+                    publication: 'Book Magic'
+                }]
+            }
+        ],
+        notebookList: [
+            {
+                name: 'Hindi 5 Lines',
+                qty: 2
+            },
+            {
+                name: 'English 4 Lines',
+                qty: 2
+            },
+            {
+                name: 'Maths Square Blocks',
+                qty: 2
+            },
+            {
+                name: 'All in one',
+                qty: 2
+            },
+            {
+                name: 'Drawing Copy',
+                qty: 1
+            },
+            {
+                name: 'G.K (One Sided English)',
+                qty: 1
+            }
+        ],
+        stationary: [
+            'Crayons', 'Pencil', 'Erasor and Sharpener', 'Cover and Name Slips'
+        ]
     }
 }
 
