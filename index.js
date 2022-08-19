@@ -4,6 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 const inquiryRouter = require("./routers/inquiry");
 const adminRouter = require("./routers/admin");
+const reviewRouter = require("./routers/review")
 const newsRouter = require("./routers/news");
 
 require("./db/DB");
@@ -15,6 +16,8 @@ app.use(express.json());
 app.use("/api/inquiry", inquiryRouter);
 
 app.use("/api/admin", adminRouter);
+
+app.use("/api/review", reviewRouter);
 
 app.use("/api/news", newsRouter);
 
