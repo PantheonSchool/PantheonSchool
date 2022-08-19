@@ -271,6 +271,214 @@ const BookData = {
         stationary: [
             'Crayons', 'Pencil', 'Erasor and Sharpener', 'Cover and Name Slips'
         ]
+    },
+    1:{
+        bookList: [
+            {
+                subject: 'Hindi Literature',
+                names: [{
+                    name: 'Rim Jhim - Part 1',
+                    publication: 'NCERT'
+                }]
+            },
+            {
+                subject: 'Hindi Grammar',
+                names: [{
+                    name: 'Anupam Hindi Vyankaran',
+                    publication: 'Holy Faith'
+                }]
+            },
+            {
+                subject: 'English Literature',
+                names: [{
+                    name: 'Marigold Book-1',
+                    publication: 'NCERT'
+                }]
+            },
+            {
+                subject: 'English Grammar',
+                names: [{
+                    name: 'My Big Book of Grammar and Composition',
+                    publication: 'Macmillan Education'
+                }]
+            },
+            {
+                subject: 'Mathematics',
+                names: [{
+                    name: 'Maths Magic-1',
+                    publication: 'NCERT'
+                }]
+            },
+            {
+                subject: 'EVS',
+                names: [{
+                    name: 'Eureka Plus',
+                    publication: 'Macmillan Education'
+                }]
+            },
+            {
+                subject: 'Drawing',
+                names: [{
+                    name: 'Art & Craft',
+                    publication: 'Ocean'
+                }]
+            },
+            {
+                subject: 'GK',
+                names: [{
+                    name: 'Curious Kids',
+                    publication: 'Holy Faith'
+                }]
+            },
+            {
+                subject: 'Computer',
+                names: [{
+                    name: 'New Grow with Information and Technology',
+                    publication: 'Headword'
+                }]
+            }
+        ],
+        notebookList: [
+            {
+                name: 'Hindi-5 Lines',
+                qty: 2
+            },
+            {
+                name: 'English-4 Lines',
+                qty: 2
+            },
+            {
+                name: 'Maths Square Blocks',
+                qty: 1
+            },
+            {
+                name: 'GK -One side plane one side -4 Lines',
+                qty: 1
+            },
+            {
+                name: 'EVS -One side plane one side -4 Lines',
+                qty: 1
+            },
+            {
+                name: 'Computer -One side plane one side -4 lines',
+                qty: 1
+            },
+            {
+                name: 'Register (Convent)',
+                qty: 1
+            },
+            {
+                name: 'Drawing Copy ',
+                qty: 1
+            }
+        ],
+        stationary: [
+            'Crayons', 'Pencil', 'Erasor and Sharpener', 'Cover and Name Slips'
+        ]
+    },
+    2:{
+        bookList: [
+            {
+                subject: 'Hindi Literature',
+                names: [{
+                    name: 'Rim Jhim - Part 2',
+                    publication: 'NCERT'
+                }]
+            },
+            {
+                subject: 'Hindi Grammar',
+                names: [{
+                    name: 'Anupam Hindi Vyankaran',
+                    publication: 'Holy Faith'
+                }]
+            },
+            {
+                subject: 'English Literature',
+                names: [{
+                    name: 'Marigold Book-2',
+                    publication: 'NCERT'
+                }]
+            },
+            {
+                subject: 'English Grammar',
+                names: [{
+                    name: 'My Big Book of Grammar and Composition',
+                    publication: 'Macmillan Education'
+                }]
+            },
+            {
+                subject: 'Mathematics',
+                names: [{
+                    name: 'Maths Magic-2',
+                    publication: 'NCERT'
+                }]
+            },
+            {
+                subject: 'EVS',
+                names: [{
+                    name: 'Eureka Plus',
+                    publication: 'Macmillan Education'
+                }]
+            },
+            {
+                subject: 'Drawing',
+                names: [{
+                    name: 'Art & Craft',
+                    publication: 'Ocean'
+                }]
+            },
+            {
+                subject: 'GK',
+                names: [{
+                    name: 'Curious Kids',
+                    publication: 'Holy Faith'
+                }]
+            },
+            {
+                subject: 'Computer',
+                names: [{
+                    name: 'New Grow with Information and Technology',
+                    publication: 'Headword'
+                }]
+            }
+        ],
+        notebookList: [
+            {
+                name: 'Hindi-5 Lines',
+                qty: 2
+            },
+            {
+                name: 'English-4 Lines',
+                qty: 2
+            },
+            {
+                name: 'Maths Square Blocks',
+                qty: 1
+            },
+            {
+                name: 'GK -One side plane one side -4 Lines',
+                qty: 1
+            },
+            {
+                name: 'EVS -One side plane one side -4 Lines',
+                qty: 1
+            },
+            {
+                name: 'Computer -One side plane one side -4 lines',
+                qty: 1
+            },
+            {
+                name: 'Register (Convent)',
+                qty: 1
+            },
+            {
+                name: 'Drawing Copy ',
+                qty: 1
+            }
+        ],
+        stationary: [
+            'Crayons', 'Pencil', 'Erasor and Sharpener', 'Cover and Name Slips'
+        ]
     }
 }
 

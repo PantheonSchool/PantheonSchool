@@ -101,7 +101,7 @@
 }
 
 @media only screen and (max-width:756px) {
-    .dropdown-menu{
+    .main_nav .dropdown-menu{
         background: rgba(0, 0, 0, 0.3);
     }
     .bottom-nav{
@@ -113,7 +113,7 @@
 }
 
 @media only screen and (max-width:991px){
-    .dropdown-menu{
+    .main_nav .dropdown-menu{
         background-color: transparent !important;
         border-top: none !important;
     }
