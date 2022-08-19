@@ -18,7 +18,7 @@ const PrincipalMessage = () => {
         <div className='director principal text-light text-justify'>
             <div className='d-flex'>
                 <div className='logo d-none d-md-block col-3'>
-                    <img className='img-fluid' alt='' src={cdnURL + '/Images/director_1.jpg'} />
+                    <img className='img-fluid' alt='' src={cdnURL + '/Images/director2.jpg'} />
                 </div>
                 <div className='content px-4' style={{ paddingTop: navHeight }}>
                     <div className='col-lg-11'>
@@ -28,7 +28,7 @@ const PrincipalMessage = () => {
                                 <span>message</span>
                             </h1>
                             <div className='director_img text-center p-2 pe-0'>
-                                <img src={cdnURL + '/Images/principal_photo.jpeg'} className='img-fluid rounded-3' />
+                                <img src={cdnURL + '/Images/principal_photo1.jpg'} className='img-fluid rounded-3' />
                             </div>
                         </div>
                         <p>

@@ -18,7 +18,7 @@ const DirectorMessage = () => {
         <div className='director text-light text-justify'>
             <div className='d-flex'>
                 <div className='logo d-none d-md-block col-3'>
-                    <img className='img-fluid' alt='' src={cdnURL + '/Images/director_1.jpg'} />
+                    <img className='img-fluid' alt='' src={cdnURL + '/Images/director2.jpg'} />
                 </div>
                 <div className='content px-4 pb-5' style={{ paddingTop: navHeight }}>
                     <div className='col-lg-11'>
@@ -41,7 +41,8 @@ const DirectorMessage = () => {
                         <div className='row '>
                             <div className='col-7 col-md-8 col-lg-9' />
                             <div className='col d-flex align-items-center sign flex-column pe-0'>
-                                <img className='img-fluid' alt='' src={cdnURL + '/Images/director_sign1.png'} />
+                                {/* <img className='img-fluid' alt='' src={cdnURL + '/Images/director_sign1.png'} /> */}
+                                <span className='fw-bold fs-5'>Prakash Ch. Pandey</span>
                                 <div className='d-flex align-items-center flex-column w-100'>
                                     <span className='sign-under'>B.Tech (NIT Allahabad)</span>
                                     <span className='sign-under'>B.Ed, CTET I & II</span>

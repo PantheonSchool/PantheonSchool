@@ -18,7 +18,7 @@ const ChairmanMessage = () => {
         <div className='director chairman text-light text-justify'>
             <div className='d-flex'>
                 <div className='logo d-none d-md-block col-3'>
-                    <img className='img-fluid' alt='' src={cdnURL + '/Images/director_1.jpg'} />
+                    <img className='img-fluid' alt='' src={cdnURL + '/Images/director2.jpg'} />
                 </div>
                 <div className='content px-4' style={{ paddingTop: navHeight }}>
                     <div className='col-lg-11'>
@@ -35,7 +35,13 @@ const ChairmanMessage = () => {
                             The final stage of our development is almost complete and we have kept the highest standards in mind while developing the infrastructure for our students. Our endeavour is to create a world class institution that will be a centre of excellence in all respects.<br/>
                             Our children, whose individuality is nurtured by the child-centric curriculum, are our true ambassadors wherever they go. They are global in their outlook and yet are rooted in their heritage. Sensitive towards the environment as well as to each other, they hold integrity in the highest regard.<br/>
                             Your role as parents is critical as they grow into responsible individuals with a mind of their own. The three-way-handshake between the school, the parent, and the child is a cornerstone of our ethos at school.</p>
-
+                            <p className='text-end'>
+                                <span className='fw-bold fs-5'>Yatendra Suyal</span>
+                                <br/>
+                                Chairman,
+                                <br/>
+                                The Pantheon School.
+                            </p>
                         {/* <div className='row '>
                             <div className='col-7 col-md-8 col-lg-9' />
                             <div className='col d-flex align-items-center sign flex-column pe-0'>
