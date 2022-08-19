@@ -75,7 +75,7 @@ label:focus,
   background-color: rgba(255, 203, 5, 0.6) !important;
 }
 
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 
@@ -358,11 +358,18 @@ code {
   }
 }
 
-.modal-header{
+.modal-header {
   border-bottom: 0 !important;
   padding: 0.8rem 1rem !important;
 }
 
-.cursor-pointer{
+.cursor-pointer {
   cursor: pointer;
+}
+
+td,
+tr,
+th {
+  border: 0.1px solid #000 !important;
+
 }

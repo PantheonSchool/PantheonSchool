@@ -18,6 +18,7 @@ const About = lazy(() => import('./components/About/About'))
 const DirectorMessage = lazy(() => import('./components/About/DirectorMessage'))
 const ChairmanMessage = lazy(() => import('./components/About/ChairmanMessage'))
 const PrincipalMessage = lazy(() => import('./components/About/PrincipalMessage'))
+const BookList = lazy(() => import('./components/BookList/BookList'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -42,6 +43,7 @@ const App = () => {
               <Route path='/director-message' element={<DirectorMessage />} />
               <Route path='/chairman-message' element={<ChairmanMessage />} />
               <Route path='/principal-message' element={<PrincipalMessage />} />
+              <Route path='/book-list' element={<BookList />} />
 
               <Route element={<PrivateRoute />}>
                 <Route path='/admin/register' element={<Register />} />

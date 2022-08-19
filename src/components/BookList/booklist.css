@@ -1,0 +1,29 @@
+.__booklist_container {
+    background-color: var(--pantheon-mustard-v2);
+    box-shadow: 0 0 0 100vmax var(--overview-bg-color);
+    clip-path: inset(0 -100vmax);
+}
+
+.__toggle_booklist {
+    display: flex;
+    justify-content: center;
+}
+
+.__toggle_booklist .__toggle_btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--pantheon-blue);
+}
+
+.__toggle_booklist .__toggle_btn:hover {
+    background-color: var(--pantheon-blue);
+}
+
+
+.__booklist_container table {
+    vertical-align: middle;
+    border-collapse: collapse;
+}
+
+.__booklist_container table thead {
+    background-color: var(--overview-bg-color);
+}

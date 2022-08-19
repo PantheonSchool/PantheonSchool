@@ -67,7 +67,7 @@ const Navbar = () => {
         }
     })
 
-    return (<><NavbarContainer ref={navbar} variant='dark' className='p-0 text-white sticky-top col-12' expand="lg">
+    return (<><NavbarContainer ref={navbar} variant='dark' className='p-0 text-white sticky-top col-12 main_nav' expand="lg">
         <NavMobile show={show} handleClose={handleClose} user={user} />
         <Container className='p-0 mw-100 border-bottom'>
             <Link to='/' className="d-flex d-lg-none font-arvo flex-row align-items-center justify-content-center ps-2 py-2">

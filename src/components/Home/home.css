@@ -311,6 +311,7 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
     display: -webkit-box;
+    min-height: 9rem;
 }
 
 .__prev_cover,
