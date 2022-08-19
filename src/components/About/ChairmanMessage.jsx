@@ -18,7 +18,7 @@ const ChairmanMessage = () => {
         <div className='director chairman text-light text-justify'>
             <div className='d-flex'>
                 <div className='logo d-none d-md-block col-3'>
-                    <img className='img-fluid' alt='' src={cdnURL + '/Images/director.jpg'} />
+                    <img className='img-fluid' alt='' src={cdnURL + '/Images/director_1.jpg'} />
                 </div>
                 <div className='content px-4' style={{ paddingTop: navHeight }}>
                     <div className='col-lg-11'>
