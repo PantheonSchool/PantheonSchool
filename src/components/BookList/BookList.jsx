@@ -76,9 +76,38 @@ const BookList = () => {
                             })}
                         </tbody>
                     </Table>}
+
+                    {book && <Table bordered className="border-dark text-center">
+                        <thead className="text-light">
+                            <tr>
+                                <th colSpan={2}>Note Book List Class {bookClass}</th>
+                                <th>Qty</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-light">
+                            {book.notebookList.map((det, idx) => <tr key={det.name + idx}>
+                                <td>{idx + 1}</td>
+                                <td>{det.name}</td>
+                                <td>{det.qty}</td>
+                            </tr>)}
+                        </tbody>
+                    </Table>}
+                    {book && <Table bordered className="border-dark text-center">
+                        <thead className="text-light">
+                            <tr>
+                                <th colSpan={2}>Stationary for Class {bookClass}</th>
+                            </tr>
+                        </thead>
+                        <tbody className="bg-light">
+                            {book.stationary.map((det, idx) => <tr key={det + idx}>
+                                <td>{idx + 1}</td>
+                                <td>{det}</td>
+                            </tr>)}
+                        </tbody>
+                    </Table>}
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 

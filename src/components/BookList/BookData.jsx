@@ -58,6 +58,35 @@ const BookData = {
                     publication: 'Unique'
                 }]
             }
+        ],
+        notebookList: [
+            {
+                name: 'Hindi 5 Lines',
+                qty: 2
+            },
+            {
+                name: 'English 4 Lines',
+                qty: 2
+            },
+            {
+                name: 'Maths Square Blocks',
+                qty: 2
+            },
+            {
+                name: 'Three in one',
+                qty: 1
+            },
+            {
+                name: 'Unruled Notebook (both side plain)',
+                qty: 1
+            },
+            {
+                name: 'Drawing Copy',
+                qty: 1
+            }
+        ],
+        stationary: [
+            'Crayons', 'Pencil', 'Erasor and Sharpener', 'Cover and Name Slips'
         ]
     }
 }
