@@ -28,7 +28,7 @@ const ChairmanMessage = () => {
                                 <span>the chairman</span>
                             </h1>
                             <div className='director_img text-center p-2 pe-0'>
-                                {/* <img src={cdnURL + '/Images/director_photo.jpg'} className='img-fluid rounded-3' /> */}
+                                <img src={cdnURL + '/Images/chairman.jpeg'} className='img-fluid rounded-3' />
                             </div>
                         </div>
                         <p>We opened our doors to our students in April 2019 and over the past three years have established a reputation as an institution of innovation and quality.<br/>
