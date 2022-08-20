@@ -1,10 +1,14 @@
 .__sideNav_container {
-    position: relative;
+    position: absolute;
     background-color: var(--pantheon-mustard);
     width: 100%;
     line-height: 1.618;
     font-size: 1rem;
     letter-spacing: 0.1rem;
+    /* bottom: -50%; */
+    top: 90%;
+    right: 0;
+    z-index: 1;
 }
 
 .__sideNav_container .title {
@@ -69,9 +73,25 @@
     color: #000 !important;
 }
 
+
+
+@media (min-width:576px) {
+    .__sideNav_container {
+        width: 40%;
+        clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 50% 100%, 0% calc(100% - 40px));
+    }
+
+    .p-pt-10{
+        padding-top: 10rem;
+    }
+
+    .p-pt-5{
+        padding-top: 5rem;
+    }
+}
+
 @media (min-width:768px) {
     .__sideNav_container {
         width: 30%;
-        clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 40px), 50% 100%, 0% calc(100% - 40px));
     }
 }

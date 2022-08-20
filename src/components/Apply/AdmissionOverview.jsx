@@ -62,6 +62,12 @@ const AdmissionOverview = () => {
                 <div className="row">
                     <div className="col mb-4">
                         <h1 className="text-uppercase text-mustard letter-spacing-1"><span className='display-3' style={{ fontWeight: '900' }}>Admission</span><br /><span className="display-4">Overview</span></h1>
+                    </div>
+                    <div className="col-md-5 col-lg-4">
+                    </div>
+                </div>
+                <div className="row p-pt-5">
+                    <div className="col mb-4">
                         <p className="mb-0 fw-bold admission-procedure">ADMISSION PROCEDURE</p>
                         <p className="fw-light small admission-procedure-para">At The Pantheon School we aim to make our admission process as simple as possible to ensure that all prospective parents enjoy a stress free application experience.</p>
                     </div>
@@ -69,7 +75,7 @@ const AdmissionOverview = () => {
                         <StepBox data={FirstStepData} index={1} />
                     </div>
                 </div>
-                <div className="second-step row mt-5 mt-md-4 align-items-lg-end">
+                <div className="second-step row mt-5 align-items-lg-end">
                     {StepData && StepData.reverse().map((step, index) => <div key={step.title + index} className="d-none d-lg-block col-md-6 col-lg-4 mb-5"><StepBox data={step} index={StepData.length - index + 1} /></div>)}
                     {StepData && StepData.map((step, index) => <div key={step.description + index} className="d-lg-none col-md-6 col-lg-4 mb-5"><StepBox data={step} index={index + 2} /></div>)}
                 </div>

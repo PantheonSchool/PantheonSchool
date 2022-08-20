@@ -20,6 +20,7 @@ const DirectorMessage = lazy(() => import('./components/About/DirectorMessage'))
 const ChairmanMessage = lazy(() => import('./components/About/ChairmanMessage'))
 const PrincipalMessage = lazy(() => import('./components/About/PrincipalMessage'))
 const BookList = lazy(() => import('./components/BookList/BookList'))
+const ContactUs = lazy(() => import('./components/ContactUs'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -33,7 +34,7 @@ const App = () => {
     <>
       <Suspense fallback={<></>}><Navbar /></Suspense>
       <div style={{ minHeight: '50vh' }} className='mb-1'>
-        <Suspense fallback={<ClipLoad/>} >
+        <Suspense fallback={<ClipLoad />} >
           <Routes>
             <Route>
               <Route path='/' element={<Home />} />
@@ -61,6 +62,7 @@ const App = () => {
               <Route element={<PublicRoute restricted={false} />}>
                 <Route path='/visit' element={<Visit />} />
                 <Route path='/news' element={<News />} />
+                <Route path='contact-us' element={<ContactUs />} />
               </Route>
 
               <Route path='*' element={<Page404 />} />

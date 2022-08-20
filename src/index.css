@@ -323,11 +323,13 @@ code {
   width: 400px
 } */
 
+
+
 @media (min-width: 960px) {
 
   .cover-mod.pantheon-cover {
     height: 59.6vh;
-    background-size: 100% 59.6vh !important;
+    background-size: auto 59.6vh !important;
   }
 
   .cover-mod.pantheon-cover::before {
@@ -358,6 +360,13 @@ code {
   }
 }
 
+@media (min-width:1400px) {
+  .cover-mod.pantheon-cover {
+    height: 59.6vh;
+    background-size: 100% 59.6vh !important;
+  }
+}
+
 .modal-header {
   border-bottom: 0 !important;
   padding: 0.8rem 1rem !important;
@@ -376,10 +385,10 @@ th {
 
 @keyframes skeleton-loading {
   0% {
-      background-color: hsl(200, 20%, 70%);
+    background-color: hsl(200, 20%, 70%);
   }
 
   100% {
-      background-color: hsl(200, 20%, 95%);
+    background-color: hsl(200, 20%, 95%);
   }
 }

@@ -2,7 +2,7 @@ import { HashLoader,ClipLoader } from "react-spinners"
 
 
 const override = {
-    minHeight: '50vh'
+    minHeight: '100vh'
 }
 
 export const HashLoad = () => {
