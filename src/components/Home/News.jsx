@@ -23,8 +23,14 @@ const News = () => {
         </div>
       </div>
       <div className="posts d-flex my-1 p-3 flex-row justify-content-md-between overflow-auto overflow_hide">
+        {!newsData.length && <>
+          <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
+          <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
+          <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
+          <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
+        </>}
         {newsData && newsData.map((post, index) => (
-          <Link to='/news'  key={post.title + index}>
+          <Link to='/news' key={post.title + index}>
             <NewsComp homepage='homepage' boxSize='p-2' post={post} />
           </Link>
         ))}

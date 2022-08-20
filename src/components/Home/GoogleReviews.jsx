@@ -5,7 +5,7 @@ import ApiCall from '../../utils/ApiCall'
 
 const GoogleReviews = () => {
 
-    const ReviewCard = ({ review }) => {
+    const ReviewCard = ({ review, }) => {
         const { author_name, profile_photo_url, rating, text, relative_time_description } = review
 
         const ratingStars = () => {
@@ -26,6 +26,32 @@ const GoogleReviews = () => {
                     </div><br />
                     <p className='text-start review'>{text}</p>
                     <p className='small text-muted'><FcGoogle className='fs-5' />&emsp;{relative_time_description}</p>
+                </div>
+            </div>
+        )
+    }
+
+    const SkeletonReviewCard = () => {
+        const ratingStars = () => {
+            let stars = [];
+            for (let i = 0; i < 5; i++) {
+                stars.push(<AiFillStar className='fs-4 stars' />);
+            }
+            return stars;
+        }
+        return (
+            <div className="col-11 col-sm-6 col-md-4 col-lg-3 p-2 skeleton">
+                <div className="border shadow-sm p-3 text-center h-100">
+                    <div className='user_img mx-auto' />
+                    <p className="fw-bold username"></p>
+                    <div className='d-flex justify-content-center'>
+                        {ratingStars()}
+                    </div><br />
+                    <p className='text-start review'></p>
+                    <p className='text-start review'></p>
+                    <p className='text-start review'></p>
+                    <p className='text-start review'></p>
+                    <p className='time_ago'></p>
                 </div>
             </div>
         )
@@ -52,6 +78,12 @@ const GoogleReviews = () => {
             <h1 className="text-center display-4 fw-bold letter-spacing-1">OUR REVIEWS</h1>
             <div className="d-flex overflow-auto scrollbar-v1">
                 {reviewData && reviewData.map((review, index) => <ReviewCard review={review} key={review.username + index} />)}
+                {!reviewData.length && <>
+                    <SkeletonReviewCard />
+                    <SkeletonReviewCard />
+                    <SkeletonReviewCard />
+                    <SkeletonReviewCard />
+                </>}
             </div>
         </div>
     )

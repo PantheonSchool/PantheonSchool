@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react"
 import { Route, Routes } from "react-router-dom"
 import Footer from "./components/Footer/Footer"
 import { ToastContainer } from "react-toastify"
+import { ClipLoad } from "./components/Fallback"
 
 const Navbar = lazy(() => import('./components/Navbar/Navbar'))
 const Home = lazy(() => import('./components/Home/Home'))
@@ -30,9 +31,9 @@ const AdminInquire = lazy(() => import('./components/Admin/Inquire'))
 const App = () => {
   return (
     <>
-      <Suspense fallback={<>Loading...</>}><Navbar /></Suspense>
+      <Suspense fallback={<></>}><Navbar /></Suspense>
       <div style={{ minHeight: '50vh' }} className='mb-1'>
-        <Suspense fallback={<>Loading ...</>} >
+        <Suspense fallback={<ClipLoad/>} >
           <Routes>
             <Route>
               <Route path='/' element={<Home />} />

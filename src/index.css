@@ -373,3 +373,13 @@ th {
   border: 0.1px solid #000 !important;
 
 }
+
+@keyframes skeleton-loading {
+  0% {
+      background-color: hsl(200, 20%, 70%);
+  }
+
+  100% {
+      background-color: hsl(200, 20%, 95%);
+  }
+}
