@@ -28,7 +28,7 @@ const PrincipalMessage = () => {
                                 <span>message</span>
                             </h1>
                             <div className='director_img text-center p-2 pe-0'>
-                                <img src={cdnURL + '/Images/principal_photo1.jpg'} className='img-fluid rounded-3' />
+                                <img src={cdnURL + '/Images/principal_photo2.jpg'} className='img-fluid rounded-3' />
                             </div>
                         </div>
                         <p>
