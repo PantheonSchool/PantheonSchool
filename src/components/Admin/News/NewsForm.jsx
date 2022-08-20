@@ -6,6 +6,7 @@ import { toast } from 'react-toastify'
 const NewsForm = ({ getNewsData }) => {
 
     const [isImp, setImp] = useState(false)
+    const [imgURL, setimgURL] = useState('')
 
     const SubmitNews = async e => {
         e.preventDefault();
@@ -26,11 +27,12 @@ const NewsForm = ({ getNewsData }) => {
 
     return (
         <div className="p-2 shadow border">
-        <h3 className="my-0 text-center text-pantheon-blue fw-bold">ADD NEWS</h3>
+            <h3 className="my-0 text-center text-pantheon-blue fw-bold">ADD NEWS</h3>
+            <img alt='' src={imgURL} className='img-fluid'/>
             <Form onSubmit={(e) => SubmitNews(e)}>
                 <Form.Group className='py-1'>
                     <Form.Floating>
-                        <Form.Control type='text' name='imgURL' />
+                        <Form.Control onChange={e => setimgURL(e.target.value)} type='text' name='imgURL' />
                         <label>Photo Link</label>
                     </Form.Floating>
                 </Form.Group>
@@ -42,7 +44,7 @@ const NewsForm = ({ getNewsData }) => {
                 </Form.Group>
                 <Form.Group className='py-1'>
                     <Form.Floating>
-                        <textarea className="form-control" rows={3} name='body'/>
+                        <textarea className="form-control" rows={3} name='body' />
                         <label>Body</label>
                     </Form.Floating>
                 </Form.Group>

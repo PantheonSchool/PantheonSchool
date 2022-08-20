@@ -54,6 +54,7 @@ const NewsCard = ({ news, getNewsData }) => {
                 <button className='btn' onClick={() => setEdit(!edit)}><AiFillEdit /></button>
                 <button className='btn' onClick={deleteNews}><AiFillDelete /></button>
             </div>
+            <img alt='' src={news.imgURL} className='img-fluid' />
             <Form onSubmit={(e) => UpdateNews(e)}>
                 <Form.Group className='py-1'>
                     <Form.Floating>
