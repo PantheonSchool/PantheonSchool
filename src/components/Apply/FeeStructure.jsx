@@ -3,7 +3,7 @@ import AdmissionContainer from './AdmissionContainer'
 
 const FeeStructure = () => {
     return (<>
-        <AdmissionContainer>
+        <AdmissionContainer path={['admission','fee structure']}>
             <div className="fee-container text-light mt-1">
                 <div className='py-3'>
                     <div className='container'>

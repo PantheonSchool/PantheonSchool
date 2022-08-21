@@ -8,7 +8,7 @@ import './apply.css'
 const Apply = () => {
     return (
         <>
-            <AdmissionContainer path={['Overview','Admission Information']}>
+            <AdmissionContainer path={['admission','Admission Information']}>
                 <div className='container'>
                     <AdmissionOverview />
                 </div>

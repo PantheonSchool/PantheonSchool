@@ -61,7 +61,7 @@ const AdmissionOverview = () => {
             <div>
                 <div className="row">
                     <div className="col mb-4">
-                        <h1 className="text-uppercase text-mustard letter-spacing-1"><span className='display-3' style={{ fontWeight: '900' }}>Admission</span><br /><span className="display-4">Overview</span></h1>
+                        <h1 className="text-uppercase text-mustard letter-spacing-1 mt-3"><span className='display-3' style={{ fontWeight: '900' }}>Admission</span><br /><span className="display-4">Overview</span></h1>
                     </div>
                     <div className="col-md-5 col-lg-4">
                     </div>

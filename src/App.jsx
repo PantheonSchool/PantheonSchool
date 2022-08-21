@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom"
 import Footer from "./components/Footer/Footer"
 import { ToastContainer } from "react-toastify"
 import { ClipLoad } from "./components/Fallback"
-import { Navigate } from "react-router-dom"
 
 const Navbar = lazy(() => import('./components/Navbar/Navbar'))
 const Home = lazy(() => import('./components/Home/Home'))
@@ -41,7 +40,6 @@ const App = () => {
               <Route path='/' element={<Home />} />
               <Route path="/inquire" element={<Inquire />} />
               <Route path='/apply' element={<Apply />} />
-              <Route path='/admission-information' element={<Navigate to='/apply'/>} />
               <Route path='/fee-structure' element={<FeeStructure />} />
               <Route path='/pantheon-at-a-glance' element={<About />} />
               <Route path='/director-message' element={<DirectorMessage />} />
