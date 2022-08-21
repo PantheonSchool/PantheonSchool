@@ -3,7 +3,7 @@ import './apply.css'
 import navList from '../Navbar/navList'
 import { useState, useEffect } from 'react'
 
-const AdmissionContainer = ({ children }) => {
+const AdmissionContainer = ({ children, path }) => {
     const [navData, setNavData] = useState()
 
     useEffect(() => {
@@ -12,7 +12,7 @@ const AdmissionContainer = ({ children }) => {
     }, [])
     return (
         <>
-            <Cover classN='apply-cover' backgroundImg='/Images/applyCoverImg7.jpg' navData={navData} />
+            <Cover classN='apply-cover' backgroundImg='/Images/applyCoverImg7.jpg' navData={navData} path={path}/>
             {children}
         </>
     )

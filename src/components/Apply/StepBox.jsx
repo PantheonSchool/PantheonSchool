@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 const StepBox = ({ data, index }) => {
     const { title, description, Icon, additionalData } = data
     return (
