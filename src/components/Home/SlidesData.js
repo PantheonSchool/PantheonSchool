@@ -1,6 +1,6 @@
-import pic1 from "../Images/slides-pics/pic1.jpg";
-import pic2 from "../Images/slides-pics/pic2.jpg";
-import pic3 from "../Images/slides-pics/dsc03474.jpg";
+// import pic1 from "../Images/slides-pics/pic1.jpg";
+// import pic2 from "../Images/slides-pics/pic2.jpg";
+// import pic3 from "../Images/slides-pics/dsc03474.jpg";
 
 import { cdnURL } from '../../utils/constants'
 

@@ -16,7 +16,7 @@ export const HashLoad = () => {
 export const ClipLoad = () => {
     return <>
         <div className="d-flex align-items-center justify-content-center" style={override}>
-            <ClipLoader loading={true} color='#84101b' size={35} />
+            <ClipLoader loading={true} color='#84101b' size={70} />
         </div>
     </>
 }
