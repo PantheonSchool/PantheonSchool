@@ -38,3 +38,13 @@
 .__booklist_container table thead {
     background-color: var(--overview-bg-color);
 }
+
+.__booklist_container .scrollbar-v1{
+    margin-top: 1rem;
+}
+
+@media (min-width:576px){
+    .__booklist_container .scrollbar-v1{
+        margin-top: 10rem;
+    }
+}

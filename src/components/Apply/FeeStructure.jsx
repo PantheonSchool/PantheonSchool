@@ -7,7 +7,7 @@ const FeeStructure = () => {
             <div className="fee-container text-light mt-1">
                 <div className='py-3'>
                     <div className='container'>
-                        <h1 className='text-uppercase letter-spacing-1'><span className='display-2 fw-bold'>Fee</span><br /><span className='display-3'>Structure</span></h1>
+                        <h1 className='text-uppercase letter-spacing-1 mt-5 mt-md-0'><span className='display-2 fw-bold'>Fee</span><br /><span className='display-3'>Structure</span></h1>
                         <div className='overflow-auto scrollbar-v1 mb-5 p-pt-10'>
                             <Table bordered className='text-center border-dark '>
                                 <thead className='text-light'>

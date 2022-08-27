@@ -1,0 +1,24 @@
+.__curriculum{
+    background-color: var(--pantheon-blue);
+    box-shadow: 0 0 0 100vmax var(--pantheon-blue);
+    clip-path: inset(0 -100vmax);
+    min-height: 100vh;
+}
+
+.__curriculum::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/Pantheon_Prospectus-12.png');
+    background-position: 100% center;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.__curriculum .__curriculum-content{
+    z-index: 0;
+}
