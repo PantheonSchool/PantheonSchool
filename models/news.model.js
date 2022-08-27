@@ -8,6 +8,4 @@ const newsSchema = new mongoose.Schema({
   important: { type: Boolean },
 });
 
-const News = mongoose.model("News", newsSchema);
-
-module.exports = News;
+module.exports = mongoose.model("News", newsSchema);
