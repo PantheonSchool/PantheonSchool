@@ -68,13 +68,6 @@ router.post("/", auth, upload.single("profileImage"), async (req, res) => {
       let facultyData = new Faculty(req.body);
       await facultyData.save();
     }
-    await Faculty.create({
-      sno: req.body.sno,
-      profileImage: req.file.buffer,
-      name: req.body.name,
-      role: req.body.role,
-      qualif: req.body.qualif,
-    });
     res.status(201).send({ status: true })
   } catch (err) {
     console.log(err);
