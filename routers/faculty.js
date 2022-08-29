@@ -35,7 +35,7 @@ router.get("/", async (req, res) => {
 });
 
 router.get(
-  ":id/profilePicture",
+  "/:id/profilePicture",
   async (req, res) => {
     try {
       const faculty = await Faculty.findById(req.params.id);
