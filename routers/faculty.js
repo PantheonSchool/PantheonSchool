@@ -34,8 +34,30 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get(
+  "/:id/profilePicture",
+  async (req, res) => {
+    try {
+      const faculty = await Faculty.findById(req.params.id);
+      if (!faculty | !faculty.profileImage) {
+        throw new Error("image not found");
+      }
+
+      res.set("Content-Type", "image/jpeg");
+      res.status(200).send(faculty.profileImage);
+    } catch (err) {
+      console.log(err);
+      res.status(500).send("Not Found");
+    }
+  },
+  (error, req, res, next) => {
+    res.status(404).send({ error: error.message });
+  }
+);
+
 router.post("/", auth, upload.single("profileImage"), async (req, res) => {
   try {
+<<<<<<< HEAD
     if (req.body.profileImage) {
       await Faculty.create({
         sno: req.body.sno,
@@ -47,6 +69,15 @@ router.post("/", auth, upload.single("profileImage"), async (req, res) => {
       let facultyData = new Faculty(req.body);
       await facultyData.save();
     }
+=======
+    await Faculty.create({
+      sno: req.body.sno,
+      profileImage: req.file.buffer,
+      name: req.body.name,
+      role: req.body.role,
+      qualif: req.body.qualif,
+    });
+>>>>>>> 8c400df0f93842f51d07028036d178b723c99502
     res.status(201).send({ status: true })
   } catch (err) {
     console.log(err);

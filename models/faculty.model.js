@@ -6,6 +6,7 @@ const facultySchema = new mongoose.Schema(
     profileImage: { type: Buffer },
     name: { type: String, required: true, trim: true },
     role: { type: String, trim: true },
+    qualif: { type: String, trim: true },
   }
 );
 
