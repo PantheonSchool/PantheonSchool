@@ -4,6 +4,7 @@ import { AiFillEdit, AiFillDelete } from 'react-icons/ai'
 import { serverURL } from '../../../utils/constants'
 import { toast } from 'react-toastify'
 import { Form } from 'react-bootstrap'
+import ApiCallV2 from '../../../utils/APICallv2'
 
 const FacultyCard = ({ faculty, getFacultyData }) => {
 
@@ -33,7 +34,7 @@ const FacultyCard = ({ faculty, getFacultyData }) => {
         const fd = new FormData(e.target);
         try {
             toast.warn(`Updating ${faculty.name} data...`)
-            const data = await ApiCall(`/api/faculty/${faculty._id}`, 'PATCH');
+            const data = await ApiCallV2(`/api/faculty/${faculty._id}`, 'PATCH');
             toast.dismiss();
             if (data.status) {
                 getFacultyData()
