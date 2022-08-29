@@ -1,0 +1,15 @@
+.faculty_skeleton .__skeleton-txt{
+    width: 95%;
+    height: 0.7rem;
+    animation: skeleton-loading 1s linear infinite alternate;
+    margin-bottom: 0.25rem;
+}
+
+.faculty_skeleton .__skeleton-txt:nth-child(2){
+    width: 50%;
+    height: 0.6rem;
+}
+
+.faculty_skeleton .__skeleton-txt:nth-child(3){
+    margin-top: 1rem;
+}
