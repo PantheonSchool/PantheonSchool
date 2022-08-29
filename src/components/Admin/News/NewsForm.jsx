@@ -28,7 +28,9 @@ const NewsForm = ({ getNewsData }) => {
     return (
         <div className="p-2 shadow border">
             <h3 className="my-0 text-center text-pantheon-blue fw-bold">ADD NEWS</h3>
-            <img alt='' src={imgURL} className='img-fluid'/>
+            <div className="text-center my-1">
+                <img alt='' src={imgURL} className='img-fluid' />
+            </div>
             <Form onSubmit={(e) => SubmitNews(e)}>
                 <Form.Group className='py-1'>
                     <Form.Floating>

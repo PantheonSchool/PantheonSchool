@@ -1,0 +1,5 @@
+@media (min-width:768px){
+    .__news-cards .__card:nth-child(even){
+          padding-right: 0;  
+    }
+}

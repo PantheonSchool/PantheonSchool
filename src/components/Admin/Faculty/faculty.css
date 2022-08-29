@@ -1,0 +1,5 @@
+@media (min-width:768px){
+    .__faculty-cards .__card:nth-child(even){
+          padding-right: 0;  
+    }
+}

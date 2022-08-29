@@ -30,6 +30,7 @@ const PublicRoute = lazy(() => import('./components/PublicRoute'))
 const Admin = lazy(() => import('./components/Admin/Admin'))
 const AdminNews = lazy(() => import('./components/Admin/News/News'))
 const AdminInquire = lazy(() => import('./components/Admin/Inquire'))
+const FacultyAdmin = lazy(() => import('./components/Admin/Faculty/Faculty'))
 
 const App = () => {
   return (
@@ -54,6 +55,7 @@ const App = () => {
                 <Route path='/admin/register' element={<Register />} />
                 <Route path='/admin/news' element={<AdminNews />} />
                 <Route path='/admin/inquire' element={<AdminInquire />} />
+                <Route path='/admin/faculty' element={<FacultyAdmin />} />
                 <Route path='/logout' element={<Logout />} />
                 <Route path='/admin' element={<Admin />} />
               </Route>

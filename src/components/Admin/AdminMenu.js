@@ -1,4 +1,5 @@
 import { FaUserEdit, FaInbox } from "react-icons/fa"
+import { BsPeopleFill } from 'react-icons/bs'
 
 const AdminMenu = [
     {
@@ -18,6 +19,12 @@ const AdminMenu = [
         link: '/admin/inquire',
         Icon: FaInbox,
         color: 'secondary'
+    },
+    {
+        title: 'Faculty Section',
+        link: '/admin/faculty',
+        Icon: BsPeopleFill,
+        color: 'pantheon-blue'
     }
 ]
 
