@@ -39,7 +39,7 @@ router.get(
   async (req, res) => {
     try {
       const faculty = await Faculty.findById(req.params.id);
-      if (!faculty || !faculty.profileImage) {
+      if (!faculty | !faculty.profileImage) {
         throw new Error("image not found");
       }
 
