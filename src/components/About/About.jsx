@@ -1,10 +1,10 @@
 import PantheonInfo from './PantheonInfo'
-import Mission from './Mission'
-import Vision from './Vision'
-import Approach from './Approach'
+// import Mission from './Mission'
+// import Vision from './Vision'
+// import Approach from './Approach'
 import { useSearchParams } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
-import Cover from '../Cover'
+// import Cover from '../Cover'
 
 import { useContext } from 'react'
 import { AuthContext } from '../../utils/ContextAPI/AuthContext'
@@ -51,9 +51,9 @@ const About = () => {
             <div className='container'>
                 <PantheonInfo AboutRef={AboutRef} navHeight={navHeight}/>
             </div>
-            <Vision VisionRef={VisionRef} navHeight={navHeight}/>
+            {/* <Vision VisionRef={VisionRef} navHeight={navHeight}/>
             <Mission MissionRef={MissionRef} navHeight={navHeight}/>
-            <Approach ApproachRef={ApproachRef} navHeight={navHeight}/>
+            <Approach ApproachRef={ApproachRef} navHeight={navHeight}/> */}
         </div>
     )
 }

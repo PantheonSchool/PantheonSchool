@@ -1,26 +1,25 @@
 import { Form } from "react-bootstrap"
 import { toast } from 'react-toastify'
 import { useRef } from "react"
-import { serverURL } from "../../../utils/constants"
+// import { serverURL } from "../../../utils/constants"
 import ApiCallV2 from "../../../utils/APICallv2"
 
 const FacultyForm = ({ getFacultyData }) => {
 
     const facultyImgRef = useRef()
+    const profileImg = useRef()
 
     const AddFaculty = async (e) => {
         e.preventDefault();
         const fd = new FormData(e.target);
         toast.info('Processing...')
+
+        if (profileImg.current && profileImg.current.files.length === 0) {
+            console.log('hello')
+            fd.delete('profileImage');
+            fd.append('profileImage', '')
+        }
         const data = await ApiCallV2('/api/faculty', 'POST', fd);
-        // const response = await fetch(serverURL + '/api/faculty', {
-        //     method: 'POST',
-        //     headers: {
-        //         'x-access-token': localStorage.pantheon_token
-        //     },
-        //     body: fd
-        // });
-        // const data = await response.json()
         toast.dismiss();
         if (data.status) {
             toast.success('Faculty Added Successfully')
@@ -54,7 +53,7 @@ const FacultyForm = ({ getFacultyData }) => {
             <Form onSubmit={e => AddFaculty(e)}>
                 <Form.Group className='py-1'>
                     <label>Profile Image</label>
-                    <Form.Control onChange={e => previewImg(e.target)} type='file' accept=".jpeg" name='profileImage' />
+                    <Form.Control ref={profileImg} onChange={e => previewImg(e.target)} type='file' accept=".jpeg,.jpg" name='profileImage' />
                 </Form.Group>
                 <Form.Group className='py-1'>
                     <Form.Floating>

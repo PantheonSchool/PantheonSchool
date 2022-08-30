@@ -1,3 +1,6 @@
+import './about.css'
+import CoverContainer from '../CoverContainer'
+
 const Approach = ({ ApproachRef, navHeight }) => {
     return (
         <div className="px-lg-5 pb-lg-5 approach row" ref={ApproachRef} style={{ paddingTop: navHeight }}>

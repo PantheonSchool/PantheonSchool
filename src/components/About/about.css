@@ -13,6 +13,9 @@
     background-color: var(--pantheon-mustard-v2);
     box-shadow: 0 0 0 100vmax var(--pantheon-mustard-v2);
     clip-path: inset(0 -100vmax);
+    padding-top: 5rem;
+    position: relative;
+    min-height: 135vh;
 }
 
 .pantheon-at-a-glance-container .mission .mission_icon {
@@ -29,9 +32,9 @@
 }
 
 
-.pantheon-at-a-glance-container .mission .d-flex {
+/* .pantheon-at-a-glance-container .mission .d-flex {
     position: relative;
-}
+} */
 
 .pantheon-at-a-glance-container .vision {
     position: relative;
@@ -43,8 +46,9 @@
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center 100%;
-    min-height: 100vh;
-    z-index: 1;
+    min-height: 113vh;
+    z-index: 0;
+    padding-top: 5rem;
 }
 
 .pantheon-at-a-glance-container .vision .h-100 {
@@ -176,5 +180,11 @@
 @media (max-width:768px) {
     .director .content .sign img {
         width: 150px;
+    }
+}
+
+@media (min-width:576px){
+    .pantheon-at-a-glance-container .vision {
+        padding-top: 0rem;
     }
 }

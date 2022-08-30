@@ -6,23 +6,35 @@ const navList = [
     list: [
       {
         title: "Pantheon at a Glance",
-        link: "/pantheon-at-a-glance"
+        link: "/overview/pantheon-at-a-glance"
+      },
+      {
+        title: "Our Vision",
+        link: "/overview/our-vision"
+      },
+      {
+        title: "Our Mission",
+        link: "/overview/our-mission"
+      },
+      {
+        title: "Our Approach",
+        link: "/overview/our-approach"
       },
       {
         title: "Chairman's Message",
-        link: '/chairman-message'
+        link: '/overview/chairman-message'
       },
       {
         title: "Director's Message",
-        link: '/director-message'
+        link: '/overview/director-message'
       },
       {
         title: "Principal's Message",
-        link: '/principal-message'
+        link: '/overview/principal-message'
       },
       {
         title: "Mandatory Disclosure",
-        link: '/mandatory-disclosure'
+        link: '/overview/mandatory-disclosure'
       },
     ],
   },
@@ -41,12 +53,12 @@ const navList = [
     hasList: true,
     bgColor: "rgba(0,39,76,0.9)",
     list: [
-      { title: "Academic Calendar", link: '/academic-calendar' },
-      { title: "Assesment Schedule", link: '/assesment-schedule' },
-      { title: "Faculty", link: '/faculty' },
-      { title: "Curriculum", link: '/curriculum' },
-      { title: "Syllabus", link: '/syllabus' },
-      { title: "Book List", link: '/book-list' },
+      { title: "Academic Calendar", link: '/academics/academic-calendar' },
+      { title: "Assesment Schedule", link: '/academics/assesment-schedule' },
+      { title: "Faculty", link: '/academics/faculty' },
+      { title: "Curriculum", link: '/academics/curriculum' },
+      { title: "Syllabus", link: '/academics/syllabus' },
+      { title: "Book List", link: '/academics/book-list' },
     ],
   },
   {

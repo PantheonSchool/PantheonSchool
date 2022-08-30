@@ -23,6 +23,9 @@ const BookList = lazy(() => import('./components/Academics/BookList/BookList'))
 const ContactUs = lazy(() => import('./components/ContactUs'))
 const Curriculum = lazy(() => import('./components/Academics/Curriculum/Curriculum'))
 const Faculty = lazy(() => import('./components/Academics/Faculty/Faculty'))
+const Vision = lazy(() => import('./components/About/Vision'));
+const Mission = lazy(() => import('./components/About/Mission'))
+const Approach = lazy(() => import('./components/About/Approach'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -44,20 +47,29 @@ const App = () => {
               <Route path="/inquire" element={<Inquire />} />
               <Route path='/apply' element={<Apply />} />
               <Route path='/fee-structure' element={<FeeStructure />} />
-              <Route path='/pantheon-at-a-glance' element={<About />} />
-              <Route path='/director-message' element={<DirectorMessage />} />
-              <Route path='/chairman-message' element={<ChairmanMessage />} />
-              <Route path='/principal-message' element={<PrincipalMessage />} />
-              <Route path='/book-list' element={<BookList />} />
-              <Route path='/curriculum' element={<Curriculum />} />
-              <Route path='/faculty' element={<Faculty />} />
+              <Route path='overview'>
+                <Route path='pantheon-at-a-glance' element={<About />} />
+                <Route path='our-vision' element={<Vision/>}/>
+                <Route path='our-mission' element={<Mission/>}/>
+                <Route path='our-approach' element={<Approach/>}/>
+                <Route path='director-message' element={<DirectorMessage />} />
+                <Route path='chairman-message' element={<ChairmanMessage />} />
+                <Route path='principal-message' element={<PrincipalMessage />} />
+              </Route>
+              <Route path='/academics'>
+                <Route path='book-list' element={<BookList />} />
+                <Route path='curriculum' element={<Curriculum />} />
+                <Route path='faculty' element={<Faculty />} />
+              </Route>
               <Route element={<PrivateRoute />}>
-                <Route path='/admin/register' element={<Register />} />
-                <Route path='/admin/news' element={<AdminNews />} />
-                <Route path='/admin/inquire' element={<AdminInquire />} />
-                <Route path='/admin/faculty' element={<FacultyAdmin />} />
+                <Route path='/admin'>
+                  <Route path='' element={<Admin />} />
+                  <Route path='register' element={<Register />} />
+                  <Route path='news' element={<AdminNews />} />
+                  <Route path='inquire' element={<AdminInquire />} />
+                  <Route path='faculty' element={<FacultyAdmin />} />
+                </Route>
                 <Route path='/logout' element={<Logout />} />
-                <Route path='/admin' element={<Admin />} />
               </Route>
 
               <Route element={<PublicRoute restricted={true} />}>

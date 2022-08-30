@@ -19,7 +19,7 @@ const ExplorePantheon = () => {
                     <h2 className='fw-bold display-4 my-4'>EXPLORE PANTHEON</h2>
                     <p>The Pantheon School is set up in three acres area amidst the well connected location at the crossing of Kathgodam-Kathgharia Road and Haldwani-Kaladhungi Road near by Haidakhan Mandir Kathgharia Haldwani.</p>
                 </div>
-                <Link to='/pantheon-at-a-glance' className="btn-v3 px-4 py-2 mx-auto">learn more</Link>
+                <Link to='/overview/pantheon-at-a-glance' className="btn-v3 px-4 py-2 mx-auto">learn more</Link>
             </div>
             <div className='explore_portals d-flex my-5 p-3 flex-row justify-content-xl-center overflow-auto overflow_hide'>
                 {portals && portals.map((portal, index) => <PortalComp portal={portal} key={portal.title + index} />)}
