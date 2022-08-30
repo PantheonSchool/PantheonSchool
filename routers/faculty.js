@@ -57,7 +57,8 @@ router.get(
 
 router.post("/", auth, upload.single("profileImage"), async (req, res) => {
   try {
-    if (req.body.profileImage) {
+    console.log(req.body.profileImage);
+    if (!(req.body.profileImage==='')) {
       await Faculty.create({
         sno: req.body.sno,
         profileImage: req.file.buffer,
