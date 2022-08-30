@@ -1,16 +1,28 @@
 import './about.css'
 import CoverContainer from '../CoverContainer'
+import { useEffect, useRef, useContext } from 'react'
+import { AuthContext } from '../../utils/ContextAPI/AuthContext'
 
-const Vision = ({ VisionRef, navHeight }) => {
+const Vision = () => {
+    const VisionRef = useRef();
+
+    const { navHeight } = useContext(AuthContext)
+
+    useEffect(() => {
+        window.scrollTo({
+            top: VisionRef.current.offsetTop,
+            behavior: 'smooth'
+        })
+    }, [])
     return (
-        <CoverContainer path={['overview','our vision']} _title='OVERVIEW'>
+        <CoverContainer path={['overview', 'our vision']} _title='OVERVIEW'>
             <div className='pantheon-at-a-glance-container text-light overflow-hidden'>
-                <div className="px-lg-5 pb-lg-5 vision" ref={VisionRef} style={{ paddingTop: navHeight }}>
+                <div className="px-lg-5 pb-lg-5 vision" ref={VisionRef} style={{ paddingTop: navHeight - 10 }}>
                     <div className="h-100">
                         <div className="row flex-column-reverse flex-md-row pe-md-2 py-md-2 col-12 m-0">
                             <div className="col-md-8 col-lg-5 content p-3">
                                 <p className="fw-bold mb-0 mb-sm-5"></p>
-                                <h1 className="text-mustard display-3 letter-spacing-1 mb-5 mt-2"><span className='fw-bold'>OUR</span> VISION</h1>
+                                <h1 className="text-mustard display-3 letter-spacing-1 mb-5"><span className='fw-bold'>OUR</span> VISION</h1>
                                 <ul >
                                     <li>Foster a culture of high expectations, and strive for excellence.</li>
                                     <li>To put the child at the heart of learning to become a transformational

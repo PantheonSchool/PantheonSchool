@@ -10,7 +10,7 @@ const slides = [
     img: cdnURL + '/Images/slides-pics/pic1.jpg',
     class: "d-flex flex-column flex-md-row-reverse ",
     backgroundColor: "#597E20",
-    learnMoreLink: "/overview/pantheon-at-a-glance?scrollTo=vision",
+    learnMoreLink: "/overview/our-vision",
     slideData: [
       {
         title: "student/teacher ratio",
@@ -31,7 +31,7 @@ const slides = [
     img: cdnURL + '/Images/slides-pics/pic2.jpg',
     class: "d-flex flex-column flex-md-row ",
     backgroundColor: "#5A2049",
-    learnMoreLink: "/overview/pantheon-at-a-glance?scrollTo=mission",
+    learnMoreLink: "/overview/our-mission",
     slideData: [
       {
         title: "max class size",

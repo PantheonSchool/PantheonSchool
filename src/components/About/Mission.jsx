@@ -1,8 +1,18 @@
 import { cdnURL } from "../../utils/constants"
 import './about.css'
 import CoverContainer from '../CoverContainer'
+import { useEffect,useRef } from "react"
 
-const Mission = ({ MissionRef }) => {
+const Mission = () => {
+
+    const MissionRef = useRef();
+
+    useEffect(() => {
+        window.scrollTo({
+            top: MissionRef.current.offsetTop,
+            behavior: 'smooth'
+        })
+    }, [])
     return (
         <CoverContainer path={['overview', 'our mission']} _title='OVERVIEW'>
             <div className='pantheon-at-a-glance-container text-light overflow-hidden'>

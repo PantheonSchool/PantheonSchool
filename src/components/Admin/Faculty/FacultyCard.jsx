@@ -34,7 +34,7 @@ const FacultyCard = ({ faculty, getFacultyData }) => {
         const fd = new FormData(e.target);
         try {
             toast.warn(`Updating ${faculty.name} data...`)
-            const data = await ApiCallV2(`/api/faculty/${faculty._id}`, 'PATCH');
+            const data = await ApiCallV2(`/api/faculty/${faculty._id}`, 'PATCH',fd);
             toast.dismiss();
             if (data.status) {
                 getFacultyData()

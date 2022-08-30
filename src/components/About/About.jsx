@@ -4,8 +4,7 @@ import PantheonInfo from './PantheonInfo'
 // import Approach from './Approach'
 import { useSearchParams } from 'react-router-dom'
 import { useEffect, useRef } from 'react'
-// import Cover from '../Cover'
-
+import CoverContainer from '../CoverContainer'
 import { useContext } from 'react'
 import { AuthContext } from '../../utils/ContextAPI/AuthContext'
 
@@ -46,15 +45,17 @@ const About = () => {
     }, [])
 
     return (
-        <div className='pantheon-at-a-glance-container text-light text-justify overflow-hidden'>
-            {/* <Cover/> */}
-            <div className='container'>
-                <PantheonInfo AboutRef={AboutRef} navHeight={navHeight}/>
-            </div>
-            {/* <Vision VisionRef={VisionRef} navHeight={navHeight}/>
+        <CoverContainer path={['overview', 'pantheon at a glance']} _title='OVERVIEW'>
+            <div className='pantheon-at-a-glance-container text-light text-justify overflow-hidden'>
+                {/* <Cover/> */}
+                <div className='container'>
+                    <PantheonInfo AboutRef={AboutRef} navHeight={navHeight} />
+                </div>
+                {/* <Vision VisionRef={VisionRef} navHeight={navHeight}/>
             <Mission MissionRef={MissionRef} navHeight={navHeight}/>
             <Approach ApproachRef={ApproachRef} navHeight={navHeight}/> */}
-        </div>
+            </div>
+        </CoverContainer>
     )
 }
 
