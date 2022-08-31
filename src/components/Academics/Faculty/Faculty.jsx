@@ -21,12 +21,18 @@ const Faculty = () => {
         <CoverContainer path={['academics', 'faculty']} _title={'ACADEMICS'}>
             <div className='container-fluid pt-5 mt-3'>
                 <h1 className='text-uppercase letter-spacing-1 display-3 fw-bold text-pantheon-blue'>Faculty</h1>
-                {facultyData && facultyData.map((fac, idx) => <FacultyCard faculty={fac} key={fac.name + idx} />)}
+                <div className='row'>
+                    {facultyData && facultyData.map((fac, idx) => <FacultyCard faculty={fac} key={fac.name + idx} idx={idx} />)}
+                </div>
                 {!facultyData && <>
-                    <FacultySkeleton/>
-                    <FacultySkeleton/>
-                    <FacultySkeleton/>
-                    <FacultySkeleton/>
+                    <div className='row px-3'>
+                        <FacultySkeleton />
+                        <div className='col-12' />
+                        <FacultySkeleton />
+                        <FacultySkeleton />
+                        <FacultySkeleton />
+                        <FacultySkeleton />
+                    </div>
                 </>}
             </div>
         </CoverContainer>
