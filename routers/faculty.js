@@ -57,32 +57,53 @@ router.get(
 
 router.post("/", auth, upload.single("profileImage"), async (req, res) => {
   try {
-    console.log(req.body.profileImage);
-    if (!(req.body.profileImage==='')) {
-      await Faculty.create({
-        sno: req.body.sno,
-        profileImage: req.file.buffer,
-        name: req.body.name,
-        role: req.body.role
-      });
+    if (req.file) {
+        let body = req.body;
+
+        let sno = body.sno;
+        let profileImage = req.file.buffer;
+        let name = body.name;
+        let role = body.role;
+
+        let facultyData = new Faculty({ sno, profileImage, name, role });
+        await facultyData.save();
     } else {
       let facultyData = new Faculty(req.body);
       await facultyData.save();
     }
     res.status(201).send({ status: true })
   } catch (err) {
-    console.log(err);
-    res.status(500).send({ status: false, error: err })
+      console.log(err);
+      res.status(500).send({ status: false, error: err })
   }
 });
 
-router.patch("/:id", auth, async (req, res) => {
+router.patch("/:id", auth, upload.single("profileImage"), async (req, res) => {
   try {
-    await Faculty.findByIdAndUpdate(req.params.id, req.body);
-    res.status(201).send({ status: true });
+      let body = req.body;
+
+      let sno = body.sno;
+      let name = body.name;
+      let role = body.role;
+
+      let updates = {
+        sno,
+        name,
+        role,
+      };
+
+      if (req.file) {
+        let profileImage = req.file.buffer
+        updates.profileImage = profileImage;
+      }
+
+      await Faculty.findByIdAndUpdate( req.params.id, { $set: updates }, { new: true } );
+
+      res.status(201).send({ status: true });
+
   } catch (err) {
-    console.log(err);
-    res.status(500).send({ status: false, error: err })
+      console.log(err);
+      res.status(500).send({ status: false, error: err })
   }
 });
 
