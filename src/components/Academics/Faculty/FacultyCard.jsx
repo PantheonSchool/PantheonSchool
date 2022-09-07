@@ -2,11 +2,11 @@ import { serverURL, cdnURL } from "../../../utils/constants"
 
 const FacultyCard = ({ faculty, idx }) => {
     return (<>
-        <div className='col-12 p-3 col-sm-6'>
+        <div className='col-12 p-3 col-sm-6 h-100'>
             <div className="d-flex border rounded-3 shadow">
-                <img className="img-fluid rounded-start my-auto p-0 col h-100" alt='' src={(serverURL + `/api/faculty/${faculty._id}/profilePicture`)} style={{
+                <img className="img-fluid rounded-start my-auto p-0 col" alt='' src={(serverURL + `/api/faculty/${faculty._id}/profilePicture`)} style={{
                     maxWidth: '150px',
-                    maxHeight: '200px',
+                    height: '200px',
                     objectFit: 'cover'
                 }} onError={(e) => {
                     e.target.src = cdnURL + `/Images/avatar-1577909.svg`
