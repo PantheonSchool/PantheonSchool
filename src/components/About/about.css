@@ -2,13 +2,34 @@
     background-color: var(--overview-bg-color);
 } */
 
-
-.pantheon-at-a-glance-container .container .about {
+.__about-container{
     background-color: var(--overview-bg-color);
     box-shadow: 0 0 0 100vmax var(--overview-bg-color);
     clip-path: inset(0 -100vmax);
     padding-bottom: 5rem;
+    min-height: 152vh;
 }
+
+.__about-container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('https://cdn.jsdelivr.net/gh/PantheonSchool/pantheon-assets@latest/Images/about.png');
+    background-repeat: no-repeat;
+    background-size: 25rem;
+    background-position: 100% 100%;
+    right: 0;
+    bottom: 0;
+}
+
+.__pantheon-at-a-glance-content{
+    z-index: 0;
+}
+
+/* .pantheon-at-a-glance-container .container .about {
+    
+} */
 
 .pantheon-at-a-glance-container .mission {
     background-color: var(--pantheon-mustard-v2);
@@ -102,7 +123,12 @@
         width: 250px;
     }
 
-    #_pantheon_at_a_glance_icon img {
+    
+    .__about-container::before{
+        opacity: 0.6;
+    }
+
+    /* #_pantheon_at_a_glance_icon img {
         height: 300px;
         object-fit: contain;
         width: 100%;
@@ -112,22 +138,12 @@
         transform: translate(-50%, -50%);
         z-index: -1;
         opacity: 0.6;
-    }
-
-    .pantheon-at-a-glance-container .content {
-        flex-direction: column;
-        position: relative;
-        z-index: 0;
-    }
+    } */
 
     .pantheon-at-a-glance-container .mission .mission_icon img {
         object-fit: contain;
         z-index: -1;
         opacity: 0.11;
-    }
-
-    .pantheon-at-a-glance-container h1 {
-        text-align: center;
     }
 
     .pantheon-at-a-glance-container .approach::before {
@@ -185,13 +201,23 @@
     }
 }
 
+@media (max-width:576px) {
+    .pantheon-at-a-glance-container h1 {
+        text-align: center;
+    }
+    .pantheon-at-a-glance-container .content {
+        flex-direction: column;
+        position: relative;
+    }
+}
+
 @media (min-width:576px){
     .pantheon-at-a-glance-container .vision {
         padding-top: 0rem;
     }
-    .__pantheon-at-a-glance-content{
+    /* .__pantheon-at-a-glance-content{
         padding-top: 12rem;
-    }
+    } */
     .pantheon-at-a-glance-container .container .about{
         padding-top: 117px !important;
     }

@@ -46,11 +46,13 @@ const About = () => {
 
     return (
         <CoverContainer path={['overview', 'pantheon at a glance']} _title='OVERVIEW'>
-            <div className='pantheon-at-a-glance-container text-light text-justify overflow-hidden'>
-                {/* <Cover/> */}
-                <div className='container'>
-                    <PantheonInfo AboutRef={AboutRef} navHeight={navHeight} />
+            <div className='pantheon-at-a-glance-container text-light text-justify overflow-hidden position-relative'>
+                <div className='__about-container'>
+                    <div className='container'>
+                        <PantheonInfo AboutRef={AboutRef} navHeight={navHeight} />
+                    </div>
                 </div>
+                {/* <Cover/> */}
                 {/* <Vision VisionRef={VisionRef} navHeight={navHeight}/>
             <Mission MissionRef={MissionRef} navHeight={navHeight}/>
             <Approach ApproachRef={ApproachRef} navHeight={navHeight}/> */}
