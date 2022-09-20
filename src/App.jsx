@@ -20,6 +20,7 @@ const DirectorMessage = lazy(() => import('./components/About/DirectorMessage'))
 const ChairmanMessage = lazy(() => import('./components/About/ChairmanMessage'))
 const PrincipalMessage = lazy(() => import('./components/About/PrincipalMessage'))
 const BookList = lazy(() => import('./components/Academics/BookList/BookList'))
+const AcademicCalendar = lazy(() => import('./components/Academics/AcademicCalendar/AcademicCalendar'))
 const ContactUs = lazy(() => import('./components/ContactUs'))
 const Curriculum = lazy(() => import('./components/Academics/Curriculum/Curriculum'))
 const Faculty = lazy(() => import('./components/Academics/Faculty/Faculty'))
@@ -49,9 +50,9 @@ const App = () => {
               <Route path='/fee-structure' element={<FeeStructure />} />
               <Route path='overview'>
                 <Route path='pantheon-at-a-glance' element={<About />} />
-                <Route path='our-vision' element={<Vision/>}/>
-                <Route path='our-mission' element={<Mission/>}/>
-                <Route path='our-approach' element={<Approach/>}/>
+                <Route path='our-vision' element={<Vision />} />
+                <Route path='our-mission' element={<Mission />} />
+                <Route path='our-approach' element={<Approach />} />
                 <Route path='director-message' element={<DirectorMessage />} />
                 <Route path='chairman-message' element={<ChairmanMessage />} />
                 <Route path='principal-message' element={<PrincipalMessage />} />
@@ -60,6 +61,7 @@ const App = () => {
                 <Route path='book-list' element={<BookList />} />
                 <Route path='curriculum' element={<Curriculum />} />
                 <Route path='faculty' element={<Faculty />} />
+                <Route path='academic-calendar' element={<AcademicCalendar />} />
               </Route>
               <Route element={<PrivateRoute />}>
                 <Route path='/admin'>
