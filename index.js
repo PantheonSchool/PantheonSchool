@@ -10,9 +10,7 @@ const facultyRouter = require("./routers/faculty")
 
 require("./db/DB");
 
-app.use(cors({
-  origin: 'https://thepantheonschool.com'
-}));
+app.use(cors());
 
 app.use(express.json());
 
