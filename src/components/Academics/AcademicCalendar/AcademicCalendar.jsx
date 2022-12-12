@@ -8,7 +8,7 @@ const AcademicCalendar = () => {
     const LazyLoadImages = async () => {
         var lazyImages = [].slice.call(document.querySelectorAll("img.lazy"))
         if("IntersectionObserver" in window){
-            console.log('Inside Intersection Observer')
+            // console.log('Inside Intersection Observer')
             let lazyImageObserver = new IntersectionObserver((ent,obs) => {
                 ent.forEach((entry) => {
                     if(entry.isIntersecting){
@@ -23,7 +23,7 @@ const AcademicCalendar = () => {
                 lazyImageObserver.observe(lazyImage);
             });
         }else{
-            console.log('Inside Fallback')
+            // console.log('Inside Fallback')
             lazyImages.forEach((lazyImage) => {
                 lazyImage.src = lazyImage.dataset.src;
                 lazyImage.classList.remove('lazy');

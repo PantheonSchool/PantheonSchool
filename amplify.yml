@@ -3,7 +3,8 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm config set legacy-peer-deps true
+        - npm install
         - '# This installs Chrome on any RHEL/CentOS/Amazon Linux variant.'
         - curl https://intoli.com/install-google-chrome.sh | bash
     build:
