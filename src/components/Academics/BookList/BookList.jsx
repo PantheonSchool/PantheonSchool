@@ -94,7 +94,7 @@ const BookList = () => {
                                 </tr>)}
                             </tbody>
                         </Table>}
-                        {book && <Table bordered className="border-dark text-center">
+                        {/* {book && <Table bordered className="border-dark text-center">
                             <thead className="text-light">
                                 <tr>
                                     <th>S No.</th>
@@ -107,7 +107,7 @@ const BookList = () => {
                                     <td>{det}</td>
                                 </tr>)}
                             </tbody>
-                        </Table>}
+                        </Table>} */}
                     </div>
                 </div>
             </div>
