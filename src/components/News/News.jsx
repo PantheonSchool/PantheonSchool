@@ -2,6 +2,7 @@ import { useState, useEffect, lazy, Suspense } from "react"
 import ApiCall from "../../utils/ApiCall"
 import { Modal } from "react-bootstrap"
 import NewsTemplate from "./NewsTemplate"
+import Masonry from "react-masonry-css"
 
 const NewsComp = lazy(() => import('./NewsComp'))
 
@@ -24,19 +25,35 @@ const News = () => {
         }
         getNewsData()
     }, [])
+
+    const breakpoints = {
+        default: 4,
+        1300: 3,
+        1000: 2,
+        650: 1
+    }
+
     return (
-        <div className='container-fluid px-4 pt-md-4'>
+        <div className='px-4 pt-md-4'>
             <h1 className='fw-bold display-3'>NEWS</h1>
             <hr />
-            <div className="posts row justify-content-center">
-                {newsData && newsData.map((post, index) => <Suspense fallback={<>Loading...</>} key={post.title + index}><NewsComp setModalData={setModalData} handleShow={handleShow} post={post} boxSize='col-lg-3 col-md-4 col-sm-6 p-2' /></Suspense>)}
-                {!newsData.length && <>
-                    <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
-                    <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
-                    <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
-                    <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
-                </>}
-            </div>
+            <Masonry
+                breakpointCols={breakpoints}
+                className="my-masonry-grid posts"
+                columnClassName="my-masonry-grid_column"
+            >
+                {/* <div className="posts"> */}
+                    {newsData && newsData.map((post, index) => <Suspense fallback={<>Loading...</>} key={post.title + index}><NewsComp setModalData={setModalData} handleShow={handleShow} post={post} /></Suspense>)}
+                {/* </div> */}
+            </Masonry>
+                    {!newsData.length && <div className="container-fluid ">
+                        <div className="posts row justify-content-center">
+                            <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
+                            <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
+                            <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
+                            <NewsComp boxSize='col-lg-3 col-md-4 col-sm-6 p-2 skeleton' />
+                        </div>
+                    </div>}
             <Modal show={show} size='md' onHide={handleClose}>
                 <Modal.Body className="p-0 posts">
                     {modalData && modalData.content === 'image' ? <img alt='' src={modalData.post} className='w-100' /> : <div className="post">
