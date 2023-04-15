@@ -7,7 +7,7 @@ import './booklist.css'
 
 const BookList = () => {
 
-    const [bookClass, setBookClass] = useState('Nursery')
+    const [bookClass, setBookClass] = useState(1)
     const [book, setBook] = useState(BookData[bookClass])
 
     useEffect(() => {
@@ -15,7 +15,8 @@ const BookList = () => {
     }, [bookClass])
 
     const classDropdown = () => {
-        let classes = ['Nursery', 'LKG', 'UKG'];
+        // let classes = ['Nursery', 'LKG', 'UKG'];
+        let classes = [];
 
         for (let i = 1; i <= 8; i++) {
             classes.push(i)
@@ -28,10 +29,10 @@ const BookList = () => {
         <CoverContainer path={['academics', 'book list']} _title='ACADEMICS'>
             <div className="__booklist_container text-light mt-5 mt-md-0">
                 <div className="container py-5">
-                    <h1 className='text-uppercase letter-spacing-1'><span className='display-2 fw-bold'>Book</span> <span className='display-2'>list</span></h1>
+                    <h1 className='text-uppercase letter-spacing-1 mt-5'><span className='display-2 fw-bold'>Book</span> <span className='display-2'>list</span></h1>
                     <div className="__toggle_booklist">
-                        <Dropdown>
-                            <Dropdown.Toggle className="__toggle_btn">
+                        <Dropdown className="mt-5">
+                            <Dropdown.Toggle className="__toggle_btn mt-5">
                                 Book List of Class: {bookClass}
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
@@ -39,7 +40,7 @@ const BookList = () => {
                             </Dropdown.Menu>
                         </Dropdown>
                     </div>
-                    <div className='overflow-auto scrollbar-v1 mb-5'>
+                    <div className='overflow-auto scrollbar-v1 mt-5'>
                         <p className="fs-4 fw-bold text-center">Book List Class {bookClass}</p>
                         {book && <Table bordered className="border-dark text-center">
                             <thead className="text-light">
