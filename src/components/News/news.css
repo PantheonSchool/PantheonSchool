@@ -76,3 +76,7 @@
     display: flex;
     justify-content: center;
   }
+
+  .my-masonry-grid_column > div > div{ 
+    max-width: 412px !important;
+  }
