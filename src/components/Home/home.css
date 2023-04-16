@@ -248,6 +248,9 @@
     margin: 0 0 15px;
     padding: 0 20px;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .posts .post.homepage .body {
