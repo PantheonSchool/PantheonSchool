@@ -5,7 +5,7 @@ import ApiCall from '../../utils/ApiCall'
 
 const GoogleReviews = () => {
 
-    const ReviewCard = ({ review, }) => {
+    const ReviewCard = ({ review }) => {
         const { author_name, profile_photo_url, rating, text, relative_time_description } = review
 
         const ratingStars = () => {
@@ -73,11 +73,12 @@ const GoogleReviews = () => {
         getReviewData()
     }, [])
 
+
     return (
         <div className="reviews pt-5 pb-3 px-3 px-lg-5">
             <h1 className="text-center display-4 fw-bold letter-spacing-1">OUR REVIEWS</h1>
             <div className="d-flex overflow-auto scrollbar-v1">
-                {reviewData && reviewData.map((review, index) => <ReviewCard review={review} key={review.username + index} />)}
+                {reviewData && reviewData.map((review, index) => <ReviewCard review={review} key={"google" + index + "Review"} /> )}
                 {!reviewData.length && <>
                     <SkeletonReviewCard />
                     <SkeletonReviewCard />
