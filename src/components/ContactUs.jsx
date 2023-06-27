@@ -12,13 +12,13 @@ const ContactUs = () => {
             <div className='py-3 px-4 bg-mustard'>
               <IoLocationSharp className='text-light fs-3' />
             </div>
-            <p className='ms-3'><span className='fw-bold'>Address: </span>Haidakhan Mandir Road, Kathgharia, Haldwani, 263139</p>
+            <p className='ms-3'><span className='fw-bold'>Address: </span>Lohariyasal Malla, Kathgharia, Haldwani, 263139</p>
           </div>
           <div className='d-flex flex-row mt-3'>
             <div className='py-3 px-4 bg-mustard'>
               <AiOutlineMail className='text-light fs-3' />
             </div>
-            <p className='ms-3'><span className='fw-bold'>Email: </span><a className='text-dark' href='mailto:thepantheon.2019@gmail.com'>thepantheon.2019@gmail.com</a></p>
+            <p className='ms-3'><span className='fw-bold'>Email: </span><a className='text-dark' href='mailto:thepantheon.2019@gmail.com'>thepantheon.2023@gmail.com</a></p>
           </div>
           <div className='d-flex flex-row mt-3'>
             <div className='py-3 px-4 bg-mustard'>

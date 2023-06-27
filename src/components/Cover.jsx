@@ -8,7 +8,7 @@ const Cover = ({ backgroundImg, classN, navData, path }) => {
         <div className={`position-relative ${classN}`}>
             <div className="pantheon-cover cover-mod fixed d-flex flex-column justify-content-center align-items-center" style={{ background: `url(${cdnURL + backgroundImg})` }} >
                 {/* <p className='display-4 text-center my-auto text-uppercase hero-content fw-bold text-light'><span></span></p> */}
-                {navData && Array.isArray(navData) && <SideNav navData={navData} />}
+                {navData && navData.hasList && <SideNav navData={navData} />}
             </div>
             <div className="cover_path d-flex align-items-center">
                 <Link className="text-dark" to='/'>Home</Link>
