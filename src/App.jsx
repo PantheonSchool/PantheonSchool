@@ -27,6 +27,7 @@ const Faculty = lazy(() => import('./components/Academics/Faculty/Faculty'))
 const Vision = lazy(() => import('./components/About/Vision'));
 const Mission = lazy(() => import('./components/About/Mission'))
 const Approach = lazy(() => import('./components/About/Approach'))
+const Mandatory = lazy(() => import('./components/MandatoryDisclosure/Disclosure'))
 
 const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
 const PublicRoute = lazy(() => import('./components/PublicRoute'))
@@ -63,6 +64,7 @@ const App = () => {
                 <Route path='faculty' element={<Faculty />} />
                 <Route path='academic-calendar' element={<AcademicCalendar />} />
               </Route>
+              <Route path="/mandatory-disclosure" element={<Mandatory />} />
               <Route element={<PrivateRoute />}>
                 <Route path='/admin'>
                   <Route path='' element={<Admin />} />

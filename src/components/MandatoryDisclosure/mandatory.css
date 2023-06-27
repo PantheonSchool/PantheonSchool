@@ -1,0 +1,43 @@
+.grid_custom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    padding: 5rem 0;
+    @media screen and (max-width: 1400px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    @media screen and (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    @media screen and (max-width: 800px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        justify-content: center;
+        align-content: center;
+    }
+}
+
+.card_custom {
+    background-color: rgba(128, 128, 128, 0.669);
+    padding: 5rem 0;
+    border-radius: 16px;
+    text-align: center;
+    @media screen and (max-width: 600px) {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+}
+
+.card_custom:hover {
+    background-color: rgba(128, 128, 128, 0.846);
+    cursor: pointer;
+}
+
+.a_custom {
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-overflow: ellipsis;
+}

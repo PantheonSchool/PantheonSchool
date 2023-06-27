@@ -32,10 +32,10 @@ const navList = [
         title: "Principal's Message",
         link: '/overview/principal-message'
       },
-      {
-        title: "Mandatory Disclosure",
-        link: '/overview/mandatory-disclosure'
-      },
+      // {
+      //   title: "Mandatory Disclosure",
+      //   link: '/overview/mandatory-disclosure'
+      // },
     ],
   },
   {
@@ -97,27 +97,28 @@ const navList = [
     ],
   },
   {
-    title: "UNIQUE TO PANTHEON",
-    hasList: true,
+    title: "MANDATORY DISCLOSURE",
+    hasList: false,
     bgColor: "rgba(90,32,73,0.9)",
-    list: [
-      {
-        title: "Weekly Test Series",
-        link: '/weekly-test-series'
-      },
-      {
-        title: "After School Tution Classes",
-        link: '/after-school-tution-classes'
-      },
-      {
-        title: "Focus On Concepts",
-        link: '/focus-on-concepts'
-      },
-      {
-        title: "All Round Development",
-        link: '/all-round-development'
-      },
-    ],
+    link: "/mandatory-disclosure",
+    // list: [
+    //   {
+    //     title: "Weekly Test Series",
+    //     link: '/weekly-test-series'
+    //   },
+    //   {
+    //     title: "After School Tution Classes",
+    //     link: '/after-school-tution-classes'
+    //   },
+    //   {
+    //     title: "Focus On Concepts",
+    //     link: '/focus-on-concepts'
+    //   },
+    //   {
+    //     title: "All Round Development",
+    //     link: '/all-round-development'
+    //   },
+    // ],
   },
 ];
 
