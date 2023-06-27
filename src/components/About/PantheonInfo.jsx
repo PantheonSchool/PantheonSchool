@@ -10,12 +10,10 @@ const PantheonInfo = ({ AboutRef, navHeight }) => {
                     <img src={cdnURL + '/Images/about.png'} alt='' className='img-fluid' />
                 </div> */}
                 <div className='__pantheon-at-a-glance-content col'>
-                    <p>The Pantheon School is set up in three acres area amidst the well connected
-                        location at the crossing of Kathgodam-Kathgharia Road and Haldwani-Kaladhungi
-                        Road near by Haidakhan Mandir Kathgharia Haldwani. It is a Centrally Air
-                        Conditioned School, with air Conditioned transport facility and with a Half Olympic
-                        Size all weather Swimming pool and Indoor Badminton Court Facility. Lawn Tennis
-                        court, Basket Ball Court Facility.<br />
+                    <p>The Pantheon School is situated in a prime location at the intersection of Kathgodam-Kathgharia Road and Haldwani-Kaladhungi 
+                    Road near Haidakhan Mandir Kathgharia Haldwani. It spans across a sprawling campus and offers a range of amenities, including a 
+                    centrally air-conditioned environment, air-conditioned transport facility, a half Olympic-size all-weather swimming pool, an indoor 
+                    badminton court, a lawn tennis court, and a basketball court.<br />
                     </p>
 
                     <p>The Pantheon School is going to be a CBSE affiliated co-educational school, which

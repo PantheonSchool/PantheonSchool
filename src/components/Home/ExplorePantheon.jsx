@@ -17,7 +17,7 @@ const ExplorePantheon = () => {
             <div className='mt-3 p-md-5 p-2 text-light text-center'>
                 <div className='content'>
                     <h2 className='fw-bold display-4 my-4'>EXPLORE PANTHEON</h2>
-                    <p>The Pantheon School is set up in three acres area amidst the well connected location at the crossing of Kathgodam-Kathgharia Road and Haldwani-Kaladhungi Road near by Haidakhan Mandir Kathgharia Haldwani.</p>
+                    <p>The Pantheon School is strategically located at the intersection of Kathgodam-Kathgharia Road and Haldwani-Kaladhungi Road near Haidakhan Mandir Kathgharia Haldwani, offering easy accessibility and a prime setting.</p>
                 </div>
                 <Link to='/overview/pantheon-at-a-glance' className="btn-v3 px-4 py-2 mx-auto">learn more</Link>
             </div>
