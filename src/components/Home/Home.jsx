@@ -9,14 +9,15 @@ const GoogleReviews = lazy(() => import('./GoogleReviews'))
 const Home = () => {
   return (
     <>
-      <Cover />
+      <h1>Server Down</h1>
+      {/* <Cover />
       <ExplorePantheon />
       <h2 className='display-4 text-center fw-bold my-4'>BY THE NUMBERS</h2>
       <div className='slides'>
         {slides && slides.map((slide, index) => <Slide slide={slide} index={index} key={slide.title + index} />)}
       </div>
       <GoogleReviews/>
-      <News />
+      <News /> */}
     </>
   )
 }
