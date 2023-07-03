@@ -1,46 +1,47 @@
-import { lazy, Suspense } from "react"
-import { Route, Routes } from "react-router-dom"
-import Footer from "./components/Footer/Footer"
-import { ToastContainer } from "react-toastify"
-import { ClipLoad } from "./components/Fallback"
+// import { lazy, Suspense } from "react"
+// import { Route, Routes } from "react-router-dom"
+// import Footer from "./components/Footer/Footer"
+// import { ToastContainer } from "react-toastify"
+// import { ClipLoad } from "./components/Fallback"
 
-const Navbar = lazy(() => import('./components/Navbar/Navbar'))
-const Home = lazy(() => import('./components/Home/Home'))
-const Inquire = lazy(() => import('./components/Inquire'))
-const Page404 = lazy(() => import('./components/Page404'))
-const Login = lazy(() => import('./components/Login/Login'))
-const Logout = lazy(() => import('./components/Login/Logout'))
-const Register = lazy(() => import('./components/Login/Register'))
-const Visit = lazy(() => import('./components/Visit/Visit'))
-const News = lazy(() => import('./components/News/News'))
-const Apply = lazy(() => import('./components/Apply/Apply'))
-const FeeStructure = lazy(() => import('./components/Apply/FeeStructure'))
-const About = lazy(() => import('./components/About/About'))
-const DirectorMessage = lazy(() => import('./components/About/DirectorMessage'))
-const ChairmanMessage = lazy(() => import('./components/About/ChairmanMessage'))
-const PrincipalMessage = lazy(() => import('./components/About/PrincipalMessage'))
-const BookList = lazy(() => import('./components/Academics/BookList/BookList'))
-const AcademicCalendar = lazy(() => import('./components/Academics/AcademicCalendar/AcademicCalendar'))
-const ContactUs = lazy(() => import('./components/ContactUs'))
-const Curriculum = lazy(() => import('./components/Academics/Curriculum/Curriculum'))
-const Faculty = lazy(() => import('./components/Academics/Faculty/Faculty'))
-const Vision = lazy(() => import('./components/About/Vision'));
-const Mission = lazy(() => import('./components/About/Mission'))
-const Approach = lazy(() => import('./components/About/Approach'))
-const Mandatory = lazy(() => import('./components/MandatoryDisclosure/Disclosure'))
+// const Navbar = lazy(() => import('./components/Navbar/Navbar'))
+// const Home = lazy(() => import('./components/Home/Home'))
+// const Inquire = lazy(() => import('./components/Inquire'))
+// const Page404 = lazy(() => import('./components/Page404'))
+// const Login = lazy(() => import('./components/Login/Login'))
+// const Logout = lazy(() => import('./components/Login/Logout'))
+// const Register = lazy(() => import('./components/Login/Register'))
+// const Visit = lazy(() => import('./components/Visit/Visit'))
+// const News = lazy(() => import('./components/News/News'))
+// const Apply = lazy(() => import('./components/Apply/Apply'))
+// const FeeStructure = lazy(() => import('./components/Apply/FeeStructure'))
+// const About = lazy(() => import('./components/About/About'))
+// const DirectorMessage = lazy(() => import('./components/About/DirectorMessage'))
+// const ChairmanMessage = lazy(() => import('./components/About/ChairmanMessage'))
+// const PrincipalMessage = lazy(() => import('./components/About/PrincipalMessage'))
+// const BookList = lazy(() => import('./components/Academics/BookList/BookList'))
+// const AcademicCalendar = lazy(() => import('./components/Academics/AcademicCalendar/AcademicCalendar'))
+// const ContactUs = lazy(() => import('./components/ContactUs'))
+// const Curriculum = lazy(() => import('./components/Academics/Curriculum/Curriculum'))
+// const Faculty = lazy(() => import('./components/Academics/Faculty/Faculty'))
+// const Vision = lazy(() => import('./components/About/Vision'));
+// const Mission = lazy(() => import('./components/About/Mission'))
+// const Approach = lazy(() => import('./components/About/Approach'))
+// const Mandatory = lazy(() => import('./components/MandatoryDisclosure/Disclosure'))
 
-const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
-const PublicRoute = lazy(() => import('./components/PublicRoute'))
+// const PrivateRoute = lazy(() => import('./components/PrivateRoute'))
+// const PublicRoute = lazy(() => import('./components/PublicRoute'))
 
-const Admin = lazy(() => import('./components/Admin/Admin'))
-const AdminNews = lazy(() => import('./components/Admin/News/News'))
-const AdminInquire = lazy(() => import('./components/Admin/Inquire'))
-const FacultyAdmin = lazy(() => import('./components/Admin/Faculty/Faculty'))
+// const Admin = lazy(() => import('./components/Admin/Admin'))
+// const AdminNews = lazy(() => import('./components/Admin/News/News'))
+// const AdminInquire = lazy(() => import('./components/Admin/Inquire'))
+// const FacultyAdmin = lazy(() => import('./components/Admin/Faculty/Faculty'))
 
 const App = () => {
   return (
     <>
-      <Suspense fallback={<></>}><Navbar /></Suspense>
+      <h1>Server Down</h1>
+      {/* <Suspense fallback={<></>}><Navbar /></Suspense>
       <div style={{ minHeight: '50vh' }} className='mb-1'>
         <Suspense fallback={<ClipLoad />} >
           <Routes>
@@ -104,7 +105,7 @@ const App = () => {
         pauseOnHover
         theme="dark"
       />
-      <Footer />
+      <Footer /> */}
     </>
   )
 }
