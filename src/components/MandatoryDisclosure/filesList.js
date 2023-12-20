@@ -58,12 +58,17 @@ const schoolGeneral = [
         title: "CONTACT DETAILS",
         details: "7618671071, 7618671075"
     },
+    {
+        title: "SCHOOL MANAGING COMMITTEE",
+        link: "/pdf/SMC.pdf"
+    },
 ]
 
 const academicLinks = [
     {
         title: "FEE STRUCTURE OF THE SCHOOL",
-        link: "/fee-structure"
+        link: "/pdf/FEES.pdf",
+        isCDN: true
     },
     {
         title: "ANNUAL ACADEMIC CALANDER",
@@ -92,10 +97,22 @@ const staffList = [
             },
             {
                 information: "PRT",
-                details: "14",
+                details: "08",
             },
             {
-                information: "PTI",
+                information: "PTE",
+                details: "01",
+            },
+            {
+                information: "LIBRARIAN",
+                details: "01",
+            },
+            {
+                information: "ASSISTANT TEACHERS",
+                details: "02",
+            },
+            {
+                information: "MUSIC TEACHER",
                 details: "01",
             },
         ]
@@ -110,41 +127,210 @@ const staffList = [
     },
     {
         information: "DETAILS OF COUNSELLOR AND WELNESS TEACHER",
-        details: "MRS. KAVITA MAURA",
+        details: "MRS. DEEPESWARI BISHT",
     }
 ]
 
 const schoolInfrastructure = [
     {
-        information: "TOTAL CAMPUS AREA OF THE SCHOOL (IN SQUARE MTR)",
-        details: "4050 sq mtr"
+        room: "PRINCIPAL OFFICE",
+        number: "1",
+        length: "5.4",
+        breadth: "5.4"
     },
     {
-        information: "NO. AND SIZE OF THE CLASSROOMS (IN SQUARE FEET)",
-        details: "12, 500 sq ft"
+        room: "DIRECTOR OFFICE",
+        number: "1",
+        length: "5.4",
+        breadth: "5.4"
     },
     {
-        information: "NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQUARE FEET)",
-        details: "Total Labs 03-<br/>Composite Lab 01 (800 sq ft)<br/>Computer Lab 01 (720 sq ft)<br/>Maths Lab 01 (500 sq ft)",
-        html: true,
+        room: "CLASS ROOMS",
+        number: "16",
+        length: "6.12",
+        breadth: "7.92"
     },
     {
-        information: "INTERNET FACILITY (Y/N)",
-        details: "YES"
+        room: "COMPOSITE LAB",
+        number: "1",
+        length: "7.92",
+        breadth: "10.68"
     },
     {
-        information: "NO. OF GIRLS TOILETS",
-        details: "08"
+        room: "PHYSICS LAB",
+        number: "0",
+        length: "",
+        breadth: ""
     },
     {
-        information: "NO. OF BOYS TOILETS",
-        details: "08"
+        room: "CHEMISTRY LAB",
+        number: "0",
+        length: "",
+        breadth: ""
     },
     {
-        information: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL.",
-        link: "/mandatory-disclosure",
-        hyperlink: true,
+        room: "BIOLOGY LAB",
+        number: "0",
+        length: "",
+        breadth: ""
     },
+    {
+        room: "MATHS LAB",
+        number: "1",
+        length: "6.12",
+        breadth: "7.92"
+    },
+    {
+        room: "COMPUTER LAB",
+        number: "1",
+        length: "",
+        breadth: ""
+    },
+    {
+        room: "LIBRARY",
+        number: "1",
+        length: "14",
+        breadth: "16"
+    },
+    {
+        room: "STAFF ROOM",
+        number: "2",
+        length: "",
+        breadth: ""
+    },
+    {
+        room: "MUSIC ROOM",
+        number: "1",
+        length: "7.92",
+        breadth: "10.68"
+    },
+    {
+        room: "DANCE ROOM",
+        number: "1",
+        length: "",
+        breadth: ""
+    },
+    {
+        room: "EXAMINATION ROOM",
+        number: "",
+        length: "",
+        breadth: ""
+    },
+    {
+        room: "INDOOR GAMES/ ACTIVITY ROOM",
+        number: "1",
+        length: "25",
+        breadth: "10"
+    },
+    {
+        room: "M.I. ROOM",
+        number: "1",
+        length: "3.78",
+        breadth: "2.7"
+    },
+    {
+        room: "GIRLS TOILET ",
+        number: "2 (10 Seats) ",
+        length: "4.8",
+        breadth: "3.06"
+    },
+    {
+        room: "BOYS TOILETS",
+        number: "2 (4 Seats,10 Urinals) ",
+        length: "4.8",
+        breadth: "3.06"
+    },
+    {
+        room: "CWSN TOILET ALL FLOORS",
+        number: "4",
+        length: "In each G/B Toilets",
+        breadth: "5.4"
+    },
+    {
+        room: "VACANT ROOMS",
+        number: "1",
+        length: "6.12",
+        breadth: "7.92"
+    },
+    {
+        room: "RAMP GROUND FLOOR TO TOP FLOOR",
+        number: "AVAILABLE",
+        length: "AVAILABLE",
+        breadth: ""
+    },
+    {
+        "nonNumbered": true,
+        room: "",
+        number: " ",
+        length: " ",
+        breadth: " "
+    },
+    {
+        "nonNumbered": true,
+        room: "",
+        number: " ",
+        length: " ",
+        breadth: " "
+    },
+    {
+        "nonNumbered": true,
+        room: "",
+        number: " ",
+        length: " ",
+        breadth: " "
+    },
+    {
+        "nonNumbered": true,
+        room: "",
+        number: " ",
+        length: " ",
+        breadth: " "
+    },
+    {
+        "nonNumbered": true,
+        room: "TOTAL LAND AREA",
+        number: "4156.72",
+        length: "IN SQUARE METER",
+        breadth: ""
+    },
+    {
+        "nonNumbered": true,
+        room: "BUILTUP AREA",
+        number: "2002",
+        length: "IN SQUARE METER",
+    },
+    {
+        "nonNumbered": true,
+        room: "PLAYGROUND AREA",
+        number: "2002",
+        length: "IN SQUARE METER",
+    }
+    // {
+    //     information: "NO. AND SIZE OF THE CLASSROOMS (IN SQUARE FEET)",
+    //     details: "12, 500 sq ft"
+    // },
+    // {
+    //     information: "NO. AND SIZE OF LABORATORIES INCLUDING COMPUTER LABS (IN SQUARE FEET)",
+    //     details: "Total Labs 03-<br/>Composite Lab 01 (800 sq ft)<br/>Computer Lab 01 (720 sq ft)<br/>Maths Lab 01 (500 sq ft)",
+    //     html: true,
+    // },
+    // {
+    //     information: "INTERNET FACILITY (Y/N)",
+    //     details: "YES"
+    // },
+    // {
+    //     information: "NO. OF GIRLS TOILETS",
+    //     details: "08"
+    // },
+    // {
+    //     information: "NO. OF BOYS TOILETS",
+    //     details: "08"
+    // },
+    // {
+    //     information: "LINK OF YOUTUBE VIDEO OF THE INSPECTION OF SCHOOL COVERING THE INFRASTRUCTURE OF THE SCHOOL.",
+    //     link: "/mandatory-disclosure",
+    //     hyperlink: true,
+    // },
 ]
 
 export default filesList;

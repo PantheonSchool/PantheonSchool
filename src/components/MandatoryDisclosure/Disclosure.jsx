@@ -28,7 +28,16 @@ const Disclosure = () => {
                                         <tr>
                                             <td>{idx+1}.</td>
                                             <td>{data.title}</td>
-                                            <td>{data.details}</td>
+                                            {!data.link &&
+                                                <td>{data.details}</td>
+                                            }
+                                            {data.link &&
+                                                <td>
+                                                    <a href={`${cdnURL}${data.link}`} target="_blank" rel="noreferrer">
+                                                        Click Here
+                                                    </a>
+                                                </td>
+                                            }
                                         </tr>
                                     )
                                 })
@@ -81,7 +90,7 @@ const Disclosure = () => {
                                             <td>{idx+1}.</td>
                                             <td>{data.title}</td>
                                             <td>
-                                                <a href={data.link} target="_blank" rel="noreferrer">
+                                                <a href={data.isCDN ? `${cdnURL}${data.link}` : data.link} target="_blank" rel="noreferrer">
                                                     Click Here
                                                 </a>
                                             </td>
@@ -135,17 +144,21 @@ const Disclosure = () => {
                                 <thead className='text-light'>
                                     <tr style={{ verticalAlign: "middle" }}>
                                         <th>S.NO.</th>
-                                        <th>INFORMATION</th>
-                                        <th>DETAILS</th>
+                                        <th>ROOM</th>
+                                        <th>NUMBER</th>
+                                        <th>LENGTH</th>
+                                        <th>BREADTH</th>
                                     </tr>
                                 </thead>
                                 <tbody className='text-dark bg-light'>
                                 {schoolInfrastructure.map((data, idx) => {
                                     return (
                                         <tr>
-                                            <td>{idx+1}.</td>
-                                            <td>{data.information}</td>
-                                            {!data.html && !data.hyperlink && <td>{data.details}</td>}
+                                            {!data.nonNumbered && <td>{idx+1}.</td>}
+                                            <td colSpan={data.nonNumbered && 2}>{data.room}</td>
+                                            {!data.html && !data.hyperlink && <td>{data.number}</td>}
+                                            {!data.html && !data.hyperlink && <td>{data.length}</td>}
+                                            {!data.html && !data.hyperlink && <td>{data.breadth}</td>}
                                             {data.html && <div contentEditable='true' dangerouslySetInnerHTML={{ __html: `${data.details}` }} />}
                                             {data.hyperlink && <a href={data.link} target="_blank" rel="noreferrer">Click Here</a>}
                                         </tr>
