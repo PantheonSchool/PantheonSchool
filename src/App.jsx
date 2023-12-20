@@ -64,7 +64,7 @@ const App = () => {
                 <Route path='faculty' element={<Faculty />} />
                 <Route path='academic-calendar' element={<AcademicCalendar />} />
               </Route>
-              {/* <Route path="/mandatory-disclosure" element={<Mandatory />} /> */}
+              <Route path="/mandatory-disclosure" element={<Mandatory />} />
               <Route element={<PrivateRoute />}>
                 <Route path='/admin'>
                   <Route path='' element={<Admin />} />
