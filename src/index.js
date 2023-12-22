@@ -17,7 +17,7 @@ const rootElement = document.getElementById("root");
 const APP = (
   <AuthProvider>
     <BrowserRouter>
-      <App />
+      // <App />
     </BrowserRouter>
   </AuthProvider>)
 
