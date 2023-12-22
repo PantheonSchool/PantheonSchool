@@ -17,14 +17,14 @@ const rootElement = document.getElementById("root");
 const APP = (
   <AuthProvider>
     <BrowserRouter>
-      // <App />
+      <App />
     </BrowserRouter>
   </AuthProvider>)
 
-if (rootElement.hasChildNodes()) {
-  hydrate(APP, rootElement);
-} else {
-  render(APP, rootElement);
+// if (rootElement.hasChildNodes()) {
+//   hydrate(APP, rootElement);
+// } else {
+//   render(APP, rootElement);
 }
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
