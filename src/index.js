@@ -22,10 +22,10 @@ const APP = (
   </AuthProvider>)
 
 // if (rootElement.hasChildNodes()) {
-//   hydrate(APP, rootElement);
+//    hydrate(APP, rootElement);
 // } else {
-//   render(APP, rootElement);
-}
+//    render(APP, rootElement);
+// }
 
 // const root = ReactDOM.createRoot(document.getElementById("root"));
 // root.render(
