@@ -18,6 +18,7 @@ const APP = (
   <AuthProvider>
     <BrowserRouter>
       <App />
+      <h1>404</h1>
     </BrowserRouter>
   </AuthProvider>)
 
