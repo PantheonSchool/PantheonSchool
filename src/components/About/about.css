@@ -43,7 +43,7 @@
 .pantheon-at-a-glance-container .mission .mission_icon {
     width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .pantheon-at-a-glance-container .mission .mission_icon img {
