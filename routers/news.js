@@ -54,9 +54,11 @@ router.get("/", async (req, res) => {
           // Process the posts
           const posts = response.data.data;
           const newsData = posts.filter(post => post.message).map((post) => {
+            const date = new Date(post.updated_time);
+            const options = { day: '2-digit', month: 'long' };
             return {
               imgURL: post?.attachments?.data[0]?.media?.image?.src || "",
-              date: post.updated_time,
+              date: `${date.toLocaleString('en-UK', options)} at Pantheon`,
               title: post.updated_time,
               body: post.message,
               important: true,
