@@ -54,6 +54,8 @@ router.get("/", async (req, res) => {
           // Process the posts
           const posts = response.data.data;
           const newsData = posts.map((post) => {
+            if (!post.message)
+              return;
             return {
               imgURL: post?.attachments?.data[0]?.media?.image?.src || "",
               date: post.updated_time,
