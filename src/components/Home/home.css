@@ -231,6 +231,7 @@
 .posts .post .image img {
     object-fit: cover;
     height: 285px;
+    aspect-ratio: 16/9;
     /* height: 245px; */
 }
 
