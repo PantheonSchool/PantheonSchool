@@ -58,8 +58,8 @@ router.get("/", async (req, res) => {
             const options = { day: '2-digit', month: 'long' };
             return {
               imgURL: post?.attachments?.data[0]?.media?.image?.src || "",
-              date: `${date.toLocaleString('en-UK', options)} at Pantheon`,
-              title: post.updated_time,
+              date: post.updated_time,
+              title: `${date.toLocaleString('en-UK', options)} at Pantheon`,
               body: post.message,
               important: true,
             }
