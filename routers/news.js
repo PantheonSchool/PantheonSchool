@@ -36,8 +36,6 @@ router.delete("/:id", auth, async (req, res) => {
   }
 });
 
-const access_token = "EAAPDGQGWx2EBO26pAK7AUrtiek95YOmyuTLeHKVmZB7bIHrYmbZAyyfC89dH8fTuQG64MAWZCbWDYJSjhBSF3uuyNiareYrgz6tdQjXMGtyTDvkHMRpPypjRguM3JfY9DtCoPJywO9nlp9wvSLkZC6WSgLUhUD1GVkcX6NeMhSPZCZCOekdBKeeOiwHVMOhhaTeiJupjBEipKvZCCMrlAKp7oUJ";
-
 router.get("/", async (req, res) => {
   // try {
   //   if (req.query.homepage) {
@@ -49,7 +47,7 @@ router.get("/", async (req, res) => {
   //   res.status(200).send({ status: true, data: newsData });
   try {
     const newsData = {};
-      axios.get(`https://graph.facebook.com/327589197915795/posts?fields=attachments{media},message,updated_time&limit=${req.query.homepage ? 5 : 100}&access_token=${access_token}`)
+      axios.get(`https://graph.facebook.com/327589197915795/posts?fields=attachments{media},message,updated_time&limit=${req.query.homepage ? 5 : 100}&access_token=${process.env.GRAPH_API_ACCESS}`)
       .then(response => {
           // Process the posts
           const posts = response.data.data;
