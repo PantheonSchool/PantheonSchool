@@ -46,24 +46,20 @@ router.get("/", async (req, res) => {
   //   let newsData = await News.find({}).sort({ date: -1 });
   //   res.status(200).send({ status: true, data: newsData });
   try {
-    const newsData = {};
-      axios.get(`https://graph.facebook.com/327589197915795/posts?fields=attachments{media},message,updated_time&limit=${req.query.homepage ? 5 : 100}&access_token=${process.env.GRAPH_API_ACCESS}`)
-      .then(response => {
-          // Process the posts
-          const posts = response.data.data;
-          const newsData = posts.filter(post => post.message).map((post) => {
-            const date = new Date(post.updated_time);
-            const options = { day: '2-digit', month: 'long' };
-            return {
-              imgURL: post?.attachments?.data[0]?.media?.image?.src || "",
-              date: post.updated_time,
-              title: `${date.toLocaleString('en-UK', options)} at Pantheon`,
-              body: post.message,
-              important: true,
-            }
-          })
-          res.status(200).send({ status: true, data: newsData });
-        })
+    const response = await axios.get(`https://graph.facebook.com/327589197915795/posts?fields=attachments{media},message,updated_time&limit=${req.query.homepage ? 5 : 100}&access_token=${process.env.GRAPH_API_ACCESS}`)
+    const posts = response.data.data;
+    const newsData = posts.filter(post => post.message).map((post) => {
+      const date = new Date(post.updated_time);
+      const options = { day: '2-digit', month: 'long' };
+      return {
+        imgURL: post?.attachments?.data[0]?.media?.image?.src || "",
+        date: post.updated_time,
+        title: `${date.toLocaleString('en-UK', options)} at Pantheon`,
+        body: post.message,
+        important: true,
+      }
+    })
+    res.status(200).send({ status: true, data: newsData });
   } catch (err) {
     console.log(err);
     res.status(400).send({ status: false, error: err });
