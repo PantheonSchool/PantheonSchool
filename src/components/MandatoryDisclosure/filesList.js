@@ -25,7 +25,7 @@ const filesList = [
     },
     {
         title: "COPIES OF VALID WATER , HEALTH AND SANITATION CERTIFICATES ",
-        link: "/pdf/HealtAndSanitation%20.pdf"
+        link: "/pdf/HealtAndSanitation.pdf"
     },
 ];
 
@@ -36,11 +36,11 @@ const schoolGeneral = [
     },
     {
         title: "AFFILIATION NO",
-        details: ""
+        details: "3530679"
     },
     {
         title: "SCHOOL CODE ",
-        details: ""
+        details: "80149"
     },
     {
         title: "COMPLETE ADDRESS WITH PIN CODE",
@@ -67,7 +67,7 @@ const schoolGeneral = [
 const academicLinks = [
     {
         title: "FEE STRUCTURE OF THE SCHOOL",
-        link: "/pdf/FEES.pdf",
+        link: "/pdf/FeeStructure.pdf",
         isCDN: true
     },
     {
