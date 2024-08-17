@@ -146,8 +146,8 @@ const Disclosure = () => {
                                         <th>S.NO.</th>
                                         <th>ROOM</th>
                                         <th>NUMBER</th>
-                                        <th>LENGTH</th>
-                                        <th>BREADTH</th>
+                                        <th>LENGTH (IN METER)</th>
+                                        <th>BREADTH (IN METER)</th>
                                     </tr>
                                 </thead>
                                 <tbody className='text-dark bg-light'>

@@ -163,20 +163,20 @@ const schoolInfrastructure = [
     {
         room: "PHYSICS LAB",
         number: "1",
-        length: "",
-        breadth: ""
+        length: "11",
+        breadth: "5.5"
     },
     {
         room: "CHEMISTRY LAB",
         number: "1",
-        length: "",
-        breadth: ""
+        length: "11",
+        breadth: "5.5"
     },
     {
         room: "BIOLOGY LAB",
         number: "1",
-        length: "",
-        breadth: ""
+        length: "11",
+        breadth: "5.5"
     },
     {
         room: "MATHS LAB",
@@ -187,20 +187,20 @@ const schoolInfrastructure = [
     {
         room: "COMPUTER LAB",
         number: "1",
-        length: "",
-        breadth: ""
+        length: "9",
+        breadth: "8"
     },
     {
         room: "LIBRARY",
         number: "1",
         length: "14",
-        breadth: "16"
+        breadth: "8"
     },
     {
         room: "STAFF ROOM",
         number: "2",
-        length: "",
-        breadth: ""
+        length: "7",
+        breadth: "6"
     },
     {
         room: "MUSIC ROOM",
@@ -252,7 +252,7 @@ const schoolInfrastructure = [
     },
     {
         room: "VACANT ROOMS",
-        number: "1",
+        number: "15",
         length: "6.12",
         breadth: "7.92"
     },
