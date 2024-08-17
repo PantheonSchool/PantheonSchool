@@ -255,7 +255,7 @@
 }
 
 .posts .post.homepage .body {
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
     display: -webkit-box;
