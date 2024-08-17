@@ -150,7 +150,7 @@ const schoolInfrastructure = [
     },
     {
         room: "CLASS ROOMS",
-        number: "20",
+        number: "30",
         length: "6.12",
         breadth: "7.92"
     },
@@ -293,7 +293,7 @@ const schoolInfrastructure = [
     {
         "nonNumbered": true,
         room: "TOTAL LAND AREA",
-        number: "4156.72",
+        number: "4050",
         length: "IN SQUARE METER",
         breadth: ""
     },
