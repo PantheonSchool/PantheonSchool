@@ -85,7 +85,7 @@ const staffList = [
     },
     {
         information: "TOTAL NO. OF TEACHERS",
-        details: "21",
+        details: "29",
         sub: [
             {
                 information: "PGT",
@@ -93,15 +93,19 @@ const staffList = [
             },
             {
                 information: "TGT",
-                details: "07",
-            },
-            {
-                information: "PRT",
                 details: "08",
             },
             {
+                information: "PRT",
+                details: "07",
+            },
+            {
+                information: "PRE-PRIMARY",
+                details: "06",
+            },
+            {
                 information: "PTE",
-                details: "01",
+                details: "02",
             },
             {
                 information: "LIBRARIAN",
@@ -109,7 +113,7 @@ const staffList = [
             },
             {
                 information: "ASSISTANT TEACHERS",
-                details: "02",
+                details: "04",
             },
             {
                 information: "MUSIC TEACHER",
@@ -146,7 +150,7 @@ const schoolInfrastructure = [
     },
     {
         room: "CLASS ROOMS",
-        number: "16",
+        number: "20",
         length: "6.12",
         breadth: "7.92"
     },
@@ -158,19 +162,19 @@ const schoolInfrastructure = [
     },
     {
         room: "PHYSICS LAB",
-        number: "0",
+        number: "1",
         length: "",
         breadth: ""
     },
     {
         room: "CHEMISTRY LAB",
-        number: "0",
+        number: "1",
         length: "",
         breadth: ""
     },
     {
         room: "BIOLOGY LAB",
-        number: "0",
+        number: "1",
         length: "",
         breadth: ""
     },
@@ -230,19 +234,19 @@ const schoolInfrastructure = [
     },
     {
         room: "GIRLS TOILET ",
-        number: "2 (10 Seats) ",
+        number: "3",
         length: "4.8",
         breadth: "3.06"
     },
     {
         room: "BOYS TOILETS",
-        number: "2 (4 Seats,10 Urinals) ",
+        number: "3",
         length: "4.8",
         breadth: "3.06"
     },
     {
         room: "CWSN TOILET ALL FLOORS",
-        number: "4",
+        number: "6",
         length: "In each G/B Toilets",
         breadth: "5.4"
     },
@@ -265,27 +269,27 @@ const schoolInfrastructure = [
         length: " ",
         breadth: " "
     },
-    {
-        "nonNumbered": true,
-        room: "",
-        number: " ",
-        length: " ",
-        breadth: " "
-    },
-    {
-        "nonNumbered": true,
-        room: "",
-        number: " ",
-        length: " ",
-        breadth: " "
-    },
-    {
-        "nonNumbered": true,
-        room: "",
-        number: " ",
-        length: " ",
-        breadth: " "
-    },
+    // {
+    //     "nonNumbered": true,
+    //     room: "",
+    //     number: " ",
+    //     length: " ",
+    //     breadth: " "
+    // },
+    // {
+    //     "nonNumbered": true,
+    //     room: "",
+    //     number: " ",
+    //     length: " ",
+    //     breadth: " "
+    // },
+    // {
+    //     "nonNumbered": true,
+    //     room: "",
+    //     number: " ",
+    //     length: " ",
+    //     breadth: " "
+    // },
     {
         "nonNumbered": true,
         room: "TOTAL LAND AREA",
